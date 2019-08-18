@@ -1,0 +1,205 @@
+// typography
+
+@font-face {
+  font-family: 'Proxima_Nova';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/Proxima_Nova_Regular.WOFF') format('woff');
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/Proxima_Nova_Bold.WOFF') format('woff');
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/Proxima_Nova_Light.WOFF') format('woff');
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_SemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/Proxima_Nova_SemiBold.WOFF') format('woff');
+}
+
+@font-face {
+  font-family: 'TisaPro_Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/TisaPro_Ita.WOFF') format('woff');
+}
+
+
+$FntBody: 'Proxima_Nova', 'Helvetica', sans-serif;
+$FntHeader: 'Proxima_Nova_Bold', 'Open Sans', 'Helvetica', sans-serif;
+$FntSemiBold: 'Proxima_Nova_SemiBold', 'Helvetica', sans-serif;
+$FntLight: 'Proxima_Nova_Light', 'Helvetica', sans-serif;
+$FntCaption: 'TisaPro_Italic', 'Palatino', serif;
+$FntBaseSize: 16px;
+
+body,
+html {
+  font-family: $FntBody;
+  font-size: $FntBaseSize;
+}
+
+// #####################################
+// selections
+// #####################################
+
+::-moz-selection {
+  background: $ClrNight;
+  color: $ClrWhite;
+  opacity: 100%;
+}
+
+::selection {
+  background: $ClrNight;
+  color: $ClrWhite;
+  opacity: 100%;
+}
+
+// #####################################
+// modifiers
+// #####################################
+
+.fnt-body {
+  font-family: $FntBody !important;
+  font-weight: 400 !important;
+}
+
+.fnt-bold {
+  font-family: $FntHeader !important;
+}
+
+b {
+  @extend .fnt-bold;
+}
+
+.fnt-semibold {
+  font-family: $FntSemiBold !important;
+}
+
+.txt-center {
+  align-items: center;
+}
+
+// #####################################
+// headers
+// #####################################
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: $FntHeader;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+.h1 {
+  font-size: 1.8125rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.225;
+  text-transform: uppercase;
+  @media (max-width: $BaseMediaMd) {
+    font-size: 1.53rem;
+  }
+  @media (max-width: $BaseMediaSm) {
+    font-size: 1.25rem;
+  }
+}
+
+h2,
+.h2 {
+  color: $ClrBark;
+  font-size: 1.8125rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.225;
+  text-transform: uppercase;
+  @media (max-width: $BaseMediaMd) {
+    font-size: 1.53rem;
+  }
+  @media (max-width: $BaseMediaSm) {
+    font-size: 1.25rem;
+  }
+}
+
+h3,
+.h3 {
+  color: $ClrBark;
+  font-size: 1.5rem;
+  line-height: 1.225;
+  @media (max-width: $BaseMediaMd) {
+    font-size: 1.375rem;
+  }
+  @media (max-width: $BaseMediaSm) {
+    font-size: 1.25rem;
+  }
+}
+
+h4,
+.h4 {
+  color: $ClrBark;
+  font-size: 1.5rem;
+  line-height: 1.225;
+  @media (max-width: $BaseMediaMd) {
+    font-size: 1.375rem;
+  }
+  @media (max-width: $BaseMediaSm) {
+    font-size: 1.25rem;
+  }
+}
+
+
+h5,
+.h5 {
+  color: $ClrBark;
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  line-height: 1.225;
+  text-transform: none;
+  @media (max-width: $BaseMediaMd) {
+    font-size: 1.375rem;
+  }
+  @media (max-width: $BaseMediaSm) {
+    font-size: 1.25rem;
+  }
+}
+
+// #####################################
+// body copy
+// #####################################
+
+p,
+.p {
+  color: $ClrBark;
+  font-family: $FntBody;
+  font-size: 1rem;
+  line-height: 1.65;
+  margin-top: $Base / 4;
+  @media (max-width: $BaseMediaMd) {
+    margin-top: $Base / 5;
+  }
+  @media (max-width: $BaseMediaMd) {
+    margin-top: $Base / 6;
+  }
+}
+
+

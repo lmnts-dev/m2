@@ -1,6 +1,23 @@
 @charset 'utf-8';
 
-// Import partials
-@import 'lanyon/poole',
-  'lanyon/lanyon',
-  'lanyon/syntax-highlighting';
+//Vendor
+@import 'vendor/Normalize';
+
+// Globals
+@import 'global/Animation';
+@import 'global/Base';
+@import 'global/Palette';
+@import 'global/Typography';
+
+//Structure
+@import 'structure/Section';
+
+// Components
+@import 'components/core/Button';
+@import 'components/core/Footer';
+@import 'components/core/Input';
+
+
+
+
+

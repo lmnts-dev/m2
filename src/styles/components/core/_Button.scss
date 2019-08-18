@@ -1,0 +1,20 @@
+// Button Component
+
+// Default Styles
+button, .btn {
+  border-radius: $Base * 2;
+  cursor: pointer;
+  height: $ButtonHeight;
+  line-height: $ButtonHeight;
+
+  &:focus,
+  &:active {
+    border: 0;
+    outline: 0;
+  }
+
+  &.btn-clr-white {
+    background-color: $ClrWhite;
+    color: $ClrNight;
+  }
+}

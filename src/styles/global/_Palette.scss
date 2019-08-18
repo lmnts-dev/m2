@@ -1,0 +1,45 @@
+// Sitewide Palette
+$ClrWhite: #fff;
+$ClrBlack: #000;
+$ClrSky: #2f86ff;
+$ClrCloudy: #d7e3f2;
+$ClrNight: #295ec3;
+$ClrMidnight: #1a1f5b;
+$ClrBark: #45484b;
+$ClrShell: #f5f7fa;
+
+// Universal Color Styles
+body {
+  background-color: $ClrWhite;
+  color: $ClrBark;
+}
+
+//Border Colors
+$BasicBorder: 1px solid $ClrCloudy;
+
+// Text Colors
+.txt-clr-bark {
+  color: $ClrBark !important;
+}
+
+.txt-clr-white {
+  color: $ClrWhite !important;
+}
+
+.txt-clr-night {
+  color: $ClrNight !important;
+}
+
+.txt-clr-midnight {
+  color: $ClrMidnight !important;
+}
+
+
+// Background Colors
+.bg-clr-white {
+  background-color: $ClrWhite;
+}
+
+.bg-clr-shell {
+  background-color: $ClrShell;
+}
