@@ -758,55 +758,14 @@ p,
 
 section,
 article {
+  padding-bottom: 120px;
+  padding-top: 120px;
   width: 100%;
-}
-
-section.margin-top,
-article.margin-top {
-  margin-top: 80px;
-}
-
-@media (max-width: 1024px) {
-  section.margin-top,
-  article.margin-top {
-    margin-top: 70px;
-  }
-}
-
-@media (max-width: 676px) {
-  section.margin-top,
-  article.margin-top {
-    margin-top: 50px;
-  }
-}
-
-section.overflow-visible,
-article.overflow-visible {
-  overflow: visible;
-}
-
-section.padding-bottom,
-article.padding-bottom {
-  padding-bottom: 80px;
-}
-
-@media (max-width: 676px) {
-  section.padding-bottom,
-  article.padding-bottom {
-    padding-bottom: 40px;
-  }
 }
 
 section.padding-bottom-half,
 article.padding-bottom-half {
-  padding-bottom: 40px;
-}
-
-@media (max-width: 676px) {
-  section.padding-bottom-half,
-  article.padding-bottom-half {
-    padding-bottom: 20px;
-  }
+  padding-bottom: 60px;
 }
 
 section.padding-bottom-none,
@@ -816,26 +775,7 @@ article.padding-bottom-none {
 
 section.padding-top-half,
 article.padding-top-half {
-  padding-top: 40px;
-}
-
-@media (max-width: 676px) {
-  section.padding-top-half,
-  article.padding-top-half {
-    padding-top: 20px;
-  }
-}
-
-section.padding-top,
-article.padding-top {
-  padding-top: 80px;
-}
-
-@media (max-width: 676px) {
-  section.padding-top,
-  article.padding-top {
-    padding-top: 40px;
-  }
+  padding-top: 60px;
 }
 
 section.padding-top-none,
@@ -847,21 +787,13 @@ section .inner,
 article .inner {
   margin: 0 auto;
   max-width: 1440px;
-  padding: 0 40px;
+  padding: 0 100px;
 }
 
-@media (max-width: 676px) {
-  section .inner,
-  article .inner {
-    padding: 0 20px;
-  }
-}
-
-@media (max-width: 530px) {
-  section .inner,
-  article .inner {
-    padding: 0 10px;
-  }
+section .inner .container,
+article .inner .container {
+  margin-left: 80px;
+  width: 100%;
 }
 
 button,
