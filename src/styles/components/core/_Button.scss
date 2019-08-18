@@ -4,7 +4,10 @@
 button, .btn {
   border-radius: $Base * 2;
   cursor: pointer;
+  font-family: $FntHeader;
+  font-size: 1rem;
   height: $ButtonHeight;
+  letter-spacing: 0.28rem;
   line-height: $ButtonHeight;
 
   &:focus,

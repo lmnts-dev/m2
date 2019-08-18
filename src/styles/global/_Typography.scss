@@ -1,46 +1,40 @@
 // typography
 
 @font-face {
-  font-family: 'Proxima_Nova';
+  font-family: 'Maven_Medium';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/Proxima_Nova_Regular.WOFF') format('woff');
+  src: url('/assets/fonts/mavenpro-medium.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Proxima_Nova_Bold';
+  font-family: 'Maven_Bold';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/Proxima_Nova_Bold.WOFF') format('woff');
+  src: url('/assets/fonts/mavenpro-bold.woff') format('woff');
+}
+
+//TODO Switch WOFF file to sofia regular
+@font-face {
+  font-family: 'Sofia_Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/mavenpro-regular.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Proxima_Nova_Light';
+  font-family: 'Sofia_Light';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/Proxima_Nova_Light.WOFF') format('woff');
-}
-
-@font-face {
-  font-family: 'Proxima_Nova_SemiBold';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/Proxima_Nova_SemiBold.WOFF') format('woff');
-}
-
-@font-face {
-  font-family: 'TisaPro_Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/TisaPro_Ita.WOFF') format('woff');
+  src: url('/assets/fonts/sofiapro-light.woff') format('woff');
 }
 
 
-$FntBody: 'Proxima_Nova', 'Helvetica', sans-serif;
-$FntHeader: 'Proxima_Nova_Bold', 'Open Sans', 'Helvetica', sans-serif;
-$FntSemiBold: 'Proxima_Nova_SemiBold', 'Helvetica', sans-serif;
-$FntLight: 'Proxima_Nova_Light', 'Helvetica', sans-serif;
-$FntCaption: 'TisaPro_Italic', 'Palatino', serif;
+$FntBody: 'Sofia_Regular', 'Helvetica', sans-serif;
+$FntHeader: 'Maven_Medium', 'Helvetica', sans-serif;
+$FntBold: 'Maven_Bold', 'Helvetica', sans-serif;
+$FntLight: 'Sofia_Light', 'Helvetica', sans-serif;
+
 $FntBaseSize: 16px;
 
 body,
@@ -70,20 +64,8 @@ html {
 // #####################################
 
 .fnt-body {
-  font-family: $FntBody !important;
-  font-weight: 400 !important;
-}
-
-.fnt-bold {
-  font-family: $FntHeader !important;
-}
-
-b {
-  @extend .fnt-bold;
-}
-
-.fnt-semibold {
-  font-family: $FntSemiBold !important;
+  font-family: $FntBody;
+  font-weight: 400;
 }
 
 .txt-center {
@@ -106,99 +88,128 @@ h6,
 .h4,
 .h5,
 .h6 {
+  color: $ClrBark;
   font-family: $FntHeader;
-  font-weight: 700;
+  font-weight: 400;
   margin: 0;
   padding: 0;
 }
 
 h1,
-.h1 {
-  font-size: 1.8125rem;
-  letter-spacing: 0.1rem;
-  line-height: 1.225;
-  text-transform: uppercase;
+.h1, h2, .h2 {
+  font-size: 3rem;
+  letter-spacing: -1rem;
+  line-height: 1.3;
   @media (max-width: $BaseMediaMd) {
-    font-size: 1.53rem;
+  
   }
   @media (max-width: $BaseMediaSm) {
-    font-size: 1.25rem;
-  }
-}
-
-h2,
-.h2 {
-  color: $ClrBark;
-  font-size: 1.8125rem;
-  letter-spacing: 0.1rem;
-  line-height: 1.225;
-  text-transform: uppercase;
-  @media (max-width: $BaseMediaMd) {
-    font-size: 1.53rem;
-  }
-  @media (max-width: $BaseMediaSm) {
-    font-size: 1.25rem;
+    
   }
 }
 
 h3,
 .h3 {
-  color: $ClrBark;
-  font-size: 1.5rem;
-  line-height: 1.225;
+  font-size: 2.375rem;
+  line-height: 1.3;
   @media (max-width: $BaseMediaMd) {
-    font-size: 1.375rem;
+
   }
   @media (max-width: $BaseMediaSm) {
-    font-size: 1.25rem;
+  
   }
 }
 
 h4,
 .h4 {
-  color: $ClrBark;
   font-size: 1.5rem;
-  line-height: 1.225;
+  letter-spacing: -0.15rem;
+  line-height: 1.3;
   @media (max-width: $BaseMediaMd) {
-    font-size: 1.375rem;
+ 
   }
   @media (max-width: $BaseMediaSm) {
-    font-size: 1.25rem;
+   
   }
 }
 
 
 h5,
 .h5 {
-  color: $ClrBark;
-  font-size: 1.5rem;
-  letter-spacing: 0;
-  line-height: 1.225;
-  text-transform: none;
+  font-family: $FntBold;
+  font-size: 1.25rem;
   @media (max-width: $BaseMediaMd) {
-    font-size: 1.375rem;
+
   }
   @media (max-width: $BaseMediaSm) {
-    font-size: 1.25rem;
+  
   }
+}
+
+h6,
+.h6 {
+  font-size: 0.875rem;
+  letter-spacing: 0.25rem;
+  @media (max-width: $BaseMediaMd) {
+
+  }
+  @media (max-width: $BaseMediaSm) {
+  
+  }
+}
+
+.anchor {
+  font-family: $FntHeader;
+  font-size: 0.8125rem;
+  letter-spacing: 1.4rem;
+  text-transform: uppercase;
 }
 
 // #####################################
 // body copy
 // #####################################
 
+.caption, p, .p, .p-lg {
+  font-family: $FntBody;
+}
+
+.caption {
+  font-size: 1rem;
+  letter-spacing: 1.64rem;
+  text-transform: uppercase;
+}
+
+blockquote {
+  font-family: $FntLight;
+  font-size: 2rem;
+  line-height: 1.375;
+}
+
 p,
 .p {
-  color: $ClrBark;
-  font-family: $FntBody;
-  font-size: 1rem;
-  line-height: 1.65;
+  font-size: 1.25rem;
+  line-height: 1.6;
   margin-top: $Base / 4;
+
   @media (max-width: $BaseMediaMd) {
-    margin-top: $Base / 5;
+
   }
   @media (max-width: $BaseMediaMd) {
-    margin-top: $Base / 6;
+  
+  }
+}
+
+.p {
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  line-height: 1.65;
+  margin-top: $Base / 4;
+  
+  @media (max-width: $BaseMediaMd) {
+
+  }
+  @media (max-width: $BaseMediaMd) {
+  
   }
 }
 
