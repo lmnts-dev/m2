@@ -2,45 +2,127 @@
 layout: default
 title: Home
 ---
-{% include icon.html icon="facebook" %}
 
-<h2>Data from sample json file</h2>
-
-<ul>
-  {% for sample in site.data.sample %}
-    <li>{{ sample.food }}</li>
-  {% endfor %}
-</ul>
-
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
+<section class="hero start-border">
+  <div class="inner">
+    <div class="container">
+      <div class="caption">M2 Medical Intelligence</div>
+      <h1 class="txt-clr-midnight">Leading intelligence-driven healthcare solutions</h1>
+      <p class="p-lg">
+          Designed by and for frontline healthcare professionals.
+      </p>
+    </div>
   </div>
-  {% endfor %}
-</div>
+</section>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+<section class="anchor-map">
+  <div class="inner">
+    <div class="container row">
+      <div class="block">
+        <p>We manage complex data into simple analytic outputs for safer and cost-effective outcomes.</p>
+      </div>
+      <div class="block">
+        <p>Our team includes world-leading experts and visonaries in antimicrobial stewardship.</p>
+      </div>
+      <div class="block">
+        <p>We are actively seeking partnerships and alliances with health systems  and  health management companies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="inner">
+    <div class="container row">
+      <div class="block">
+        <div class="anchor">Our Process</div>
+      </div>
+      <div class="block">
+          {% include icon.html icon="statera" %}
+      </div>
+      <div class="block">
+        <h2 class="txt-clr-white">Better Patient Outcomes</h2>
+        <p class="p-lg txt-clr-white">
+            Statera™ manages complex data to produce easy to understand outputs, resulting in cost-effective improvements in patient outcomes and prevents the spread of antibiotic resistance.
+        </p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="expert-systems">
+  <div class="inner">
+    <div class="container">
+        <div class="caption txt-center">Efficient & Superior Care</div>
+        <h2 class="txt-center">Comprehensive Expert Systems</h2>
+        <div class="row align-top two-block-padding">
+          <p class="blockquote block">
+            The Statera™ Platform analyzes data in seconds, allowing for appropriate antimicrobial therapy while optimizing patient outcomes. 
+          </p>
+          <p class="block">
+            Standards of Care in the healthcare industry are constantly evolving, Statera™ empowers superior antibiotic solutions without burdening internal support systems.
+          </p>
+        </div>
+        <a href="" class="btn">
+          Request Information
+        </a>
+    </div>
+  </div>
+</section>
+
+<section class="team" id="leadership">
+  <div class="inner">
+    <div class="container row">
+      <div class="block">
+        <div class="anchor">Leadership</div>
+      </div>
+      <div class="content">
+        <h2 class="txt-clr-midnight">Our Team</h2>
+        <p class="p-lg">M2 Medical Intelligence was founded by a team of healthcare experts, leading technological and data scientists. We’ve create leading intelligence-driven healthcare solutions with robust systems designed by practitioners for practitioners.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="advisors" >
+  <div class="inner">
+    <div class="container">
+      <h2 class="h3 txt-clr-midnight">Our Expert Advisors</h2>
+      <div class="row">
+        {% for sample in site.data.sample %}
+          {{ sample.food }}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team-pic padding-top-none padding-bottom-none">
+  <div class="inner">
+    <div class="container">
+      <img src="/assets/images/team.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="partnerships">
+  <div class="inner">
+    <div class="container row align-top">
+      <div class="block">
+        <div class="anchor">Our Process</div>
+      </div>
+      <div class="content">
+        <h2 class="txt-clr-white txt-center">Want to Work Together?</h2>
+        <p class="txt-clr-white txt-center">Partnering with us means reduced cost of care, improved patient safety and care outcomes, and re-establishing antibiotic susceptibilities for your facility.</p>
+        <a href="" class="btn">Partner with Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %}
+
+
+{% endcomment %}
+

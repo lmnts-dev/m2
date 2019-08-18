@@ -7,15 +7,19 @@ $ClrNight: #295ec3;
 $ClrMidnight: #1a1f5b;
 $ClrBark: #45484b;
 $ClrShell: #f5f7fa;
+$BasicGradient: linear-gradient( to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
 
-// Universal Color Styles
-body {
+
+body{
   background-color: $ClrWhite;
   color: $ClrBark;
 }
 
 //Border Colors
 $BasicBorder: 1px solid $ClrCloudy;
+
+//Shadow Colors
+$BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
 
 // Text Colors
 .txt-clr-bark {
@@ -42,4 +46,131 @@ $BasicBorder: 1px solid $ClrCloudy;
 
 .bg-clr-shell {
   background-color: $ClrShell;
+}
+
+
+
+.hero {
+
+}
+
+.anchor-nav {
+
+}
+
+.process {
+  background: $BasicGradient;
+
+  .inner {
+    .container {
+      margin-left: 0;
+
+      .block:first-child {
+        align-self: flex-start;
+        flex: 0;
+
+        .anchor {
+          color: $ClrWhite;
+        }
+        
+      }
+      
+    }
+  }
+}
+
+.expert-systems {
+  background-color: $ClrShell;
+
+  .inner {
+    .container {
+      position: relative;
+      text-align: center;
+
+      .btn {
+        position: relative;
+        z-index: 2;
+      }
+
+      .row {
+        padding: $Base / 2;
+        text-align: left;
+      }
+
+      &:after {
+        @extend .button-line-styles;
+      }
+    }
+  }
+}
+
+.team {
+  text-align: center;
+
+  .inner {
+    .container {
+      padding-left: 0;
+
+      .block:first-child {
+        align-self: flex-start;
+        flex: 0;
+        
+      }
+
+    }
+  }
+}
+
+.advisors {
+  text-align: center;
+}
+
+.team-pic {
+  .inner {
+    padding: 0;
+    padding-top: 50%;
+    position: relative;
+
+    img {
+      height: 100%;
+      left: 0;
+      object-fit: cover;
+      position: absolute;
+      top: 50%;
+      transform: translateY( -50%);
+      width: 100%;
+    }
+  }
+}
+
+.cta {
+  background: $BasicGradient;
+
+  .inner {
+    .container {
+      position: relative;
+
+      &:after {
+        @extend .button-line-styles;
+      }
+
+      .block:first-child {
+        align-self: flex-start;
+        flex: 0;
+
+        .anchor {
+          color: $ClrWhite;
+        }
+        
+      }
+
+      .content {
+        padding: 0 $Base;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+      }
+      
+    }
+  }
 }

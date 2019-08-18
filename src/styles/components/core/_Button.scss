@@ -2,13 +2,22 @@
 
 // Default Styles
 button, .btn {
+  
+  
+  background-color: $ClrWhite;
   border-radius: $Base * 2;
+  box-shadow: $BasicShadow;
+  color: $ClrNight;
   cursor: pointer;
+  display: inline-block;
   font-family: $FntHeader;
   font-size: 1rem;
+  font-weight: 700;
   height: $ButtonHeight;
-  letter-spacing: 0.28rem;
+  letter-spacing: 0.01rem;
   line-height: $ButtonHeight;
+  margin-top: $Base;
+  padding: 0 $Base;
 
   &:focus,
   &:active {
@@ -16,8 +25,15 @@ button, .btn {
     outline: 0;
   }
 
-  &.btn-clr-white {
-    background-color: $ClrWhite;
-    color: $ClrNight;
-  }
+}
+
+.button-line-styles {
+  background-color: $ClrCloudy;
+  bottom: $ButtonHeight / 2;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  z-index: 1;
 }
