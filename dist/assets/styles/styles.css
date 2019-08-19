@@ -613,7 +613,7 @@ body {
 }
 
 .process .inner .container {
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .process .inner .container .block:first-child {
@@ -693,6 +693,7 @@ body {
 }
 
 .cta .inner .container {
+  padding-left: 0;
   position: relative;
 }
 

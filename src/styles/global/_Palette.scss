@@ -63,7 +63,7 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
 
   .inner {
     .container {
-      margin-left: 0;
+      padding-left: 0;
 
       .block:first-child {
         align-self: flex-start;
@@ -148,6 +148,7 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
 
   .inner {
     .container {
+      padding-left: 0;
       position: relative;
 
       &:after {
