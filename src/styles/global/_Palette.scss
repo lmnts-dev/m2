@@ -54,8 +54,36 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
 
 }
 
-.anchor-nav {
+.anchor-map {
+  .inner {
+    .container {
+      .block {
+        padding-right: $Base;
 
+        .icon {
+          align-items: center;
+          border-radius: 50%;
+          box-shadow: $BasicShadow;
+          display: flex;
+          flex-direction: row;
+          height: $Base * 2;
+          justify-content: center;
+          margin-bottom: $Base / 2;
+          width: $Base *2;
+        }
+
+        .row {
+          svg {
+            margin-right: $Base / 4;
+          }
+        }
+
+        &:last-of-type {
+          padding-right: 0;
+        }
+      }
+    }
+  }
 }
 
 .process {
@@ -73,6 +101,11 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
           color: $ClrWhite;
         }
         
+      }
+
+      .block:last-of-type {
+        flex: 2;
+        padding-left: $Base * 1.5;
       }
       
     }
@@ -110,11 +143,71 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
   .inner {
     .container {
       padding-left: 0;
+      position: relative;
+
+      &:after {
+        @extend .button-line-styles;
+        bottom: $Base * 1.5 !important;
+      }
 
       .block:first-child {
         align-self: flex-start;
         flex: 0;
         
+      }
+
+      .row {
+        padding-top: $Base * 2;
+        position: relative;
+        z-index: 2;
+
+        .block {
+          box-shadow: none;
+          flex: 1;
+          margin: 0 $Base / 2;
+          transition-duration: 0.5s;
+
+          &:hover {
+            box-shadow: $BasicShadow;
+          }
+
+          &:first-of-type {
+            margin-left: 0;
+          }
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+
+          .image-container {
+            padding-top: 100%;
+            position: relative;
+            width: 100%;
+
+            img {
+              height: 100%;
+              left: 0;
+              object-fit: cover;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 100%;
+            }
+          }
+
+          .info {
+            background-color: $ClrWhite;
+            padding: $Base / 4;
+
+            .title {
+              @extend .anchor;
+              color: $ClrNight;
+              padding: $Base / 6 0;
+              white-space: initial !important;
+            }
+          }
+
+        }
       }
 
     }
@@ -123,6 +216,41 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
 
 .advisors {
   text-align: center;
+
+  .inner {
+    .container {
+      .row {
+        align-items: stretch;
+        padding: $Base $Base / 4;
+        position: relative;
+        width: 100%;
+        
+        &:after {
+          @extend .button-line-styles;
+          bottom: auto;
+          left: $Base * -2 !important;
+          top: 50%;
+        }
+
+        .block {
+          background-color: $ClrWhite;
+          display: flex;
+          flex-direction: column;
+          padding: 0 $Base / 4;
+          position: relative;
+          z-index: 2;
+
+          .title {
+            @extend .anchor;
+            color: $ClrNight;
+            flex: 20;
+            padding: $Base / 6 0;
+            white-space: initial !important;
+          }
+        }
+      }
+    }
+  }
 }
 
 .team-pic {

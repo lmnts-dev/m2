@@ -15,18 +15,21 @@ title: Home
   </div>
 </section>
 
-<section class="anchor-map">
+<section class="anchor-map padding-top-half">
   <div class="inner">
-    <div class="container row">
-      <div class="block">
-        <p>We manage complex data into simple analytic outputs for safer and cost-effective outcomes.</p>
-      </div>
-      <div class="block">
-        <p>Our team includes world-leading experts and visonaries in antimicrobial stewardship.</p>
-      </div>
-      <div class="block">
-        <p>We are actively seeking partnerships and alliances with health systems  and  health management companies.</p>
-      </div>
+    <div class="container row align-top">
+      {% for item in site.data.pillars %}
+        <div class="block">
+          <div class="icon">
+            s
+          </div>
+          <div class="row">
+            {% include arrow.html %}
+            <div class="h5">{{ item.title }}</div>
+          </div>
+          <p>{{ item.description }}</p>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -38,7 +41,7 @@ title: Home
         <div class="anchor">Our Process</div>
       </div>
       <div class="block">
-          {% include icon.html icon="statera" %}
+          {% include statera.html %}
       </div>
       <div class="block">
         <h2 class="txt-clr-white">Better Patient Outcomes</h2>
@@ -71,7 +74,7 @@ title: Home
   </div>
 </section>
 
-<section class="team" id="leadership">
+<section class="team padding-bottom-half" id="leadership">
   <div class="inner">
     <div class="container row">
       <div class="block">
@@ -80,6 +83,26 @@ title: Home
       <div class="content">
         <h2 class="txt-clr-midnight">Our Team</h2>
         <p class="p-lg">M2 Medical Intelligence was founded by a team of healthcare experts, leading technological and data scientists. We’ve create leading intelligence-driven healthcare solutions with robust systems designed by practitioners for practitioners.</p>
+        <div class="row">
+            {% for member in site.data.team %}
+              <div class="block">
+                <div class="image-container">
+                  <img src="{{ member.image }}" alt="Photo of {{ member.name }}">
+                </div>
+                <div class="info">
+                  <div class="h5">
+                    {{ member.name }}{% if member.md %}, MD{% endif %}
+                  </div>
+                  <div class="title">
+                    {{ member.title }}
+                  </div>
+                  <a href="{{ member.linkedIn }}" target="_blank">
+                      {% include linkedIn.html %}
+                  </a>
+                </div>
+              </div>
+            {% endfor %}
+        </div>
       </div>
     </div>
   </div>
@@ -90,8 +113,18 @@ title: Home
     <div class="container">
       <h2 class="h3 txt-clr-midnight">Our Expert Advisors</h2>
       <div class="row">
-        {% for sample in site.data.sample %}
-          {{ sample.food }}
+          {% for advisor in site.data.advisors %}
+            <div class="block">
+              <div class="h5">
+                  {{ advisor.name }}{% if advisor.phD %}, Ph.D. {% endif %}
+              </div>
+              <div class="title">
+                  {{ advisor.title }}{% if advisor.employer %}, {{ advisor.employer }}{% endif %}
+              </div>
+              <a href="{{advisor.linkedIn}}" target="_blank">
+                  {% include linkedIn.html %}
+              </a>
+            </div>
         {% endfor %}
       </div>
     </div>

@@ -1,0 +1,17 @@
+[
+    {
+      "title": "Our Process",
+      "description": "We manage complex data into simple analytic outputs for safer and cost-effective outcomes.",
+      "icon": "flag.html"
+    },
+    {
+        "title": "Leadership",
+        "description": "Our team includes world-leading experts and visonaries in antimicrobial stewardship.",
+        "icon": "flowChart.html"
+    },
+    {
+        "title": "Partnerships",
+        "description": "We are actively seeking partnerships and alliances with health systems  and  health management companies.",
+        "icon": "magnifier.html"
+    }
+  ]
