@@ -1,39 +1,11 @@
 // typography
 
-@font-face {
-  font-family: 'Maven_Medium';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/mavenpro-medium.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Maven_Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/mavenpro-bold.woff') format('woff');
-}
-
-//TODO Switch WOFF file to sofia regular
-@font-face {
-  font-family: 'Sofia_Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/mavenpro-regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Sofia_Light';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/sofiapro-light.woff') format('woff');
-}
+@import url('https://use.typekit.net/wyu2org.css');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:500,700&display=swap');
 
 
-$FntBody: 'Sofia_Regular', 'Helvetica', sans-serif;
-$FntHeader: 'Maven_Medium', 'Helvetica', sans-serif;
-$FntBold: 'Maven_Bold', 'Helvetica', sans-serif;
-$FntLight: 'Sofia_Light', 'Helvetica', sans-serif;
+$FntBody: 'sofia-pro', 'Helvetica', sans-serif;
+$FntHeader: 'Maven Pro', 'Helvetica', sans-serif;
 
 $FntBaseSize: 16px;
 
@@ -136,8 +108,9 @@ h4,
 
 h5,
 .h5 {
-  font-family: $FntBold;
+  font-family: $FntHeader;
   font-size: 1.25rem;
+  font-weight: 700;
   @media (max-width: $BaseMediaMd) {
 
   }
@@ -181,8 +154,9 @@ h6,
 }
 
 blockquote, .blockquote {
-  font-family: $FntLight;
+  font-family: $FntBody;
   font-size: 2rem;
+  font-weight: 300;
   line-height: 1.375;
 }
 

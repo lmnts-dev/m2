@@ -1,3 +1,6 @@
+@import url("https://use.typekit.net/wyu2org.css");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:500,700&display=swap");
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -869,37 +872,9 @@ body {
   z-index: 2;
 }
 
-@font-face {
-  font-family: 'Maven_Medium';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/mavenpro-medium.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Maven_Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/mavenpro-bold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Sofia_Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/mavenpro-regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Sofia_Light';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/sofiapro-light.woff') format('woff');
-}
-
 body,
 html {
-  font-family: 'Sofia_Regular', 'Helvetica', sans-serif;
+  font-family: 'sofia-pro', 'Helvetica', sans-serif;
   font-size: 16px;
 }
 
@@ -916,7 +891,7 @@ html {
 }
 
 .fnt-body {
-  font-family: 'Sofia_Regular', 'Helvetica', sans-serif;
+  font-family: 'sofia-pro', 'Helvetica', sans-serif;
   font-weight: 400;
 }
 
@@ -937,7 +912,7 @@ h6,
 .h5,
 .h6 {
   color: #45484b;
-  font-family: 'Maven_Medium', 'Helvetica', sans-serif;
+  font-family: 'Maven Pro', 'Helvetica', sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -967,8 +942,9 @@ h4,
 
 h5,
 .h5 {
-  font-family: 'Maven_Bold', 'Helvetica', sans-serif;
+  font-family: 'Maven Pro', 'Helvetica', sans-serif;
   font-size: 1.25rem;
+  font-weight: 700;
 }
 
 h6,
@@ -980,7 +956,7 @@ h6,
 .anchor,
 .team .inner .container .row .block .info .title,
 .advisors .inner .container .row .block .title {
-  font-family: 'Maven_Medium', 'Helvetica', sans-serif;
+  font-family: 'Maven Pro', 'Helvetica', sans-serif;
   font-size: 0.8125rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
@@ -991,7 +967,7 @@ h6,
 p,
 .p,
 .p-lg {
-  font-family: 'Sofia_Regular', 'Helvetica', sans-serif;
+  font-family: 'sofia-pro', 'Helvetica', sans-serif;
 }
 
 .caption {
@@ -1002,8 +978,9 @@ p,
 
 blockquote,
 .blockquote {
-  font-family: 'Sofia_Light', 'Helvetica', sans-serif;
+  font-family: 'sofia-pro', 'Helvetica', sans-serif;
   font-size: 2rem;
+  font-weight: 300;
   line-height: 1.375;
 }
 
@@ -1152,7 +1129,7 @@ button,
   color: #295ec3;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Maven_Medium', 'Helvetica', sans-serif;
+  font-family: 'Maven Pro', 'Helvetica', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   height: 54px;
