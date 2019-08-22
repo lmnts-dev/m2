@@ -1,0 +1,29 @@
+.process {
+  background: $BasicGradient;
+
+  .inner {
+    .container {
+      padding-left: 0;
+
+      .block:first-child {
+        align-self: flex-start;
+        flex: 0;
+
+        .anchor {
+          color: $ClrWhite;
+        }
+        
+      }
+
+      .block:last-of-type {
+        flex: 2;
+        padding-left: $Base * 1.5;
+
+        h2 {
+          margin: 0;
+        }
+      }
+      
+    }
+  }
+}

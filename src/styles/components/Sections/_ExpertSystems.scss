@@ -1,0 +1,24 @@
+.expert-systems {
+  background-color: $ClrShell;
+
+  .inner {
+    .container {
+      position: relative;
+      text-align: center;
+
+      h2 {
+        margin: 0;
+      }
+
+      .btn {
+        margin-top: $Base * 2;
+        position: relative;
+        z-index: 2;
+      }
+
+      &:after {
+        @extend .button-line-styles;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.anchor-map {
+  .inner {
+    .container {
+      .block {
+        padding-right: $Base;
+
+        .icon {
+          align-items: center;
+          border-radius: 50%;
+          box-shadow: $BasicShadow;
+          display: flex;
+          flex-direction: row;
+          height: $Base * 2;
+          justify-content: center;
+          margin-bottom: $Base / 2;
+          width: $Base *2;
+
+        }
+
+        .row {
+          .h5 {
+            margin: 0;
+          }
+
+          svg {
+            margin-right: $Base / 4;
+          }
+        }
+
+        &:last-of-type {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

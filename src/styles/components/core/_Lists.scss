@@ -1,0 +1,63 @@
+
+ul, ol {
+  margin: $Base 0;
+
+  li {
+    @extend p;
+    margin-top: 0;
+  }
+}
+
+ul {
+  li {
+    list-style-type: none;
+    position: relative;
+  }
+  
+  li::before {   
+    color: $ClrBark;
+    content: '\2022';      /* Unicode for • character */      
+    font-size: 20px;
+    left: $Base / -1.5;
+    position: absolute; 
+    top: $Base / 12;      
+  }
+}
+
+ol {
+  counter-reset: list;
+}
+
+ol > li {
+  list-style: none;
+  position: relative;
+
+  ol {
+    li:before {
+      content: counter(list, lower-alpha) ') ';
+      font-size: 18px;
+      left: $Base / -1.5;
+      top: $Base / 12;
+    }
+
+    ol {
+      li:before {
+        content: counter(list, decimal) ') ';
+      }
+    }
+  }
+}
+
+ol > li:before {
+  color: $ClrNight;
+  content: counter(list, decimal) ') ';
+  counter-increment: list;
+  font-family: $FntBody;
+  font-size: 22px;
+  font-weight: 500;
+  left: $Base / -1.25;
+  position: absolute;
+  top: $Base / -14;
+}
+
+
