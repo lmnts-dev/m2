@@ -27,7 +27,7 @@ title: Home
       {% for item in site.data.pillars %}
         <div class="block">
           <div class="icon">
-            s
+            {% include {{ item.icon }} %}
           </div>
           <div class="row">
             {% include arrow.html %}
