@@ -1,8 +1,16 @@
 .hero {
   .inner {
+    padding-right: 0;
+
     h1 {
       margin-bottom: 0;
+      margin-top: $Base * 4;
     }
-    padding-right: 0;
+    
+    .container {
+      .block:first-of-type {
+        min-width: $Base * 11;
+      }
+    }
   }
 }

@@ -69,8 +69,13 @@ a {
   cursor: pointer;
   transition-duration: 0.25s;
 
+
   svg {
     transition-duration: 0.25s;
+    @media (max-width: $BaseMediaMd) {
+      height: $Base;
+      width: $Base;
+    }
   }
 
   &:hover {

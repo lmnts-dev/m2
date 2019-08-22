@@ -37,6 +37,9 @@
       position: absolute;
       top: $Base * 2;
       z-index: 2;
+      @media( max-width: $BaseMediaMd ){
+        left: $Base / 4;
+      }
 
       .prev, .next {
         @extend .row;
@@ -49,6 +52,16 @@
         margin-bottom: $Base / 2;
         transition-duration: 0.25s;
         width: $Base * 2;
+        @media( max-width: $BaseMediaMd ){
+          height: $Base * 1.5;
+          margin-bottom: $Base / 4;
+          width: $Base * 1.5;
+
+          svg {
+            max-height: $Base / 1.5;
+            max-width: $Base / 1.5;
+          }
+        }
 
         g {
           transition-duration: 0.25s;
@@ -80,6 +93,10 @@
     }
 
     .container {
+      @media( max-width: $BaseMediaMd ){
+        padding-left: $Base * 1.25;
+      }
+
       .slide {
         .row {
           .block:last-of-type {
@@ -98,6 +115,9 @@
             height: $Base * 4;
             margin-right: $Base;
             width: $Base * 4;
+            @media( max-width: $BaseMediaMd ){
+              margin-right: $Base * 0.75;
+            }
           }
         }
 

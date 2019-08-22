@@ -22,6 +22,9 @@ header {
     
   .inner {
     padding: 0;
+    @media (max-width: $BaseMediaMd) {
+      justify-content: space-between;
+    }
 
     img {
       margin-left: $Base;
@@ -34,12 +37,19 @@ header {
         max-width: $Base * 7.5;
         transform: translateY( $Base / 2 );
         transform-origin: top left;
+        @media (max-width: $BaseMediaMd) {
+          max-width: $Base * 6;
+          transform: translateY( $Base / 3 );
+        }
       }
     }
 
     nav {
       flex: 100;
       transition-duration: 0.25s;
+      @media (max-width: $BaseMediaMd) {
+        display: none;
+      }
 
       &.no-scroll {
         transform: translateY( $Base / 4 );
@@ -54,6 +64,8 @@ header {
       li {
         font-size: 14px;
         padding-left: $Base;
+        text-shadow: 0 0 $Base / 6 $ClrWhite;
+
 
         &:before {
           content: none;
@@ -78,6 +90,9 @@ header {
       margin: 0;
       padding: $Base / 1.5 $Base * 1.5;
       transition-duration: 0.25s;
+      @media (max-width: $BaseMediaMd) {
+        padding: $Base / 2 $Base;
+      }
 
       &:hover {
         background-color: $ClrNight;

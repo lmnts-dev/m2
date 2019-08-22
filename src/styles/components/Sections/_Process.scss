@@ -18,6 +18,9 @@
       .block:last-of-type {
         flex: 2;
         padding-left: $Base * 1.5;
+        @media (max-width: $BaseMediaMd) {
+          padding-left: $Base;
+        }
 
         h2 {
           margin: 0;
