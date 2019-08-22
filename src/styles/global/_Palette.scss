@@ -56,6 +56,9 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
 
 .hero {
   .inner {
+    h1 {
+      margin-bottom: 0;
+    }
     padding-right: 0;
   }
 }
@@ -79,6 +82,10 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
         }
 
         .row {
+          .h5 {
+            margin: 0;
+          }
+
           svg {
             margin-right: $Base / 4;
           }
@@ -112,6 +119,10 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
       .block:last-of-type {
         flex: 2;
         padding-left: $Base * 1.5;
+
+        h2 {
+          margin: 0;
+        }
       }
       
     }
@@ -125,6 +136,10 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
     .container {
       position: relative;
       text-align: center;
+
+      h2 {
+        margin: 0;
+      }
 
       .btn {
         margin-top: $Base * 2;
@@ -152,6 +167,15 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
         bottom: $Base * 1.5 !important;
       }
 
+      h2 {
+        margin: 0 0 $Base / 4 0;
+
+        ~p {
+          margin: 0 auto;
+          max-width: 520px;
+        }
+      }
+
       .block:first-child {
         align-self: flex-start;
         flex: 0;
@@ -160,11 +184,6 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
 
       .content {
         width: 100%;
-
-        .p-lg {
-          margin: 0 auto;
-          max-width: 520px;
-        }
 
         .row {
           padding-top: $Base * 2;
@@ -214,6 +233,12 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
                 color: $ClrNight;
                 padding: $Base / 6 0;
                 white-space: initial !important;
+
+
+              }
+
+              .h5 {
+                margin: 0;
               }
             }
 
@@ -225,44 +250,6 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
   }
 }
 
-.advisors {
-  text-align: center;
-
-  .inner {
-    .container {
-      .row {
-        align-items: stretch;
-        padding: $Base $Base / 4;
-        position: relative;
-        width: 100%;
-        
-        &:after {
-          @extend .button-line-styles;
-          bottom: auto;
-          left: $Base * -2 !important;
-          top: 50%;
-        }
-
-        .block {
-          background-color: $ClrWhite;
-          display: flex;
-          flex-direction: column;
-          padding: 0 $Base / 4;
-          position: relative;
-          z-index: 2;
-
-          .title {
-            @extend .anchor;
-            color: $ClrNight;
-            flex: 20;
-            padding: $Base / 6 0;
-            white-space: initial !important;
-          }
-        }
-      }
-    }
-  }
-}
 
 .team-pic {
   .inner {
@@ -294,6 +281,10 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
         @extend .button-line-styles;
       }
 
+      h2 {
+        margin: 0;
+      }
+
       .block:first-child {
         align-self: flex-start;
         flex: 0;
@@ -312,5 +303,13 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
       }
       
     }
+  }
+}
+
+.privacy-policy {
+  border-bottom: $BasicBorder;
+
+  &:after {
+    content: none;
   }
 }

@@ -1,10 +1,20 @@
 footer {
+  &.no-border {
+    &:after {
+      content: none;
+    }
+  }
+
   p {
     font-family: $FntHeader;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.02rem;
     margin: 0;
+  }
+
+  .h5 {
+    margin: 0 0 $Base / 4 0;
   }
 
   ul, li {

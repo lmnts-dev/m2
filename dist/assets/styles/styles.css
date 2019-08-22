@@ -617,6 +617,10 @@ body {
   padding-right: 0;
 }
 
+.hero .inner h1 {
+  margin-bottom: 0;
+}
+
 .anchor-map .inner .container .block {
   padding-right: 40px;
 }
@@ -641,6 +645,10 @@ body {
   justify-content: center;
   margin-bottom: 20px;
   width: 80px;
+}
+
+.anchor-map .inner .container .block .row .h5 {
+  margin: 0;
 }
 
 .anchor-map .inner .container .block .row svg {
@@ -671,9 +679,7 @@ body {
 
 .process .inner .container .block:first-child .anchor,
 .process .team .inner .container .content .row .block:first-child .info .title,
-.team .process .inner .container .content .row .block:first-child .info .title,
-.process .advisors .inner .container .row .block:first-child .title,
-.advisors .process .inner .container .row .block:first-child .title {
+.team .process .inner .container .content .row .block:first-child .info .title {
   color: #fff;
 }
 
@@ -684,6 +690,10 @@ body {
   padding-left: 60px;
 }
 
+.process .inner .container .block:last-of-type h2 {
+  margin: 0;
+}
+
 .expert-systems {
   background-color: #f5f7fa;
 }
@@ -691,6 +701,10 @@ body {
 .expert-systems .inner .container {
   position: relative;
   text-align: center;
+}
+
+.expert-systems .inner .container h2 {
+  margin: 0;
 }
 
 .expert-systems .inner .container .btn {
@@ -712,6 +726,17 @@ body {
   bottom: 60px !important;
 }
 
+.team .inner .container h2 {
+  margin: 0 0 10px;
+}
+
+.team .inner .container h2 ~ p,
+.team .inner .container ul h2 ~ li,
+ul .team .inner .container h2 ~ li {
+  margin: 0 auto;
+  max-width: 520px;
+}
+
 .team .inner .container .block:first-child {
   align-self: flex-start;
   -webkit-box-flex: 0;
@@ -722,11 +747,6 @@ body {
 
 .team .inner .container .content {
   width: 100%;
-}
-
-.team .inner .container .content .p-lg {
-  margin: 0 auto;
-  max-width: 520px;
 }
 
 .team .inner .container .content .row {
@@ -790,46 +810,8 @@ body {
   white-space: initial !important;
 }
 
-.advisors {
-  text-align: center;
-}
-
-.advisors .inner .container .row {
-  align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  padding: 40px 10px;
-  position: relative;
-  width: 100%;
-}
-
-.advisors .inner .container .row:after {
-  bottom: auto;
-  left: -80px !important;
-  top: 50%;
-}
-
-.advisors .inner .container .row .block {
-  background-color: #fff;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  display: -ms-flexbox;
-  display: flex;
-  display: -webkit-box;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 0 10px;
-  position: relative;
-  z-index: 2;
-}
-
-.advisors .inner .container .row .block .title {
-  -webkit-box-flex: 20;
-  color: #295ec3;
-  -ms-flex: 20;
-  flex: 20;
-  padding: 6.6666666667px 0;
-  white-space: initial !important;
+.team .inner .container .content .row .block .info .h5 {
+  margin: 0;
 }
 
 .team-pic .inner {
@@ -862,6 +844,10 @@ body {
   position: relative;
 }
 
+.cta .inner .container h2 {
+  margin: 0;
+}
+
 .cta .inner .container .block:first-child {
   align-self: flex-start;
   -webkit-box-flex: 0;
@@ -872,9 +858,7 @@ body {
 
 .cta .inner .container .block:first-child .anchor,
 .cta .team .inner .container .content .row .block:first-child .info .title,
-.team .cta .inner .container .content .row .block:first-child .info .title,
-.cta .advisors .inner .container .row .block:first-child .title,
-.advisors .cta .inner .container .row .block:first-child .title {
+.team .cta .inner .container .content .row .block:first-child .info .title {
   color: #fff;
 }
 
@@ -883,6 +867,14 @@ body {
   position: relative;
   text-align: center;
   z-index: 2;
+}
+
+.privacy-policy {
+  border-bottom: 1px solid #d7e3f2;
+}
+
+.privacy-policy:after {
+  content: none;
 }
 
 body,
@@ -927,7 +919,7 @@ h6,
   color: #45484b;
   font-family: 'Maven Pro', 'Helvetica', sans-serif;
   font-weight: 500;
-  margin: 0;
+  margin: 60px 0 40px;
   padding: 0;
 }
 
@@ -954,7 +946,7 @@ h3,
 h4,
 .h4 {
   font-size: 1.5rem;
-  letter-spacing: -0.15rem;
+  letter-spacing: -0.01rem;
   line-height: 1.3;
 }
 
@@ -972,8 +964,7 @@ h6,
 }
 
 .anchor,
-.team .inner .container .content .row .block .info .title,
-.advisors .inner .container .row .block .title {
+.team .inner .container .content .row .block .info .title {
   font-family: 'Maven Pro', 'Helvetica', sans-serif;
   font-size: 0.8125rem;
   font-weight: 500;
@@ -984,6 +975,7 @@ h6,
 
 .caption,
 p,
+ul li,
 .p,
 .p-lg {
   font-family: 'sofia-pro', 'Helvetica', sans-serif;
@@ -1004,17 +996,26 @@ blockquote,
 }
 
 p,
+ul li,
 .p {
   font-size: 1.25rem;
   line-height: 1.6;
+  margin-top: 20px;
+}
+
+.p-lg {
+  font-size: 1.5rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.65;
   margin-top: 10px;
 }
 
-.p {
-  font-size: 1.5rem;
-  letter-spacing: 0.3rem;
-  line-height: 1.65;
-  margin-top: 10px;
+ul {
+  margin: 40px 0;
+}
+
+ul li {
+  margin-top: 0;
 }
 
 .border-styles,
@@ -1099,18 +1100,12 @@ header .inner .container {
 section .inner .container .block .anchor,
 section .team .inner .container .content .row .block .info .title,
 .team section .inner .container .content .row .block .info .title,
-section .advisors .inner .container .row .block .title,
-.advisors section .inner .container .row .block .title,
 footer .inner .container .block .anchor,
 footer .team .inner .container .content .row .block .info .title,
 .team footer .inner .container .content .row .block .info .title,
-footer .advisors .inner .container .row .block .title,
-.advisors footer .inner .container .row .block .title,
 header .inner .container .block .anchor,
 header .team .inner .container .content .row .block .info .title,
-.team header .inner .container .content .row .block .info .title,
-header .advisors .inner .container .row .block .title,
-.advisors header .inner .container .row .block .title {
+.team header .inner .container .content .row .block .info .title {
   border: 1px solid #d7e3f2;
   padding: 5px 20px;
 }
@@ -1184,7 +1179,6 @@ button:active,
 .button-line-styles,
 .expert-systems .inner .container:after,
 .team .inner .container:after,
-.advisors .inner .container .row:after,
 .cta .inner .container:after {
   background-color: #d7e3f2;
   bottom: 27px;
@@ -1242,15 +1236,26 @@ header .inner .cta-button {
   background-color: #2f86ff;
   color: #fff;
   font-size: 15px;
+  margin: 0;
   padding: 26.6666666667px 60px;
 }
 
-footer p {
+footer.no-border:after {
+  content: none;
+}
+
+footer p,
+footer ul li,
+ul footer li {
   font-family: 'Maven Pro', 'Helvetica', sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.02rem;
   margin: 0;
+}
+
+footer .h5 {
+  margin: 0 0 10px;
 }
 
 footer ul,
