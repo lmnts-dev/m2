@@ -11,7 +11,7 @@ $BasicGradient: linear-gradient( to bottom right, #69a8ff 20%, #69a8ff, #88baff 
 
 
 body{
-  background-color: $ClrWhite;
+  background-color: $ClrShell;
   color: $ClrBark;
 }
 
@@ -20,6 +20,11 @@ $BasicBorder: 1px solid $ClrCloudy;
 
 //Shadow Colors
 $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
+
+main {
+  background-color: $ClrWhite;
+  box-shadow: $BasicShadow;
+}
 
 // Text Colors
 .txt-clr-bark {
@@ -210,18 +215,7 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
 
             .image-container {
               padding-top: 100%;
-              position: relative;
               width: 100%;
-
-              img {
-                height: 100%;
-                left: 0;
-                object-fit: cover;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 100%;
-              }
             }
 
             .info {
@@ -251,20 +245,16 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
 }
 
 
+
 .team-pic {
   .inner {
     padding: 0;
-    padding-top: 50%;
-    position: relative;
 
-    img {
-      height: 100%;
-      left: 0;
-      object-fit: cover;
-      position: absolute;
-      top: 50%;
-      transform: translateY( -50%);
-      width: 100%;
+    .container {
+      .image-container {
+        padding-top: 50%;
+        width: 100%;
+      }
     }
   }
 }

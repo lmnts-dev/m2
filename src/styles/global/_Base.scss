@@ -18,3 +18,24 @@ $BaseLighten: 5%;
 //Buttons
 $ButtonHeight: 54px;
 
+
+//Image
+.image-container {
+  position: relative;
+
+  img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+}
+
+main, footer {
+  margin: 0 auto;
+  max-width: $BaseMaxWidth;
+  overflow-x: hidden;
+}

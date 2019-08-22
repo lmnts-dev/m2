@@ -1,0 +1,40 @@
+{% for member in site.data.team %}
+    <section class="team-slider" id="slider-{{ member.name }}">
+        <div class="inner">
+            <div class="arrows">
+                <div class="prev">
+                    {% include arrow-alt.html %}
+                </div>
+                <div class="next">
+                    {% include arrow-alt.html %}
+                </div>
+            </div>
+            <div class="exit">
+                {% include exit.html %}
+            </div>
+            <div class="container">
+                {% for inner-member in site.data.team %}
+                    <div class="slide">
+                        <div class="row">
+                            <div class="image-container block">
+                                <img src="{{ inner-member.image }}" alt=" Portrait of {{ inner-member.name }}">
+                            </div>
+                            <div class="block">
+                                <div class="h3">{{ inner-member.name }}{% if inner-member.md %}, MD {% endif %}</div>
+                                <div class="txt-clr-night h5">
+                                    {{ inner-member.title }}
+                                </div>
+                                <a href="{{ inner-member.linkedin }}">
+                                    {% include linkedIn.html %}
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bio">
+                            {{ inner-member.bio }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endfor %}

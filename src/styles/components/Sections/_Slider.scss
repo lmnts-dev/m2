@@ -1,0 +1,73 @@
+.team-slider {
+  background-color: $ClrWhite;
+  display: none;
+  left: 0;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 950;
+
+  .inner {
+    position: relative;
+
+    .arrows {
+      background-color: $ClrWhite;
+      left: $Base * 1.25;
+      position: absolute;
+      top: 0;
+
+      .prev, .next {
+        @extend .row;
+        border-radius: 50%;
+        box-shadow: $BasicShadow;
+        height: $Base * 2;
+        justify-content: center;
+        margin-bottom: $Base / 2;
+        width: $Base * 2;
+        
+      }
+
+      .prev {
+        transform: rotate(180deg);
+      }
+
+    }
+
+    .exit {
+      position: absolute;
+      right: $Base * 2;
+      top: 0;
+    }
+
+    .container {
+      .slide {
+        .row {
+          .block:last-of-type {
+            .h3, .h5 {
+              margin: 0;
+            }
+
+            .h5 {
+              font-weight: 500;
+              margin-bottom: $Base / 4;
+            }
+          }
+
+          .block:first-of-type {
+            flex: none;
+            height: $Base * 4;
+            margin-right: $Base;
+            width: $Base * 4;
+          }
+        }
+
+        .bio {
+          p {
+            max-width: $Base * 22;
+          }
+        }
+      }
+    }
+  }
+}
