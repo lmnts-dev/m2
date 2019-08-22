@@ -1,0 +1,72 @@
+.contact-modal {
+  background-color: $ClrNight;
+  color: $ClrWhite;
+  left: 0;
+  min-height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  transition-duration: 0.5s;
+  width: 100vw;
+  z-index: 950;
+  @extend .padding-top-none;
+  @extend .padding-bottom-none;
+
+  &.visible-modal {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &:after {
+    content: none;
+  }
+
+
+  .inner {
+    max-width: $Base * 22;
+    padding-top: $Base * 2;
+    position: relative;
+
+    .exit {
+      position: absolute;
+      right: 0;
+      top: $Base;
+      z-index: 999;
+
+      g {
+        fill: rgba($ClrWhite, 0.5);
+      }
+    }
+
+    &:after {
+      @extend .button-line-styles;
+      left: calc(calc(100vw - #{$Base * 22}) / -2);
+      opacity: 0.5;
+    }
+
+    h2 {
+      color: $ClrWhite;
+      margin: 0 0 $Base / 2 0;
+    }
+
+    p {
+      margin-bottom: $Base;
+      padding: 0 $Base;
+    }
+
+    form {
+      position: relative;
+      width: 100%;
+      z-index: 2;
+
+      button {
+        border: none;
+
+      }
+    }
+
+  }
+  
+
+}

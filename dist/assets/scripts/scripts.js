@@ -1,5 +1,7 @@
 'use strict';
 
+// Team slider functions
+
 var slider = $('#team-slider .inner .container');
 
 var sliderContainer = $('#team-slider');
@@ -39,6 +41,8 @@ function toggleSlider() {
   }
 }
 
+// Nav scroll functions
+
 $(window).scroll(function () {
   var scrollPosition = $('body, html').scrollTop();
   if (scrollPosition != 0) {
@@ -51,3 +55,21 @@ $(window).scroll(function () {
     $('header').addClass('no-background');
   }
 });
+
+// Contact modal functions
+$('div[data-contact="exit"]').click(function () {
+  toggleModal();
+});
+
+$('div[data-contact="open"]').click(function () {
+  toggleModal();
+});
+
+function toggleModal() {
+  var modal = $('#contact-modal');
+  if (modal.hasClass('visible-modal')) {
+    modal.removeClass('visible-modal');
+  } else {
+    modal.addClass('visible-modal');
+  }
+}

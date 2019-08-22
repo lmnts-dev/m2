@@ -1,7 +1,8 @@
+// Team slider functions
 
-  let slider = $('#team-slider .inner .container');
+let slider = $('#team-slider .inner .container');
 
-  let sliderContainer = $('#team-slider');
+let sliderContainer = $('#team-slider');
 
 $( document ).ready(function() {
   slider.slick({
@@ -38,15 +39,39 @@ function toggleSlider() {
   }
 }
 
- $(window).scroll(function() {
-  let scrollPosition = $('body, html').scrollTop();
-  if (scrollPosition != 0) {
-    $('header img').removeClass('large');
-    $('header nav').removeClass('no-scroll');
-    $('header').removeClass('no-background');
+
+// Nav scroll functions
+
+$(window).scroll(function() {
+let scrollPosition = $('body, html').scrollTop();
+if (scrollPosition != 0) {
+  $('header img').removeClass('large');
+  $('header nav').removeClass('no-scroll');
+  $('header').removeClass('no-background');
+} else {
+  $('header img').addClass('large');
+  $('header nav').addClass('no-scroll');
+  $('header').addClass('no-background');
+}
+});
+
+
+// Contact modal functions
+$('div[data-contact="exit"]').click(function() {
+  toggleModal();
+});
+
+$('div[data-contact="open"]').click(function() {
+  toggleModal();
+});
+
+
+function toggleModal() {
+  let modal = $('#contact-modal');
+  if (modal.hasClass('visible-modal')) {
+    modal.removeClass('visible-modal');
   } else {
-    $('header img').addClass('large');
-    $('header nav').addClass('no-scroll');
-    $('header').addClass('no-background');
+    modal.addClass('visible-modal');
   }
- });
+}
+

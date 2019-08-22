@@ -754,6 +754,8 @@ h6,
 
 .caption,
 p,
+input,
+textarea,
 ul li,
 ol li,
 .p,
@@ -776,6 +778,8 @@ blockquote,
 }
 
 p,
+input,
+textarea,
 ul li,
 ol li,
 .p {
@@ -840,10 +844,13 @@ header.padding-bottom-half {
 
 section.padding-bottom-none,
 section.team-slider,
+section.contact-modal,
 footer.padding-bottom-none,
 footer.team-slider,
+footer.contact-modal,
 header.padding-bottom-none,
-header.team-slider {
+header.team-slider,
+header.contact-modal {
   padding-bottom: 0;
 }
 
@@ -855,10 +862,13 @@ header.padding-top-half {
 
 section.padding-top-none,
 section.team-slider,
+section.contact-modal,
 footer.padding-top-none,
 footer.team-slider,
+footer.contact-modal,
 header.padding-top-none,
-header.team-slider {
+header.team-slider,
+header.contact-modal {
   padding-top: 0;
 }
 
@@ -1019,7 +1029,8 @@ button:active,
 .button-line-styles,
 .cta .inner .container:after,
 .expert-systems .inner .container:after,
-.team .inner .container:after {
+.team .inner .container:after,
+.contact-modal .inner:after {
   background-color: #d7e3f2;
   bottom: 27px;
   content: '';
@@ -1135,6 +1146,8 @@ footer.no-border:after {
 }
 
 footer .block:first-of-type p,
+footer .block:first-of-type input,
+footer .block:first-of-type textarea,
 footer .block:first-of-type ul li,
 ul footer .block:first-of-type li,
 footer .block:first-of-type ol li,
@@ -1143,6 +1156,8 @@ ol footer .block:first-of-type li {
 }
 
 footer p,
+footer input,
+footer textarea,
 footer ul li,
 ul footer li,
 footer ol li,
@@ -1181,6 +1196,25 @@ footer ul li:before {
 
 footer ul li a {
   color: #45484b;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  margin-top: 0;
+  outline: none;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100%;
+}
+
+label {
+  display: block;
+  text-align: left;
+  width: 100%;
 }
 
 ul,
@@ -1346,6 +1380,8 @@ ol > li:before {
 }
 
 .team-slider .inner .container .slide .bio p,
+.team-slider .inner .container .slide .bio input,
+.team-slider .inner .container .slide .bio textarea,
 .team-slider .inner .container .slide .bio ul li,
 ul .team-slider .inner .container .slide .bio li,
 .team-slider .inner .container .slide .bio ol li,
@@ -1591,6 +1627,8 @@ ol .team-slider .inner .container .slide .bio li {
 }
 
 .team .inner .container h2 ~ p,
+.team .inner .container h2 ~ input,
+.team .inner .container h2 ~ textarea,
 .team .inner .container ul h2 ~ li,
 ul .team .inner .container h2 ~ li,
 .team .inner .container ol h2 ~ li,
@@ -1741,4 +1779,77 @@ ol .team .inner .container h2 ~ li {
 .team-pic .inner .container .image-container {
   padding-top: 50%;
   width: 100%;
+}
+
+.contact-modal {
+  background-color: #295ec3;
+  color: #fff;
+  left: 0;
+  min-height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  width: 100vw;
+  z-index: 950;
+}
+
+.contact-modal.visible-modal {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.contact-modal:after {
+  content: none;
+}
+
+.contact-modal .inner {
+  max-width: 880px;
+  padding-top: 80px;
+  position: relative;
+}
+
+.contact-modal .inner .exit {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  z-index: 999;
+}
+
+.contact-modal .inner .exit g {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.contact-modal .inner:after {
+  left: calc(calc(100vw - 880px) / -2);
+  opacity: 0.5;
+}
+
+.contact-modal .inner h2 {
+  color: #fff;
+  margin: 0 0 20px;
+}
+
+.contact-modal .inner p,
+.contact-modal .inner input,
+.contact-modal .inner textarea,
+.contact-modal .inner ul li,
+ul .contact-modal .inner li,
+.contact-modal .inner ol li,
+ol .contact-modal .inner li {
+  margin-bottom: 40px;
+  padding: 0 40px;
+}
+
+.contact-modal .inner form {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.contact-modal .inner form button {
+  border: none;
 }
