@@ -47,6 +47,10 @@ main {
   color: $ClrMidnight !important;
 }
 
+a {
+  color: $ClrNight;
+}
+
 
 // Background Colors
 .bg-clr-white {
@@ -84,6 +88,7 @@ main {
           justify-content: center;
           margin-bottom: $Base / 2;
           width: $Base *2;
+
         }
 
         .row {
@@ -296,25 +301,4 @@ main {
   }
 }
 
-.privacy-policy, .terms {
-  border-bottom: $BasicBorder;
 
-  &.terms {
-    .h4 {
-      text-transform: uppercase;
-    }
-  }
-
-  h1 {
-    margin: 0 auto;
-    max-width: $Base * 14;
-
-    span.avoidwrap { 
-      display:inline-block; 
-    }
-  }
-
-  &:after {
-    content: none;
-  }
-}

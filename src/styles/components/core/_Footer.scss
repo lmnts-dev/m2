@@ -8,6 +8,12 @@ footer {
     }
   }
 
+  .block:first-of-type {
+    p {
+      margin-top: $Base / 2;
+    }
+  }
+
   p {
     font-family: $FntHeader;
     font-size: 16px;
@@ -32,6 +38,10 @@ footer {
 
     li {
       width: 50%;
+
+      &:before {
+        content: none;
+      }
 
       a {
         color: $ClrBark;

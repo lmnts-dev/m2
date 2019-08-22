@@ -29,6 +29,10 @@ header {
       li {
         padding-left: $Base;
 
+        &:before {
+          content: none;
+        }
+
         a {
           color: $ClrBark;
         }

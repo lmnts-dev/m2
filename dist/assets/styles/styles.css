@@ -1,3 +1,4 @@
+@charset "utf-8";
 @import url("https://use.typekit.net/wyu2org.css");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700&display=swap");
 
@@ -635,6 +636,10 @@ main {
   color: #1a1f5b !important;
 }
 
+a {
+  color: #295ec3;
+}
+
 .bg-clr-white {
   background-color: #fff;
 }
@@ -997,32 +1002,6 @@ ol .team .inner .container h2 ~ li {
   z-index: 2;
 }
 
-.privacy-policy,
-.terms {
-  border-bottom: 1px solid #d7e3f2;
-}
-
-.privacy-policy.terms .h4,
-.terms.terms .h4 {
-  text-transform: uppercase;
-}
-
-.privacy-policy h1,
-.terms h1 {
-  margin: 0 auto;
-  max-width: 560px;
-}
-
-.privacy-policy h1 span.avoidwrap,
-.terms h1 span.avoidwrap {
-  display: inline-block;
-}
-
-.privacy-policy:after,
-.terms:after {
-  content: none;
-}
-
 body,
 html {
   font-family: 'sofia-pro', 'Helvetica', sans-serif;
@@ -1174,6 +1153,53 @@ ol {
 ul li,
 ol li {
   margin-top: 0;
+}
+
+ul li {
+  list-style-type: none;
+  position: relative;
+}
+
+ul li::before {
+  color: #45484b;
+  content: '\2022';
+  /* Unicode for • character */
+  font-size: 20px;
+  left: -26.6666666667px;
+  position: absolute;
+  top: 3.3333333333px;
+}
+
+ol {
+  counter-reset: list;
+}
+
+ol > li {
+  list-style: none;
+  position: relative;
+}
+
+ol > li ol li:before {
+  content: counter(list, lower-alpha) ') ';
+  font-size: 18px;
+  left: -26.6666666667px;
+  top: 3.3333333333px;
+}
+
+ol > li ol ol li:before {
+  content: counter(list, decimal) ') ';
+}
+
+ol > li:before {
+  color: #295ec3;
+  content: counter(list, decimal) ') ';
+  counter-increment: list;
+  font-family: 'sofia-pro', 'Helvetica', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  left: -32px;
+  position: absolute;
+  top: -2.8571428571px;
 }
 
 .border-styles,
@@ -1453,6 +1479,10 @@ header .inner nav li {
   padding-left: 40px;
 }
 
+header .inner nav li:before {
+  content: none;
+}
+
 header .inner nav li a {
   color: #45484b;
 }
@@ -1473,6 +1503,14 @@ footer {
 
 footer.no-border:after {
   content: none;
+}
+
+footer .block:first-of-type p,
+footer .block:first-of-type ul li,
+ul footer .block:first-of-type li,
+footer .block:first-of-type ol li,
+ol footer .block:first-of-type li {
+  margin-top: 20px;
 }
 
 footer p,
@@ -1506,6 +1544,10 @@ footer ul {
 
 footer ul li {
   width: 50%;
+}
+
+footer ul li:before {
+  content: none;
 }
 
 footer ul li a {
@@ -1623,4 +1665,40 @@ ul .team-slider .inner .container .slide .bio li,
 .team-slider .inner .container .slide .bio ol li,
 ol .team-slider .inner .container .slide .bio li {
   max-width: 880px;
+}
+
+.privacy-policy,
+.terms {
+  border-bottom: 1px solid #d7e3f2;
+}
+
+.privacy-policy.terms .h4,
+.terms.terms .h4 {
+  text-transform: uppercase;
+}
+
+.privacy-policy .h4,
+.terms .h4 {
+  font-family: 'sofia-pro', 'Helvetica', sans-serif;
+}
+
+.privacy-policy .inner,
+.terms .inner {
+  max-width: 1080px;
+}
+
+.privacy-policy h1,
+.terms h1 {
+  margin: 0 auto;
+  max-width: 560px;
+}
+
+.privacy-policy h1 span.avoidwrap,
+.terms h1 span.avoidwrap {
+  display: inline-block;
+}
+
+.privacy-policy:after,
+.terms:after {
+  content: none;
 }
