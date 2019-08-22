@@ -10,7 +10,7 @@
   z-index: 1;
 }
 
-section, article {
+section, footer, header {
   padding-bottom: $Base * 3;
   padding-top: $Base * 3;
   position: relative;
@@ -25,7 +25,7 @@ section, article {
 
   &.start-border:before {
     @extend .border-styles;
-    background: linear-gradient(to bottom, $ClrWhite, $ClrCloudy);
+    background: linear-gradient(to bottom, $ClrWhite #{$Base * 2}, $ClrWhite, $ClrCloudy);
     z-index: 2;
   }
 

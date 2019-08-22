@@ -30,6 +30,10 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
   color: $ClrWhite !important;
 }
 
+.txt-clr-sky {
+  color: $ClrSky !important;
+}
+
 .txt-clr-night {
   color: $ClrNight !important;
 }
@@ -51,7 +55,9 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
 
 
 .hero {
-
+  .inner {
+    padding-right: 0;
+  }
 }
 
 .anchor-map {
@@ -121,13 +127,9 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
       text-align: center;
 
       .btn {
+        margin-top: $Base * 2;
         position: relative;
         z-index: 2;
-      }
-
-      .row {
-        padding: $Base / 2;
-        text-align: left;
       }
 
       &:after {
@@ -156,57 +158,66 @@ $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
         
       }
 
-      .row {
-        padding-top: $Base * 2;
-        position: relative;
-        z-index: 2;
+      .content {
+        width: 100%;
 
-        .block {
-          box-shadow: none;
-          flex: 1;
-          margin: 0 $Base / 2;
-          transition-duration: 0.5s;
+        .p-lg {
+          margin: 0 auto;
+          max-width: 520px;
+        }
 
-          &:hover {
-            box-shadow: $BasicShadow;
-          }
+        .row {
+          padding-top: $Base * 2;
+          position: relative;
+          z-index: 2;
 
-          &:first-of-type {
-            margin-left: 0;
-          }
+          .block {
+            box-shadow: none;
+            flex: 1;
+            margin: 0 $Base / 2;
+            transition-duration: 0.5s;
 
-          &:last-of-type {
-            margin-right: 0;
-          }
+            &:hover {
+              box-shadow: $BasicShadow;
+            }
 
-          .image-container {
-            padding-top: 100%;
-            position: relative;
-            width: 100%;
+            &:first-of-type {
+              margin-left: 0;
+            }
 
-            img {
-              height: 100%;
-              left: 0;
-              object-fit: cover;
-              position: absolute;
-              top: 50%;
-              transform: translateY(-50%);
+            &:last-of-type {
+              margin-right: 0;
+            }
+
+            .image-container {
+              padding-top: 100%;
+              position: relative;
               width: 100%;
+
+              img {
+                height: 100%;
+                left: 0;
+                object-fit: cover;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+              }
             }
-          }
 
-          .info {
-            background-color: $ClrWhite;
-            padding: $Base / 4;
+            .info {
+              background-color: $ClrWhite;
+              padding: $Base / 4;
 
-            .title {
-              @extend .anchor;
-              color: $ClrNight;
-              padding: $Base / 6 0;
-              white-space: initial !important;
+              .title {
+                @extend .anchor;
+                color: $ClrNight;
+                padding: $Base / 6 0;
+                white-space: initial !important;
+              }
             }
-          }
 
+          }
         }
       }
 

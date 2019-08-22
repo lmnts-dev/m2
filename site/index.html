@@ -3,19 +3,23 @@ layout: default
 title: Home
 ---
 
-<section class="hero start-border">
+<section class="hero start-border padding-top-none padding-bottom-half">
   <div class="inner">
-    <div class="container">
-      <div class="caption">M2 Medical Intelligence</div>
-      <h1 class="txt-clr-midnight">Leading intelligence-driven healthcare solutions</h1>
-      <p class="p-lg">
-          Designed by and for frontline healthcare professionals.
-      </p>
+    <div class="container row">
+      <div class="block">
+        <h1 class="txt-clr-midnight">Our technology saves you from the day when antibiotics are no longer effective at treating infections</h1>
+        <p class="p-lg">
+            Solutions designed by and for frontline healthcare professionals
+        </p>
+      </div>
+      <div class="block">
+        <img src="/assets/images/sample.png" alt="Gloved hand holding medical sample in glass container">
+      </div>
     </div>
   </div>
 </section>
 
-<section class="anchor-map padding-top-half">
+<section class="anchor-map padding-top-none">
   <div class="inner">
     <div class="container row align-top">
       {% for item in site.data.pillars %}
@@ -57,16 +61,10 @@ title: Home
 <section class="expert-systems">
   <div class="inner">
     <div class="container">
-        <div class="caption txt-center">Efficient & Superior Care</div>
         <h2 class="txt-center">Comprehensive Expert Systems</h2>
-        <div class="row align-top two-block-padding">
-          <p class="blockquote block">
+        <p class="blockquote">
             The Statera™ Platform analyzes data in seconds, allowing for appropriate antimicrobial therapy while optimizing patient outcomes. 
-          </p>
-          <p class="block">
-            Standards of Care in the healthcare industry are constantly evolving, Statera™ empowers superior antibiotic solutions without burdening internal support systems.
-          </p>
-        </div>
+        </p>
         <a href="" class="btn">
           Request Information
         </a>
@@ -82,7 +80,7 @@ title: Home
       </div>
       <div class="content">
         <h2 class="txt-clr-midnight">Our Team</h2>
-        <p class="p-lg">M2 Medical Intelligence was founded by a team of healthcare experts, leading technological and data scientists. We’ve create leading intelligence-driven healthcare solutions with robust systems designed by practitioners for practitioners.</p>
+        <p class="p-lg">We create intelligence-driven healthcare solutions designed by practitioners for practitioners.</p>
         <div class="row">
             {% for member in site.data.team %}
               <div class="block">
@@ -103,29 +101,6 @@ title: Home
               </div>
             {% endfor %}
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="advisors" >
-  <div class="inner">
-    <div class="container">
-      <h2 class="h3 txt-clr-midnight">Our Expert Advisors</h2>
-      <div class="row">
-          {% for advisor in site.data.advisors %}
-            <div class="block">
-              <div class="h5">
-                  {{ advisor.name }}{% if advisor.phD %}, Ph.D. {% endif %}
-              </div>
-              <div class="title">
-                  {{ advisor.title }}{% if advisor.employer %}, {{ advisor.employer }}{% endif %}
-              </div>
-              <a href="{{advisor.linkedIn}}" target="_blank">
-                  {% include linkedIn.html %}
-              </a>
-            </div>
-        {% endfor %}
       </div>
     </div>
   </div>

@@ -1,3 +1,29 @@
 footer {
-  
+  p {
+    font-family: $FntHeader;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+    margin: 0;
+  }
+
+  ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    flex-wrap: wrap;
+    padding-top: $Base / 4;
+
+    li {
+      width: 50%;
+
+      a {
+        color: $ClrBark;
+          
+      }
+    }
+  }
 }

@@ -1,0 +1,46 @@
+header {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 900;
+
+  &:after {
+    content: none;
+  }
+    
+  .inner {
+    padding: 0;
+
+    img {
+      margin-left: $Base / 2;
+      max-width: $Base * 5;
+    }
+
+    nav {
+      flex: 100;
+
+      ul, li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        padding-left: $Base;
+
+        a {
+          color: $ClrBark;
+        }
+      }
+    }
+
+    .cta-button {
+      background-color: $ClrSky;
+      color: $ClrWhite;
+      font-size: 15px;
+      padding: $Base / 1.5 $Base * 1.5;
+    }
+        
+  }
+}
