@@ -1850,6 +1850,7 @@ ol .contact-modal .inner li {
   z-index: 2;
 }
 
-.contact-modal .inner form button {
-  border: none;
+.contact-modal .inner form .btn {
+  margin-bottom: 0;
+  width: 120px;
 }
