@@ -794,7 +794,9 @@ main {
 
 .team .inner .container h2 ~ p,
 .team .inner .container ul h2 ~ li,
-ul .team .inner .container h2 ~ li {
+ul .team .inner .container h2 ~ li,
+.team .inner .container ol h2 ~ li,
+ol .team .inner .container h2 ~ li {
   margin: 0 auto;
   max-width: 520px;
 }
@@ -995,11 +997,29 @@ ul .team .inner .container h2 ~ li {
   z-index: 2;
 }
 
-.privacy-policy {
+.privacy-policy,
+.terms {
   border-bottom: 1px solid #d7e3f2;
 }
 
-.privacy-policy:after {
+.privacy-policy.terms .h4,
+.terms.terms .h4 {
+  text-transform: uppercase;
+}
+
+.privacy-policy h1,
+.terms h1 {
+  margin: 0 auto;
+  max-width: 560px;
+}
+
+.privacy-policy h1 span.avoidwrap,
+.terms h1 span.avoidwrap {
+  display: inline-block;
+}
+
+.privacy-policy:after,
+.terms:after {
   content: none;
 }
 
@@ -1110,6 +1130,7 @@ h6,
 .caption,
 p,
 ul li,
+ol li,
 .p,
 .p-lg {
   font-family: 'sofia-pro', 'Helvetica', sans-serif;
@@ -1131,6 +1152,7 @@ blockquote,
 
 p,
 ul li,
+ol li,
 .p {
   font-size: 1.25rem;
   line-height: 1.6;
@@ -1144,11 +1166,13 @@ ul li,
   margin-top: 10px;
 }
 
-ul {
+ul,
+ol {
   margin: 40px 0;
 }
 
-ul li {
+ul li,
+ol li {
   margin-top: 0;
 }
 
@@ -1453,7 +1477,9 @@ footer.no-border:after {
 
 footer p,
 footer ul li,
-ul footer li {
+ul footer li,
+footer ol li,
+ol footer li {
   font-family: 'Maven Pro', 'Helvetica', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1593,6 +1619,8 @@ footer ul li a {
 
 .team-slider .inner .container .slide .bio p,
 .team-slider .inner .container .slide .bio ul li,
-ul .team-slider .inner .container .slide .bio li {
+ul .team-slider .inner .container .slide .bio li,
+.team-slider .inner .container .slide .bio ol li,
+ol .team-slider .inner .container .slide .bio li {
   max-width: 880px;
 }
