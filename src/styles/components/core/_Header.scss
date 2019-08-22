@@ -1,9 +1,20 @@
 header {
+  background-color: $ClrWhite;
+  box-shadow: $BasicShadow;
   left: 0;
+  margin: 0 auto;
+  max-width: $BaseMaxWidth;
   position: fixed;
+  right: 0;
   top: 0;
+  transition-duration: 0.25s;
   width: 100vw;
   z-index: 900;
+
+  &.no-background {
+    background-color: transparent;
+    box-shadow: none;
+  }
 
   &:after {
     content: none;
@@ -13,12 +24,26 @@ header {
     padding: 0;
 
     img {
-      margin-left: $Base / 2;
+      margin-left: $Base;
+      margin-top: $Base / 8;
       max-width: $Base * 5;
+      transition-duration: 0.25s;
+
+      &.large {
+        margin-top: 0;
+        max-width: $Base * 7.5;
+        transform: translateY( $Base / 2 );
+        transform-origin: top left;
+      }
     }
 
     nav {
       flex: 100;
+      transition-duration: 0.25s;
+
+      &.no-scroll {
+        transform: translateY( $Base / 4 );
+      }
 
       ul, li {
         list-style-type: none;
@@ -27,6 +52,7 @@ header {
       }
 
       li {
+        font-size: 14px;
         padding-left: $Base;
 
         &:before {
