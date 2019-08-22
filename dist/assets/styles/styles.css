@@ -28,9 +28,10 @@ a {
 html {
   font-family: sans-serif;
   /* 1 */
+  scroll-behavior: smooth;
+  -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
   /* 2 */
 }
 

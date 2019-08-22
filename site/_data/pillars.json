@@ -2,16 +2,19 @@
     {
       "title": "Our Process",
       "description": "We empower complex data management to produce simple analytic outputs that dramatically improve patient outcomes.",
-      "icon": "flag.html"
+      "icon": "flag.html",
+      "id": "process"
     },
     {
         "title": "Leadership",
         "description": "Our team includes world-leading experts and visonaries in antimicrobial stewardship and healthcare solutions.",
-        "icon": "flowChart.html"
+        "icon": "flowChart.html",
+        "id": "leadership"
     },
     {
         "title": "Partnerships",
         "description": "We are actively seeking partnerships and alliances with health systems  and  health management companies.",
-        "icon": "magnifier.html"
+        "icon": "magnifier.html",
+        "id": "partnerships"
     }
   ]

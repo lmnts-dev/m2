@@ -30,10 +30,10 @@ title: Home
           <div class="icon">
             {% include {{ item.icon }} %}
           </div>
-          <div class="row">
+          <a class="row" href="#{{ item.id }}">
             {% include arrow.html %}
             <div class="h5">{{ item.title }}</div>
-          </div>
+          </a>
           <p>{{ item.description }}</p>
         </div>
       {% endfor %}
