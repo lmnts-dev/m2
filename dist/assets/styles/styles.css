@@ -1158,7 +1158,8 @@ footer:after,
 header:after,
 section.start-border:before,
 footer.start-border:before,
-header.start-border:before {
+header.start-border:before,
+.team-slider .inner:after {
   content: '';
   height: 200px;
   left: 100px;
@@ -1199,8 +1200,11 @@ header.padding-bottom-half {
 }
 
 section.padding-bottom-none,
+section.team-slider,
 footer.padding-bottom-none,
-header.padding-bottom-none {
+footer.team-slider,
+header.padding-bottom-none,
+header.team-slider {
   padding-bottom: 0;
 }
 
@@ -1211,8 +1215,11 @@ header.padding-top-half {
 }
 
 section.padding-top-none,
+section.team-slider,
 footer.padding-top-none,
-header.padding-top-none {
+footer.team-slider,
+header.padding-top-none,
+header.team-slider {
   padding-top: 0;
 }
 
@@ -1481,32 +1488,53 @@ footer ul li a {
 
 .team-slider {
   background-color: #fff;
-  display: none;
   left: 0;
   min-height: 100vh;
+  opacity: 0;
+  pointer-events: none;
   position: fixed;
   top: 0;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
   width: 100vw;
   z-index: 950;
 }
 
+.team-slider.visible-slider {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.team-slider:after {
+  content: none;
+}
+
 .team-slider .inner {
+  padding-top: 80px;
   position: relative;
 }
 
+.team-slider .inner:after {
+  background-color: #d7e3f2;
+  height: 100%;
+}
+
 .team-slider .inner .arrows {
-  background-color: #fff;
-  left: 50px;
+  left: 60px;
   position: absolute;
-  top: 0;
+  top: 80px;
+  z-index: 2;
 }
 
 .team-slider .inner .arrows .prev,
 .team-slider .inner .arrows .next {
+  background-color: #fff;
   border-radius: 50%;
   -webkit-box-pack: center;
   -webkit-box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
   box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
+  cursor: pointer;
   -ms-flex-pack: center;
   height: 80px;
   justify-content: center;
@@ -1514,16 +1542,18 @@ footer ul li a {
   width: 80px;
 }
 
-.team-slider .inner .arrows .prev {
+.team-slider .inner .arrows .prev svg {
   -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .team-slider .inner .exit {
+  cursor: pointer;
   position: absolute;
   right: 80px;
-  top: 0;
+  top: 80px;
+  z-index: 2;
 }
 
 .team-slider .inner .container .slide .row .block:last-of-type .h3,

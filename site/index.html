@@ -85,7 +85,7 @@ title: Home
         <p>We create intelligence-driven healthcare solutions designed by practitioners for practitioners.</p>
         <div class="row">
             {% for member in site.data.team %}
-              <div class="block">
+              <div class="block" data-member="{{ forloop.index | minus: 1 }}">
                 <div class="image-container">
                   <img src="{{ member.image }}" alt="Photo of {{ member.name }}">
                 </div>
