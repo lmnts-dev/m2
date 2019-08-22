@@ -45,6 +45,11 @@ footer {
 
       a {
         color: $ClrBark;
+        transition-duration: 0.25s;
+
+        &:hover {
+          color: $ClrNight;
+        }
           
       }
     }

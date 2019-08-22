@@ -47,7 +47,20 @@
         height: $Base * 2;
         justify-content: center;
         margin-bottom: $Base / 2;
+        transition-duration: 0.25s;
         width: $Base * 2;
+
+        g {
+          transition-duration: 0.25s;
+        }
+
+        &:hover {
+          box-shadow: $DarkShadow;
+
+          g {
+            stroke: $ClrNight;
+          }
+        }
       }
 
       .prev {

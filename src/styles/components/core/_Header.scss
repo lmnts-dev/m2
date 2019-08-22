@@ -61,6 +61,11 @@ header {
 
         a {
           color: $ClrBark;
+          transition-duration: 0.25s;
+
+          &:hover {
+            color: $ClrNight;
+          }
         }
       }
     }
@@ -68,10 +73,15 @@ header {
     .cta-button {
       background-color: $ClrSky;
       color: $ClrWhite;
+      cursor: pointer;
       font-size: 15px;
       margin: 0;
       padding: $Base / 1.5 $Base * 1.5;
+      transition-duration: 0.25s;
+
+      &:hover {
+        background-color: $ClrNight;
+      }
     }
-        
   }
 }

@@ -648,6 +648,55 @@ a {
   background-color: #f5f7fa;
 }
 
+.exit {
+  border-radius: 50%;
+  cursor: pointer;
+  -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+.exit svg {
+  -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+.exit:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.exit:hover svg {
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.exit:hover g {
+  fill: #fff;
+}
+
+.exit.blue-icon:hover {
+  background-color: rgba(47, 134, 255, 0.1);
+}
+
+.exit.blue-icon:hover g {
+  fill: #295ec3;
+}
+
+.linkedin-icon path {
+  -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+.linkedin-icon:hover path {
+  fill: #2f86ff;
+}
+
 body,
 html {
   font-family: 'sofia-pro', 'Helvetica', sans-serif;
@@ -1016,6 +1065,9 @@ button,
   line-height: 54px;
   margin-top: 40px;
   padding: 0 40px;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
 }
 
 button:focus,
@@ -1024,6 +1076,15 @@ button:active,
 .btn:active {
   border: 0;
   outline: 0;
+}
+
+button:hover,
+.btn:hover {
+  -webkit-box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.3);
+  box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.3);
+  -ms-transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .button-line-styles,
@@ -1125,14 +1186,29 @@ header .inner nav li:before {
 
 header .inner nav li a {
   color: #45484b;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+header .inner nav li a:hover {
+  color: #295ec3;
 }
 
 header .inner .cta-button {
   background-color: #2f86ff;
   color: #fff;
+  cursor: pointer;
   font-size: 15px;
   margin: 0;
   padding: 26.6666666667px 60px;
+  -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+header .inner .cta-button:hover {
+  background-color: #295ec3;
 }
 
 footer {
@@ -1196,6 +1272,13 @@ footer ul li:before {
 
 footer ul li a {
   color: #45484b;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+footer ul li a:hover {
+  color: #295ec3;
 }
 
 input,
@@ -1327,7 +1410,28 @@ ol > li:before {
   height: 80px;
   justify-content: center;
   margin-bottom: 20px;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
   width: 80px;
+}
+
+.team-slider .inner .arrows .prev g,
+.team-slider .inner .arrows .next g {
+  -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+.team-slider .inner .arrows .prev:hover,
+.team-slider .inner .arrows .next:hover {
+  -webkit-box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.3);
+  box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.3);
+}
+
+.team-slider .inner .arrows .prev:hover g,
+.team-slider .inner .arrows .next:hover g {
+  stroke: #295ec3;
 }
 
 .team-slider .inner .arrows .prev svg {
@@ -1461,6 +1565,9 @@ ol .team-slider .inner .container .slide .bio li {
 .anchor-map .team-slider .inner .arrows .container .block .next .h5,
 .team-slider .anchor-map .inner .arrows .container .block .next .h5 {
   margin: 0;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
 }
 
 .anchor-map .inner .container .block .row svg,
@@ -1473,6 +1580,73 @@ ol .team-slider .inner .container .slide .bio li {
 .anchor-map .team-slider .inner .arrows .container .block .next svg,
 .team-slider .anchor-map .inner .arrows .container .block .next svg {
   margin-right: 10px;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+.anchor-map .inner .container .block .row svg g,
+.anchor-map .team-slider .inner .container .block .arrows .prev svg g,
+.team-slider .anchor-map .inner .container .block .arrows .prev svg g,
+.anchor-map .team-slider .inner .arrows .container .block .prev svg g,
+.team-slider .anchor-map .inner .arrows .container .block .prev svg g,
+.anchor-map .team-slider .inner .container .block .arrows .next svg g,
+.team-slider .anchor-map .inner .container .block .arrows .next svg g,
+.anchor-map .team-slider .inner .arrows .container .block .next svg g,
+.team-slider .anchor-map .inner .arrows .container .block .next svg g {
+  -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+.anchor-map .inner .container .block .row:hover,
+.anchor-map .team-slider .inner .container .block .arrows .prev:hover,
+.team-slider .anchor-map .inner .container .block .arrows .prev:hover,
+.anchor-map .team-slider .inner .arrows .container .block .prev:hover,
+.team-slider .anchor-map .inner .arrows .container .block .prev:hover,
+.anchor-map .team-slider .inner .container .block .arrows .next:hover,
+.team-slider .anchor-map .inner .container .block .arrows .next:hover,
+.anchor-map .team-slider .inner .arrows .container .block .next:hover,
+.team-slider .anchor-map .inner .arrows .container .block .next:hover {
+  cursor: pointer;
+}
+
+.anchor-map .inner .container .block .row:hover .h5,
+.anchor-map .team-slider .inner .container .block .arrows .prev:hover .h5,
+.team-slider .anchor-map .inner .container .block .arrows .prev:hover .h5,
+.anchor-map .team-slider .inner .arrows .container .block .prev:hover .h5,
+.team-slider .anchor-map .inner .arrows .container .block .prev:hover .h5,
+.anchor-map .team-slider .inner .container .block .arrows .next:hover .h5,
+.team-slider .anchor-map .inner .container .block .arrows .next:hover .h5,
+.anchor-map .team-slider .inner .arrows .container .block .next:hover .h5,
+.team-slider .anchor-map .inner .arrows .container .block .next:hover .h5 {
+  color: #2f86ff;
+}
+
+.anchor-map .inner .container .block .row:hover svg,
+.anchor-map .team-slider .inner .container .block .arrows .prev:hover svg,
+.team-slider .anchor-map .inner .container .block .arrows .prev:hover svg,
+.anchor-map .team-slider .inner .arrows .container .block .prev:hover svg,
+.team-slider .anchor-map .inner .arrows .container .block .prev:hover svg,
+.anchor-map .team-slider .inner .container .block .arrows .next:hover svg,
+.team-slider .anchor-map .inner .container .block .arrows .next:hover svg,
+.anchor-map .team-slider .inner .arrows .container .block .next:hover svg,
+.team-slider .anchor-map .inner .arrows .container .block .next:hover svg {
+  -ms-transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+.anchor-map .inner .container .block .row:hover svg g,
+.anchor-map .team-slider .inner .container .block .arrows .prev:hover svg g,
+.team-slider .anchor-map .inner .container .block .arrows .prev:hover svg g,
+.anchor-map .team-slider .inner .arrows .container .block .prev:hover svg g,
+.team-slider .anchor-map .inner .arrows .container .block .prev:hover svg g,
+.anchor-map .team-slider .inner .container .block .arrows .next:hover svg g,
+.team-slider .anchor-map .inner .container .block .arrows .next:hover svg g,
+.anchor-map .team-slider .inner .arrows .container .block .next:hover svg g,
+.team-slider .anchor-map .inner .arrows .container .block .next:hover svg g {
+  stroke: #45484b;
 }
 
 .anchor-map .inner .container .block:last-of-type {
@@ -1675,11 +1849,12 @@ ol .team .inner .container h2 ~ li {
   -webkit-box-flex: 1;
   -webkit-box-shadow: none;
   box-shadow: none;
+  cursor: pointer;
   -ms-flex: 1;
   flex: 1;
   margin: 0 20px;
-  -o-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 

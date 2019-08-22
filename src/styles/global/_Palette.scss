@@ -20,6 +20,7 @@ $BasicBorder: 1px solid $ClrCloudy;
 
 //Shadow Colors
 $BasicShadow: -4px 7px 20px rgba( $ClrNight, 0.15);
+$DarkShadow: -4px 7px 20px rgba( $ClrNight, 0.3);
 
 main {
   background-color: $ClrWhite;
@@ -61,4 +62,51 @@ a {
   background-color: $ClrShell;
 }
 
+//global calsses that need colors
+
+.exit {
+  border-radius: 50%;
+  cursor: pointer;
+  transition-duration: 0.25s;
+
+  svg {
+    transition-duration: 0.25s;
+  }
+
+  &:hover {
+    background-color: rgba( $ClrWhite, 0.1);
+    transform: scale(1.2);
+
+    svg {
+      transform: scale( 0.5 );
+    }
+
+    g {
+      fill: $ClrWhite;
+    }
+  }
+
+  &.blue-icon {
+    &:hover {
+      background-color: rgba( $ClrSky, 0.1);
+
+      g {
+        fill: $ClrNight;
+      }
+    }
+
+  }
+}
+
+.linkedin-icon {
+  path {
+    transition-duration: 0.25s;
+  }
+
+  &:hover {
+    path {
+      fill: $ClrSky;
+    }
+  }
+}
 
