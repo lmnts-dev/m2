@@ -11,6 +11,9 @@
   @media (max-width: $BaseMediaMd){
     left: $Base;
   }
+  @media (max-width: $BaseMediaSm){
+    left: $Base / 2;
+  }
 }
 
 section, footer, header {
@@ -68,17 +71,18 @@ section, footer, header {
     }
 
     @media (max-width: $BaseMediaSm) {
-     
+      padding: 0 $Base / 2;
     }
-    @media (max-width: $BaseMediaTiny) {
-  
-    }
+
 
     .container {
       padding-left: $Base * 2;
       width: 100%;
       @media (max-width: $BaseMediaMd){
         padding-left: $Base;
+      }
+      @media (max-width: $BaseMediaSm) {
+        padding-left: $Base / 2;
       }
 
       .block {

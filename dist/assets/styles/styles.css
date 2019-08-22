@@ -949,6 +949,19 @@ header.start-border:before,
   }
 }
 
+@media (max-width: 750px) {
+  .border-styles,
+  section:after,
+  footer:after,
+  header:after,
+  section.start-border:before,
+  footer.start-border:before,
+  header.start-border:before,
+  .team-slider .inner:after {
+    left: 20px;
+  }
+}
+
 section,
 footer,
 header {
@@ -1050,6 +1063,14 @@ header .inner {
   }
 }
 
+@media (max-width: 750px) {
+  section .inner,
+  footer .inner,
+  header .inner {
+    padding: 0 20px;
+  }
+}
+
 section .inner .container,
 footer .inner .container,
 header .inner .container {
@@ -1062,6 +1083,14 @@ header .inner .container {
   footer .inner .container,
   header .inner .container {
     padding-left: 40px;
+  }
+}
+
+@media (max-width: 750px) {
+  section .inner .container,
+  footer .inner .container,
+  header .inner .container {
+    padding-left: 20px;
   }
 }
 
@@ -1768,6 +1797,12 @@ ol .team-slider .inner .container .slide .bio li {
   content: none;
 }
 
+@media (max-width: 750px) {
+  .anchor-map .inner .container {
+    display: block;
+  }
+}
+
 .anchor-map .inner .container .block {
   padding-right: 40px;
 }
@@ -1785,6 +1820,23 @@ ol .team-slider .inner .container .slide .bio li {
   .anchor-map .inner .container .block ol li,
   ol .anchor-map .inner .container .block li {
     margin-top: 6.6666666667px;
+  }
+}
+
+@media (max-width: 750px) {
+  .anchor-map .inner .container .block {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+
+  .anchor-map .inner .container .block:last-of-type {
+    margin-bottom: 0;
   }
 }
 
@@ -1819,6 +1871,14 @@ ol .team-slider .inner .container .slide .bio li {
   .anchor-map .inner .container .block .icon svg {
     max-height: 26.6666666667px;
     max-width: 26.6666666667px;
+  }
+}
+
+@media (max-width: 750px) {
+  .anchor-map .inner .container .block .icon {
+    margin-right: 20px;
+    min-height: 60px;
+    min-width: 60px;
   }
 }
 
@@ -2024,6 +2084,12 @@ ol .team-slider .inner .container .slide .bio li {
   }
 }
 
+@media (max-width: 1024px) {
+  .hero {
+    padding-bottom: 100px !important;
+  }
+}
+
 .hero .inner {
   padding-right: 0;
 }
@@ -2033,8 +2099,38 @@ ol .team-slider .inner .container .slide .bio li {
   margin-top: 160px;
 }
 
+@media (max-width: 1024px) {
+  .hero .inner h1 {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero .inner .container {
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+}
+
 .hero .inner .container .block:first-of-type {
   min-width: 440px;
+}
+
+@media (max-width: 1024px) {
+  .hero .inner .container .block:first-of-type {
+    min-width: 320px;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero .inner .container .block:last-of-type {
+    align-self: flex-end;
+    -ms-flex-item-align: end;
+    min-width: none;
+    width: 70%;
+  }
 }
 
 .process {
@@ -2047,12 +2143,36 @@ ol .team-slider .inner .container .slide .bio li {
   padding-left: 0;
 }
 
+@media (max-width: 1024px) {
+  .process .inner .container svg {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 750px) {
+  .process .inner .container {
+    display: block;
+  }
+
+  .process .inner .container .block {
+    padding-left: 20px;
+    text-align: center;
+  }
+}
+
 .process .inner .container .block:first-child {
   align-self: flex-start;
   -webkit-box-flex: 0;
   -ms-flex: 0;
   flex: 0;
   -ms-flex-item-align: start;
+}
+
+@media (max-width: 750px) {
+  .process .inner .container .block:first-child {
+    display: inline-block;
+    text-align: left;
+  }
 }
 
 .process .inner .container .block:first-child .anchor,
@@ -2087,6 +2207,12 @@ ol .team-slider .inner .container .slide .bio li {
 @media (max-width: 1024px) {
   .process .inner .container .block:last-of-type {
     padding-left: 40px;
+  }
+}
+
+@media (max-width: 750px) {
+  .process .inner .container .block:last-of-type {
+    padding-left: 20px;
   }
 }
 

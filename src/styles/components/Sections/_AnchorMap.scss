@@ -1,6 +1,10 @@
 .anchor-map {
   .inner {
     .container {
+      @media (max-width: $BaseMediaSm) {
+        display: block;
+      }
+
       .block {
         padding-right: $Base;
         @media (max-width: $BaseMediaMd){
@@ -8,6 +12,15 @@
 
           p {
             margin-top: $Base / 6;
+          }
+        }
+        @media (max-width: $BaseMediaSm) {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: $Base;
+
+          &:last-of-type {
+            margin-bottom: 0;
           }
         }
 
@@ -29,6 +42,11 @@
               max-height: $Base / 1.5;
               max-width: $Base / 1.5;
             }
+          }
+          @media (max-width: $BaseMediaSm) {
+            margin-right: $Base / 2;
+            min-height: $Base * 1.5;
+            min-width: $Base * 1.5;
           }
         }
 
