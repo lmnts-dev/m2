@@ -17,6 +17,11 @@
           text-align: center;
         }
       }
+      @media (max-width: $BaseMediaTiny) {
+        svg {
+          width: $Base * 5;
+        }
+      }
 
       .block:first-child {
         align-self: flex-start;

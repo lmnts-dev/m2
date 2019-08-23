@@ -1392,6 +1392,12 @@ header .inner img {
   }
 }
 
+@media (max-width: 530px) {
+  header .inner img {
+    margin-left: 20px;
+  }
+}
+
 header .inner img.large {
   margin-top: 0;
   max-width: 300px;
@@ -1415,6 +1421,16 @@ header .inner img.large {
 @media (max-width: 750px) {
   header .inner img.large {
     max-width: 200px;
+  }
+}
+
+@media (max-width: 530px) {
+  header .inner img.large {
+    margin-top: 5px;
+    max-width: 160px;
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
   }
 }
 
@@ -1493,6 +1509,13 @@ header .inner .cta-button {
   }
 }
 
+@media (max-width: 530px) {
+  header .inner .cta-button {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 header .inner .cta-button:hover {
   background-color: #295ec3;
 }
@@ -1534,6 +1557,7 @@ footer .disclaimer-small {
   footer .block:first-of-type {
     margin: 0 auto;
     max-width: 400px;
+    padding-right: 0 !important;
   }
 }
 
@@ -1566,7 +1590,9 @@ footer .block:last-of-type {
 @media (max-width: 1024px) {
   footer .block:last-of-type {
     margin-top: 40px;
+    min-width: auto;
     padding: 0 !important;
+    width: 100%;
   }
 }
 
@@ -1722,14 +1748,15 @@ ol > li:before {
 
 .team-slider {
   background-color: #fff;
+  height: 100vh;
   left: 0;
-  min-height: 100vh;
   opacity: 0;
+  overflow-y: auto;
   pointer-events: none;
   position: fixed;
   top: 0;
-  -o-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
   width: 100vw;
   z-index: 950;
@@ -1783,6 +1810,7 @@ ol > li:before {
     -ms-flex-direction: row;
     flex-direction: row;
     left: 40px;
+    position: fixed;
     top: 20px;
   }
 }
@@ -1861,6 +1889,7 @@ ol > li:before {
 
 @media (max-width: 750px) {
   .team-slider .inner .exit {
+    position: fixed;
     right: 40px;
     top: 40px;
   }
@@ -1880,6 +1909,16 @@ ol > li:before {
 @media (max-width: 750px) {
   .team-slider .inner .container {
     padding-left: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .team-slider .inner .container .slide .row,
+  .team-slider .inner .container .slide .arrows .prev,
+  .team-slider .inner .arrows .container .slide .prev,
+  .team-slider .inner .container .slide .arrows .next,
+  .team-slider .inner .arrows .container .slide .next {
+    display: block;
   }
 }
 
@@ -1926,6 +1965,10 @@ ol > li:before {
   .team-slider .inner .arrows .container .slide .next .block:first-of-type {
     margin-right: 30px;
   }
+}
+
+.team-slider .inner .container .slide .bio {
+  padding-bottom: 80px;
 }
 
 .team-slider .inner .container .slide .bio p,
@@ -2014,6 +2057,12 @@ ol .team-slider .inner .container .slide .bio li {
 
   .anchor-map .inner .container .block:last-of-type {
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .anchor-map .inner .container .block {
+    padding-right: 0;
   }
 }
 
@@ -2367,6 +2416,12 @@ ol .team-slider .inner .container .slide .bio li {
   }
 }
 
+@media (max-width: 530px) {
+  .process .inner .container svg {
+    width: 200px;
+  }
+}
+
 .process .inner .container .block:first-child {
   align-self: flex-start;
   -webkit-box-flex: 0;
@@ -2460,7 +2515,14 @@ ol .team-slider .inner .container .slide .bio li {
 
 @media (max-width: 750px) {
   .team .inner .container h2 {
+    padding-left: 20px;
     text-align: center;
+  }
+}
+
+@media (max-width: 530px) {
+  .team .inner .container h2 {
+    margin-top: 20px;
   }
 }
 
@@ -2483,6 +2545,7 @@ ol .team .inner .container h2 ~ li {
   ul .team .inner .container h2 ~ li,
   .team .inner .container ol h2 ~ li,
   ol .team .inner .container h2 ~ li {
+    padding-left: 20px;
     text-align: center;
   }
 }
@@ -2530,6 +2593,7 @@ ol .team .inner .container h2 ~ li {
   .team .team-slider .inner .arrows .container .content .next,
   .team-slider .team .inner .arrows .container .content .next {
     display: block;
+    padding-left: 20px;
     padding-top: 40px;
   }
 }
@@ -2633,7 +2697,7 @@ ol .team .inner .container h2 ~ li {
   .team-slider .team .inner .arrows .container .content .next .block:after {
     bottom: 60px !important;
     content: '';
-    left: calc(calc(calc(100vw - 100%) / -2) + 20px);
+    left: calc(calc(calc(100vw - 100%) / -2) + 11.4285714286px);
   }
 }
 
@@ -2753,14 +2817,15 @@ ol .team .inner .container h2 ~ li {
 .contact-modal {
   background-color: #295ec3;
   color: #fff;
+  height: 100vh;
   left: 0;
-  min-height: 100vh;
   opacity: 0;
+  overflow-y: auto;
   pointer-events: none;
   position: fixed;
   top: 0;
-  -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
   width: 100vw;
   z-index: 950;
@@ -2781,11 +2846,36 @@ ol .team .inner .container h2 ~ li {
   position: relative;
 }
 
+@media (max-width: 530px) {
+  .contact-modal .inner {
+    padding-top: 40px;
+  }
+}
+
 .contact-modal .inner .exit {
   position: absolute;
   right: 0;
   top: 40px;
   z-index: 999;
+}
+
+@media (max-width: 750px) {
+  .contact-modal .inner .exit {
+    position: fixed;
+    right: 40px;
+  }
+
+  .contact-modal .inner .exit svg {
+    max-height: 20px;
+    max-width: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .contact-modal .inner .exit {
+    right: 20px;
+    top: 20px;
+  }
 }
 
 .contact-modal .inner .exit g {
@@ -2795,6 +2885,12 @@ ol .team .inner .container h2 ~ li {
 .contact-modal .inner:after {
   left: calc(calc(100vw - 880px) / -2);
   opacity: 0.5;
+}
+
+@media (max-width: 750px) {
+  .contact-modal .inner:after {
+    left: 0;
+  }
 }
 
 .contact-modal .inner h2 {
@@ -2813,7 +2909,20 @@ ol .contact-modal .inner li {
   padding: 0 40px;
 }
 
+@media (max-width: 530px) {
+  .contact-modal .inner p,
+  .contact-modal .inner input,
+  .contact-modal .inner textarea,
+  .contact-modal .inner ul li,
+  ul .contact-modal .inner li,
+  .contact-modal .inner ol li,
+  ol .contact-modal .inner li {
+    padding: 0;
+  }
+}
+
 .contact-modal .inner form {
+  margin-bottom: 80px;
   position: relative;
   width: 100%;
   z-index: 2;

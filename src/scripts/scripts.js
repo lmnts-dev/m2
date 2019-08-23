@@ -7,6 +7,7 @@ let sliderContainer = $('#team-slider');
 $( document ).ready(function() {
   slider.slick({
     arrows: false,
+    adaptiveHeight: true,
   });
 });
 

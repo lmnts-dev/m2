@@ -22,13 +22,18 @@
       h2 {
         margin: 0 0 $Base / 4 0;
         @media (max-width: $BaseMediaSm) {
+          padding-left: $Base / 2;
           text-align: center;
+        }
+        @media (max-width: $BaseMediaTiny) {
+          margin-top: $Base / 2;
         }
 
         ~p {
           margin: 0 auto;
           max-width: 520px;
           @media (max-width: $BaseMediaSm) {
+            padding-left: $Base / 2;
             text-align: center;
           }
         }
@@ -53,6 +58,7 @@
           z-index: 2;
           @media (max-width: $BaseMediaSm) {
             display: block;
+            padding-left: $Base / 2;
             padding-top: $Base;
           }
 
@@ -90,7 +96,7 @@
               &:after {
                 bottom: $Base * 1.5 !important;
                 content: '';
-                left: calc(calc(calc( 100vw - 100%) / -2) + #{$Base / 2});
+                left: calc(calc(calc( 100vw - 100%) / -2) + #{$Base / 3.5});
               }
             }
 

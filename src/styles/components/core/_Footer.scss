@@ -28,6 +28,7 @@ footer {
     @media (max-width: $BaseMediaMd) {
       margin: 0 auto;
       max-width: $Base * 10;
+      padding-right: 0 !important;
     }
 
     p {
@@ -42,7 +43,9 @@ footer {
     min-width: $Base * 10;
     @media (max-width: $BaseMediaMd) {
       margin-top: $Base;
+      min-width: auto;
       padding: 0 !important;
+      width: 100%;
     }
   }
 

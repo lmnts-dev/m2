@@ -1,9 +1,10 @@
 .contact-modal {
   background-color: $ClrNight;
   color: $ClrWhite;
+  height: 100vh;
   left: 0;
-  min-height: 100vh;
   opacity: 0;
+  overflow-y: auto;
   pointer-events: none;
   position: fixed;
   top: 0;
@@ -27,12 +28,30 @@
     max-width: $Base * 22;
     padding-top: $Base * 2;
     position: relative;
+    @media (max-width: $BaseMediaTiny) {
+      padding-top: $Base;
+    }
 
     .exit {
       position: absolute;
       right: 0;
       top: $Base;
       z-index: 999;
+
+      @media (max-width: $BaseMediaSm) {
+        position: fixed;
+        right: $Base;
+          
+        svg {
+          max-height: $Base / 2;
+          max-width: $Base / 2;
+        }
+      }
+
+      @media (max-width: $BaseMediaTiny) {
+        right: $Base / 2;
+        top: $Base / 2;
+      }
 
       g {
         fill: rgba($ClrWhite, 0.5);
@@ -43,6 +62,9 @@
       @extend .button-line-styles;
       left: calc(calc(100vw - #{$Base * 22}) / -2);
       opacity: 0.5;
+      @media (max-width: $BaseMediaSm) {
+        left: 0;
+      }
     }
 
     h2 {
@@ -53,9 +75,13 @@
     p {
       margin-bottom: $Base;
       padding: 0 $Base;
+      @media (max-width: $BaseMediaTiny) {
+        padding: 0;
+      }
     }
 
     form {
+      margin-bottom: $Base * 2;
       position: relative;
       width: 100%;
       z-index: 2;
