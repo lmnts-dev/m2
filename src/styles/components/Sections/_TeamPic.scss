@@ -1,10 +1,17 @@
 .team-pic {
   .inner {
-    padding: 0;
+    padding: 50% 0 0;
+    
 
     .container {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+
       .image-container {
-        padding-top: 50%;
+        
         width: 100%;
       }
     }

@@ -24,9 +24,11 @@
                             <div class="txt-clr-night h5">
                                 {{ inner-member.title }}
                             </div>
-                            <a href="{{ inner-member.linkedin }}">
-                                {% include linkedIn.html %}
-                            </a>
+                            {% if inner-member.linkedIn %}
+                                <a href="{{ inner-member.linkedin }}">
+                                    {% include linkedIn.html %}
+                                </a>
+                            {% endif %}
                         </div>
                     </div>
                     <div class="bio">

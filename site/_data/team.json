@@ -18,7 +18,6 @@
     {
         "name": "Saul Reed",
         "title": "CTO",
-        "linkedIn" : "https://www.linkedin.com",
         "md": false,
         "image": "/assets/images/saul.jpg",
         "bio": "<p>Saul is machine learning and UX technologist. He received his B.S. and M.S. degrees from the University of Nevada, Reno. Presently, he's a Ph.D. candidate in the Department of Computer Science and Engineering at UNR with an emphasis on machine learning.</p><p>Utilizing the latest advances as well as a culmination of technologies, Saul architected the web services and proprietary tools used in the consumption of M2 Medical Intelligence's exposed interfaces and systems. As such, these robust systems are able to digest structured data, ensuring accurate and detailed analyses.</p>"

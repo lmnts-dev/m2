@@ -53,9 +53,11 @@
         width: 100%;
 
         .row {
+          align-items: stretch;
           padding-top: $Base * 2;
           position: relative;
           z-index: 2;
+          
           @media (max-width: $BaseMediaSm) {
             display: block;
             padding-left: $Base / 2;
