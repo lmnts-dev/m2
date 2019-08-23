@@ -40,7 +40,7 @@ header {
 
       &.large {
         margin-top: 0;
-        max-width: $Base * 7.5;
+        max-width: $Base * 6.5;
         transform: translateY( $Base / 2 );
         transform-origin: top left;
         @media (max-width: $BaseMediaMd) {
