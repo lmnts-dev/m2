@@ -136,10 +136,10 @@ a:hover {
 abbr[title] {
   border-bottom: none;
   /* 1 */
-  text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
+  text-decoration: underline;
   /* 2 */
 }
 
@@ -593,8 +593,8 @@ textarea {
   object-fit: cover;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 100%;
 }
@@ -652,8 +652,8 @@ a {
 .exit {
   border-radius: 50%;
   cursor: pointer;
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1290,8 +1290,8 @@ button:hover,
 .btn:hover {
   -webkit-box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.3);
   box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.3);
-  -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
 }
 
@@ -1348,8 +1348,8 @@ header {
   position: fixed;
   right: 0;
   top: 0;
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
   width: 100vw;
   z-index: 900;
@@ -1428,8 +1428,8 @@ header .inner img.large {
   header .inner img.large {
     margin-top: 5px;
     max-width: 160px;
-    -webkit-transform: none;
     -ms-transform: none;
+    -webkit-transform: none;
     transform: none;
   }
 }
@@ -1490,8 +1490,8 @@ header .inner .cta-button {
   font-size: 15px;
   margin: 0;
   padding: 26.6666666667px 60px;
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1762,6 +1762,11 @@ ol > li:before {
   z-index: 950;
 }
 
+.team-slider .slick-slide {
+  border: 0;
+  outline: 0;
+}
+
 .team-slider.visible-slider {
   opacity: 1;
   pointer-events: all;
@@ -1804,8 +1809,12 @@ ol > li:before {
   .team-slider .inner .arrows {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-box;
+<<<<<<< HEAD
+    display: -ms-flexbox;
+=======
+>>>>>>> 61ac98b1447cec9e9b02b27105508f4ba9cd658c
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -1827,9 +1836,15 @@ ol > li:before {
   height: 80px;
   justify-content: center;
   margin-bottom: 20px;
+<<<<<<< HEAD
   -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
+=======
+  transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+>>>>>>> 61ac98b1447cec9e9b02b27105508f4ba9cd658c
   width: 80px;
 }
 
@@ -2047,8 +2062,12 @@ ol .team-slider .inner .container .slide .bio li {
   .anchor-map .inner .container .block {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-box;
+<<<<<<< HEAD
+    display: -ms-flexbox;
+=======
+>>>>>>> 61ac98b1447cec9e9b02b27105508f4ba9cd658c
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -2616,6 +2635,9 @@ ol .team .inner .container h2 ~ li {
 .team-slider .team .inner .container .content .arrows .next,
 .team .team-slider .inner .arrows .container .content .next,
 .team-slider .team .inner .arrows .container .content .next {
+  align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   padding-top: 80px;
   position: relative;
   z-index: 2;
@@ -2845,11 +2867,18 @@ ol .team .inner .container h2 ~ li {
 }
 
 .team-pic .inner {
-  padding: 0;
+  padding: 50% 0 0;
+}
+
+.team-pic .inner .container {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .team-pic .inner .container .image-container {
-  padding-top: 50%;
   width: 100%;
 }
 
@@ -2863,8 +2892,8 @@ ol .team .inner .container h2 ~ li {
   pointer-events: none;
   position: fixed;
   top: 0;
-  -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
   width: 100vw;
   z-index: 950;

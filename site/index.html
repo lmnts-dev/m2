@@ -100,9 +100,11 @@ title: Home
                   <div class="title">
                     {{ member.title }}
                   </div>
-                  <a href="{{ member.linkedIn }}" target="_blank">
-                      {% include linkedIn.html %}
-                  </a>
+                  {% if member.linkedIn %}
+                    <a href="{{ member.linkedIn }}" target="_blank">
+                        {% include linkedIn.html %}
+                    </a>
+                  {% endif %}
                 </div>
               </div>
             {% endfor %}

@@ -13,6 +13,10 @@
   @extend .padding-top-none;
   @extend .padding-bottom-none;
 
+  .slick-slide { border: 0;
+    outline: 0;
+  }
+
   &.visible-slider {
     opacity: 1;
     pointer-events: all;

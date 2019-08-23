@@ -4,7 +4,11 @@
  <title>Lanyon</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
+<<<<<<< HEAD
  <updated>2019-08-23T18:49:56-04:00</updated>
+=======
+ <updated>2019-08-23T14:45:25-07:00</updated>
+>>>>>>> 61ac98b1447cec9e9b02b27105508f4ba9cd658c
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
