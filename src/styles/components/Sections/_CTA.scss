@@ -5,6 +5,9 @@
     .container {
       padding-left: 0;
       position: relative;
+      @media (max-width: $BaseMediaSm) {
+        display: block;
+      }
 
       &:after {
         @extend .button-line-styles;
@@ -12,11 +15,17 @@
 
       h2 {
         margin: 0;
+        @media (max-width: $BaseMediaSm) {
+          margin-top: $Base;
+        }
       }
 
       .block:first-child {
         align-self: flex-start;
         flex: 0;
+        @media (max-width: $BaseMediaSm) {
+          display: inline-block;
+        }
 
         .anchor {
           color: $ClrWhite;
@@ -29,6 +38,9 @@
         position: relative;
         text-align: center;
         z-index: 2;
+        @media (max-width: $BaseMediaSm) {
+          padding: 0 0 0 $Base / 2; 
+        }
       }
       
     }

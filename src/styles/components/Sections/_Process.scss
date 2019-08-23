@@ -23,6 +23,7 @@
         flex: 0;
         @media (max-width: $BaseMediaSm) {
           display: inline-block;
+          padding-left: 0;
           text-align: left;
         }
 

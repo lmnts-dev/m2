@@ -25,6 +25,10 @@ section, footer, header {
     padding-bottom: $Base * 2;
     padding-top: $Base * 2;
   }
+  @media (max-width: $BaseMediaSm){
+    padding-bottom: $Base * 1.5;
+    padding-top: $Base * 1.5;
+  }
 
   &:after {
     @extend .border-styles;
@@ -44,6 +48,9 @@ section, footer, header {
     @media( max-width: $BaseMediaMd ){
       padding-bottom: $Base;
     }
+    @media (max-width: $BaseMediaSm){
+      padding-bottom: $Base * 0.75;
+    }
   }
 
   &.padding-bottom-none {
@@ -54,6 +61,9 @@ section, footer, header {
     padding-top: $Base * 1.5;
     @media( max-width: $BaseMediaMd ){
       padding-top: $Base;
+    }
+    @media (max-width: $BaseMediaSm){
+      padding-top: $Base * 0.75;
     }
   }
 
