@@ -593,8 +593,8 @@ textarea {
   object-fit: cover;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 100%;
 }
@@ -672,8 +672,8 @@ a {
 
 .exit:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -1188,8 +1188,8 @@ header .team-slider .team .inner .arrows .container .content .next .block .info 
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-align: center;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1412,8 +1412,8 @@ header .inner img.large {
 @media (max-width: 1024px) {
   header .inner img.large {
     max-width: 240px;
-    -webkit-transform: translateY(13.3333333333px);
     -ms-transform: translateY(13.3333333333px);
+    -webkit-transform: translateY(13.3333333333px);
     transform: translateY(13.3333333333px);
   }
 }
@@ -1474,8 +1474,8 @@ header .inner nav li:before {
 
 header .inner nav li a {
   color: #45484b;
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1490,8 +1490,8 @@ header .inner .cta-button {
   font-size: 15px;
   margin: 0;
   padding: 26.6666666667px 60px;
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1661,8 +1661,8 @@ footer ul li:before {
 
 footer ul li a {
   color: #45484b;
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1755,11 +1755,16 @@ ol > li:before {
   pointer-events: none;
   position: fixed;
   top: 0;
-  -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
   width: 100vw;
   z-index: 950;
+}
+
+.team-slider .slick-slide {
+  border: 0;
+  outline: 0;
 }
 
 .team-slider.visible-slider {
@@ -1804,9 +1809,9 @@ ol > li:before {
   .team-slider .inner .arrows {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
+    display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
     left: 40px;
@@ -1827,8 +1832,8 @@ ol > li:before {
   height: 80px;
   justify-content: center;
   margin-bottom: 20px;
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
   width: 80px;
 }
@@ -2047,9 +2052,9 @@ ol .team-slider .inner .container .slide .bio li {
   .anchor-map .inner .container .block {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
+    display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
     margin-bottom: 40px;
@@ -2075,12 +2080,12 @@ ol .team-slider .inner .container .slide .bio li {
   -webkit-box-pack: center;
   -webkit-box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
   box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
-  display: -ms-flexbox;
-  display: flex;
   display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
   -ms-flex-align: center;
-  flex-direction: row;
   -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-pack: center;
   height: 80px;
   justify-content: center;
@@ -2124,8 +2129,8 @@ ol .team-slider .inner .container .slide .bio li {
 .anchor-map .team-slider .inner .arrows .container .block .content-container .next .h5,
 .team-slider .anchor-map .inner .arrows .container .block .content-container .next .h5 {
   margin: 0;
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -2139,8 +2144,8 @@ ol .team-slider .inner .container .slide .bio li {
 .anchor-map .team-slider .inner .arrows .container .block .content-container .next svg,
 .team-slider .anchor-map .inner .arrows .container .block .content-container .next svg {
   margin-right: 10px;
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -2228,9 +2233,9 @@ ol .team-slider .inner .container .slide .bio li {
 }
 
 .cta {
+  background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #69a8ff), color-stop(#69a8ff), color-stop(70%, #88baff), to(#88baff));
   background: -o-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
-  background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
 }
 
 .cta .inner .container {
@@ -2429,9 +2434,9 @@ ol .team-slider .inner .container .slide .bio li {
 }
 
 .process {
+  background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #69a8ff), color-stop(#69a8ff), color-stop(70%, #88baff), to(#88baff));
   background: -o-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
-  background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
 }
 
 .process .inner .container {
