@@ -626,7 +626,7 @@ main {
 }
 
 .txt-clr-sky {
-  color: #2f86ff !important;
+  color: #1b72eb !important;
 }
 
 .txt-clr-night {
@@ -688,7 +688,7 @@ a {
 }
 
 .exit.blue-icon:hover {
-  background-color: rgba(47, 134, 255, 0.1);
+  background-color: rgba(27, 114, 235, 0.1);
 }
 
 .exit.blue-icon:hover g {
@@ -702,7 +702,7 @@ a {
 }
 
 .linkedin-icon:hover path {
-  fill: #2f86ff;
+  fill: #1b72eb;
 }
 
 body,
@@ -980,6 +980,15 @@ header {
   }
 }
 
+@media (max-width: 750px) {
+  section,
+  footer,
+  header {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+
 section:after,
 footer:after,
 header:after {
@@ -1009,6 +1018,14 @@ header.padding-bottom-half {
   }
 }
 
+@media (max-width: 750px) {
+  section.padding-bottom-half,
+  footer.padding-bottom-half,
+  header.padding-bottom-half {
+    padding-bottom: 30px;
+  }
+}
+
 section.padding-bottom-none,
 section.team-slider,
 section.contact-modal,
@@ -1032,6 +1049,14 @@ header.padding-top-half {
   footer.padding-top-half,
   header.padding-top-half {
     padding-top: 40px;
+  }
+}
+
+@media (max-width: 750px) {
+  section.padding-top-half,
+  footer.padding-top-half,
+  header.padding-top-half {
+    padding-top: 30px;
   }
 }
 
@@ -1274,6 +1299,15 @@ button:hover,
 .cta .inner .container:after,
 .expert-systems .inner .container:after,
 .team .inner .container:after,
+.team .inner .container .content .row .block:after,
+.team .team-slider .inner .container .content .arrows .prev .block:after,
+.team-slider .team .inner .container .content .arrows .prev .block:after,
+.team .team-slider .inner .arrows .container .content .prev .block:after,
+.team-slider .team .inner .arrows .container .content .prev .block:after,
+.team .team-slider .inner .container .content .arrows .next .block:after,
+.team-slider .team .inner .container .content .arrows .next .block:after,
+.team .team-slider .inner .arrows .container .content .next .block:after,
+.team-slider .team .inner .arrows .container .content .next .block:after,
 .contact-modal .inner:after {
   background-color: #d7e3f2;
   bottom: 27px;
@@ -1290,6 +1324,15 @@ button:hover,
   .cta .inner .container:after,
   .expert-systems .inner .container:after,
   .team .inner .container:after,
+  .team .inner .container .content .row .block:after,
+  .team .team-slider .inner .container .content .arrows .prev .block:after,
+  .team-slider .team .inner .container .content .arrows .prev .block:after,
+  .team .team-slider .inner .arrows .container .content .prev .block:after,
+  .team-slider .team .inner .arrows .container .content .prev .block:after,
+  .team .team-slider .inner .container .content .arrows .next .block:after,
+  .team-slider .team .inner .container .content .arrows .next .block:after,
+  .team .team-slider .inner .arrows .container .content .next .block:after,
+  .team-slider .team .inner .arrows .container .content .next .block:after,
   .contact-modal .inner:after {
     bottom: 22.95px;
   }
@@ -1343,6 +1386,18 @@ header .inner img {
   transition-duration: 0.25s;
 }
 
+@media (max-width: 750px) {
+  header .inner img {
+    max-width: 160px;
+  }
+}
+
+@media (max-width: 530px) {
+  header .inner img {
+    margin-left: 20px;
+  }
+}
+
 header .inner img.large {
   margin-top: 0;
   max-width: 300px;
@@ -1360,6 +1415,22 @@ header .inner img.large {
     -webkit-transform: translateY(13.3333333333px);
     -ms-transform: translateY(13.3333333333px);
     transform: translateY(13.3333333333px);
+  }
+}
+
+@media (max-width: 750px) {
+  header .inner img.large {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 530px) {
+  header .inner img.large {
+    margin-top: 5px;
+    max-width: 160px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
   }
 }
 
@@ -1413,7 +1484,7 @@ header .inner nav li a:hover {
 }
 
 header .inner .cta-button {
-  background-color: #2f86ff;
+  background-color: #1b72eb;
   color: #fff;
   cursor: pointer;
   font-size: 15px;
@@ -1430,6 +1501,21 @@ header .inner .cta-button {
   }
 }
 
+@media (max-width: 750px) {
+  header .inner .cta-button {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 530px) {
+  header .inner .cta-button {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 header .inner .cta-button:hover {
   background-color: #295ec3;
 }
@@ -1440,8 +1526,39 @@ footer {
   box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
 }
 
+@media (max-width: 1024px) {
+  footer .row,
+  footer .team-slider .inner .arrows .prev,
+  .team-slider .inner .arrows footer .prev,
+  footer .team-slider .inner .arrows .next,
+  .team-slider .inner .arrows footer .next {
+    display: block;
+    text-align: center;
+  }
+}
+
 footer.no-border:after {
   content: none;
+}
+
+footer .disclaimer-small {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  footer .disclaimer-small {
+    display: block;
+    font-size: 12px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  footer .block:first-of-type {
+    margin: 0 auto;
+    max-width: 400px;
+    padding-right: 0 !important;
+  }
 }
 
 footer .block:first-of-type p,
@@ -1454,8 +1571,29 @@ ol footer .block:first-of-type li {
   margin-top: 20px;
 }
 
+@media (max-width: 1024px) {
+  footer .block:first-of-type p,
+  footer .block:first-of-type input,
+  footer .block:first-of-type textarea,
+  footer .block:first-of-type ul li,
+  ul footer .block:first-of-type li,
+  footer .block:first-of-type ol li,
+  ol footer .block:first-of-type li {
+    display: none;
+  }
+}
+
 footer .block:last-of-type {
   min-width: 400px;
+}
+
+@media (max-width: 1024px) {
+  footer .block:last-of-type {
+    margin-top: 40px;
+    min-width: auto;
+    padding: 0 !important;
+    width: 100%;
+  }
 }
 
 footer p,
@@ -1489,12 +1627,32 @@ footer ul {
   padding-top: 10px;
 }
 
+@media (max-width: 1024px) {
+  footer ul {
+    display: block;
+    margin-top: 0;
+  }
+}
+
 footer ul li {
   width: 65%;
 }
 
+@media (max-width: 1024px) {
+  footer ul li {
+    margin: 6.6666666667px 0;
+    width: 100%;
+  }
+}
+
 footer ul li:nth-of-type(even) {
   width: 35%;
+}
+
+@media (max-width: 1024px) {
+  footer ul li:nth-of-type(even) {
+    width: 100%;
+  }
 }
 
 footer ul li:before {
@@ -1590,9 +1748,10 @@ ol > li:before {
 
 .team-slider {
   background-color: #fff;
+  height: 100vh;
   left: 0;
-  min-height: 100vh;
   opacity: 0;
+  overflow-y: auto;
   pointer-events: none;
   position: fixed;
   top: 0;
@@ -1617,6 +1776,12 @@ ol > li:before {
   position: relative;
 }
 
+@media (max-width: 750px) {
+  .team-slider .inner {
+    padding-top: 100px;
+  }
+}
+
 .team-slider .inner:after {
   background-color: #d7e3f2;
   height: 100%;
@@ -1632,6 +1797,21 @@ ol > li:before {
 @media (max-width: 1024px) {
   .team-slider .inner .arrows {
     left: 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .team-slider .inner .arrows {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    left: 40px;
+    position: fixed;
+    top: 20px;
   }
 }
 
@@ -1668,6 +1848,13 @@ ol > li:before {
   }
 }
 
+@media (max-width: 750px) {
+  .team-slider .inner .arrows .prev,
+  .team-slider .inner .arrows .next {
+    margin-right: 10px;
+  }
+}
+
 .team-slider .inner .arrows .prev g,
 .team-slider .inner .arrows .next g {
   -webkit-transition-duration: 0.25s;
@@ -1700,9 +1887,38 @@ ol > li:before {
   z-index: 2;
 }
 
+@media (max-width: 750px) {
+  .team-slider .inner .exit {
+    position: fixed;
+    right: 40px;
+    top: 40px;
+  }
+
+  .team-slider .inner .exit svg {
+    max-height: 26.6666666667px;
+    max-width: 26.6666666667px;
+  }
+}
+
 @media (max-width: 1024px) {
   .team-slider .inner .container {
     padding-left: 50px;
+  }
+}
+
+@media (max-width: 750px) {
+  .team-slider .inner .container {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .team-slider .inner .container .slide .row,
+  .team-slider .inner .container .slide .arrows .prev,
+  .team-slider .inner .arrows .container .slide .prev,
+  .team-slider .inner .container .slide .arrows .next,
+  .team-slider .inner .arrows .container .slide .next {
+    display: block;
   }
 }
 
@@ -1749,6 +1965,10 @@ ol > li:before {
   .team-slider .inner .arrows .container .slide .next .block:first-of-type {
     margin-right: 30px;
   }
+}
+
+.team-slider .inner .container .slide .bio {
+  padding-bottom: 80px;
 }
 
 .team-slider .inner .container .slide .bio p,
@@ -1840,6 +2060,12 @@ ol .team-slider .inner .container .slide .bio li {
   }
 }
 
+@media (max-width: 750px) {
+  .anchor-map .inner .container .block {
+    padding-right: 0;
+  }
+}
+
 .anchor-map .inner .container .block .icon {
   align-items: center;
   border-radius: 50%;
@@ -1882,30 +2108,36 @@ ol .team-slider .inner .container .slide .bio li {
   }
 }
 
-.anchor-map .inner .container .block .row .h5,
-.anchor-map .team-slider .inner .container .block .arrows .prev .h5,
-.team-slider .anchor-map .inner .container .block .arrows .prev .h5,
-.anchor-map .team-slider .inner .arrows .container .block .prev .h5,
-.team-slider .anchor-map .inner .arrows .container .block .prev .h5,
-.anchor-map .team-slider .inner .container .block .arrows .next .h5,
-.team-slider .anchor-map .inner .container .block .arrows .next .h5,
-.anchor-map .team-slider .inner .arrows .container .block .next .h5,
-.team-slider .anchor-map .inner .arrows .container .block .next .h5 {
+@media (max-width: 750px) {
+  .anchor-map .inner .container .block .content-container {
+    width: calc(100% - 80px);
+  }
+}
+
+.anchor-map .inner .container .block .content-container .row .h5,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .prev .h5,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .prev .h5,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .prev .h5,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .prev .h5,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .next .h5,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .next .h5,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .next .h5,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .next .h5 {
   margin: 0;
   -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
-.anchor-map .inner .container .block .row svg,
-.anchor-map .team-slider .inner .container .block .arrows .prev svg,
-.team-slider .anchor-map .inner .container .block .arrows .prev svg,
-.anchor-map .team-slider .inner .arrows .container .block .prev svg,
-.team-slider .anchor-map .inner .arrows .container .block .prev svg,
-.anchor-map .team-slider .inner .container .block .arrows .next svg,
-.team-slider .anchor-map .inner .container .block .arrows .next svg,
-.anchor-map .team-slider .inner .arrows .container .block .next svg,
-.team-slider .anchor-map .inner .arrows .container .block .next svg {
+.anchor-map .inner .container .block .content-container .row svg,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .prev svg,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .prev svg,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .prev svg,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .prev svg,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .next svg,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .next svg,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .next svg,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .next svg {
   margin-right: 10px;
   -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
@@ -1913,81 +2145,81 @@ ol .team-slider .inner .container .slide .bio li {
 }
 
 @media (max-width: 1024px) {
-  .anchor-map .inner .container .block .row svg,
-  .anchor-map .team-slider .inner .container .block .arrows .prev svg,
-  .team-slider .anchor-map .inner .container .block .arrows .prev svg,
-  .anchor-map .team-slider .inner .arrows .container .block .prev svg,
-  .team-slider .anchor-map .inner .arrows .container .block .prev svg,
-  .anchor-map .team-slider .inner .container .block .arrows .next svg,
-  .team-slider .anchor-map .inner .container .block .arrows .next svg,
-  .anchor-map .team-slider .inner .arrows .container .block .next svg,
-  .team-slider .anchor-map .inner .arrows .container .block .next svg {
+  .anchor-map .inner .container .block .content-container .row svg,
+  .anchor-map .team-slider .inner .container .block .content-container .arrows .prev svg,
+  .team-slider .anchor-map .inner .container .block .content-container .arrows .prev svg,
+  .anchor-map .team-slider .inner .arrows .container .block .content-container .prev svg,
+  .team-slider .anchor-map .inner .arrows .container .block .content-container .prev svg,
+  .anchor-map .team-slider .inner .container .block .content-container .arrows .next svg,
+  .team-slider .anchor-map .inner .container .block .content-container .arrows .next svg,
+  .anchor-map .team-slider .inner .arrows .container .block .content-container .next svg,
+  .team-slider .anchor-map .inner .arrows .container .block .content-container .next svg {
     max-width: 20px;
     max-width: 20px;
   }
 }
 
-.anchor-map .inner .container .block .row svg g,
-.anchor-map .team-slider .inner .container .block .arrows .prev svg g,
-.team-slider .anchor-map .inner .container .block .arrows .prev svg g,
-.anchor-map .team-slider .inner .arrows .container .block .prev svg g,
-.team-slider .anchor-map .inner .arrows .container .block .prev svg g,
-.anchor-map .team-slider .inner .container .block .arrows .next svg g,
-.team-slider .anchor-map .inner .container .block .arrows .next svg g,
-.anchor-map .team-slider .inner .arrows .container .block .next svg g,
-.team-slider .anchor-map .inner .arrows .container .block .next svg g {
+.anchor-map .inner .container .block .content-container .row svg g,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .prev svg g,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .prev svg g,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .prev svg g,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .prev svg g,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .next svg g,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .next svg g,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .next svg g,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .next svg g {
   -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
-.anchor-map .inner .container .block .row:hover,
-.anchor-map .team-slider .inner .container .block .arrows .prev:hover,
-.team-slider .anchor-map .inner .container .block .arrows .prev:hover,
-.anchor-map .team-slider .inner .arrows .container .block .prev:hover,
-.team-slider .anchor-map .inner .arrows .container .block .prev:hover,
-.anchor-map .team-slider .inner .container .block .arrows .next:hover,
-.team-slider .anchor-map .inner .container .block .arrows .next:hover,
-.anchor-map .team-slider .inner .arrows .container .block .next:hover,
-.team-slider .anchor-map .inner .arrows .container .block .next:hover {
+.anchor-map .inner .container .block .content-container .row:hover,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .prev:hover,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .prev:hover,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .prev:hover,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .prev:hover,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .next:hover,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .next:hover,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .next:hover,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .next:hover {
   cursor: pointer;
 }
 
-.anchor-map .inner .container .block .row:hover .h5,
-.anchor-map .team-slider .inner .container .block .arrows .prev:hover .h5,
-.team-slider .anchor-map .inner .container .block .arrows .prev:hover .h5,
-.anchor-map .team-slider .inner .arrows .container .block .prev:hover .h5,
-.team-slider .anchor-map .inner .arrows .container .block .prev:hover .h5,
-.anchor-map .team-slider .inner .container .block .arrows .next:hover .h5,
-.team-slider .anchor-map .inner .container .block .arrows .next:hover .h5,
-.anchor-map .team-slider .inner .arrows .container .block .next:hover .h5,
-.team-slider .anchor-map .inner .arrows .container .block .next:hover .h5 {
-  color: #2f86ff;
+.anchor-map .inner .container .block .content-container .row:hover .h5,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .prev:hover .h5,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .prev:hover .h5,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .prev:hover .h5,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .prev:hover .h5,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .next:hover .h5,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .next:hover .h5,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .next:hover .h5,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .next:hover .h5 {
+  color: #1b72eb;
 }
 
-.anchor-map .inner .container .block .row:hover svg,
-.anchor-map .team-slider .inner .container .block .arrows .prev:hover svg,
-.team-slider .anchor-map .inner .container .block .arrows .prev:hover svg,
-.anchor-map .team-slider .inner .arrows .container .block .prev:hover svg,
-.team-slider .anchor-map .inner .arrows .container .block .prev:hover svg,
-.anchor-map .team-slider .inner .container .block .arrows .next:hover svg,
-.team-slider .anchor-map .inner .container .block .arrows .next:hover svg,
-.anchor-map .team-slider .inner .arrows .container .block .next:hover svg,
-.team-slider .anchor-map .inner .arrows .container .block .next:hover svg {
+.anchor-map .inner .container .block .content-container .row:hover svg,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .prev:hover svg,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .prev:hover svg,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .prev:hover svg,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .prev:hover svg,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .next:hover svg,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .next:hover svg,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .next:hover svg,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .next:hover svg {
   -webkit-transform: translateY(5px);
   -ms-transform: translateY(5px);
   transform: translateY(5px);
 }
 
-.anchor-map .inner .container .block .row:hover svg g,
-.anchor-map .team-slider .inner .container .block .arrows .prev:hover svg g,
-.team-slider .anchor-map .inner .container .block .arrows .prev:hover svg g,
-.anchor-map .team-slider .inner .arrows .container .block .prev:hover svg g,
-.team-slider .anchor-map .inner .arrows .container .block .prev:hover svg g,
-.anchor-map .team-slider .inner .container .block .arrows .next:hover svg g,
-.team-slider .anchor-map .inner .container .block .arrows .next:hover svg g,
-.anchor-map .team-slider .inner .arrows .container .block .next:hover svg g,
-.team-slider .anchor-map .inner .arrows .container .block .next:hover svg g {
+.anchor-map .inner .container .block .content-container .row:hover svg g,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .prev:hover svg g,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .prev:hover svg g,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .prev:hover svg g,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .prev:hover svg g,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .next:hover svg g,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .next:hover svg g,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .next:hover svg g,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .next:hover svg g {
   stroke: #45484b;
 }
 
@@ -2006,8 +2238,20 @@ ol .team-slider .inner .container .slide .bio li {
   position: relative;
 }
 
+@media (max-width: 750px) {
+  .cta .inner .container {
+    display: block;
+  }
+}
+
 .cta .inner .container h2 {
   margin: 0;
+}
+
+@media (max-width: 750px) {
+  .cta .inner .container h2 {
+    margin-top: 40px;
+  }
 }
 
 .cta .inner .container .block:first-child {
@@ -2016,6 +2260,12 @@ ol .team-slider .inner .container .slide .bio li {
   -ms-flex: 0;
   flex: 0;
   -ms-flex-item-align: start;
+}
+
+@media (max-width: 750px) {
+  .cta .inner .container .block:first-child {
+    display: inline-block;
+  }
 }
 
 .cta .inner .container .block:first-child .anchor,
@@ -2045,6 +2295,12 @@ ol .team-slider .inner .container .slide .bio li {
   position: relative;
   text-align: center;
   z-index: 2;
+}
+
+@media (max-width: 750px) {
+  .cta .inner .container .content {
+    padding: 0 0 0 20px;
+  }
 }
 
 .expert-systems {
@@ -2160,6 +2416,12 @@ ol .team-slider .inner .container .slide .bio li {
   }
 }
 
+@media (max-width: 530px) {
+  .process .inner .container svg {
+    width: 200px;
+  }
+}
+
 .process .inner .container .block:first-child {
   align-self: flex-start;
   -webkit-box-flex: 0;
@@ -2171,6 +2433,7 @@ ol .team-slider .inner .container .slide .bio li {
 @media (max-width: 750px) {
   .process .inner .container .block:first-child {
     display: inline-block;
+    padding-left: 0;
     text-align: left;
   }
 }
@@ -2229,12 +2492,38 @@ ol .team-slider .inner .container .slide .bio li {
   position: relative;
 }
 
+@media (max-width: 750px) {
+  .team .inner .container {
+    display: block;
+    text-align: left;
+  }
+}
+
 .team .inner .container:after {
   bottom: 60px !important;
 }
 
+@media (max-width: 750px) {
+  .team .inner .container:after {
+    content: none;
+  }
+}
+
 .team .inner .container h2 {
   margin: 0 0 10px;
+}
+
+@media (max-width: 750px) {
+  .team .inner .container h2 {
+    padding-left: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 530px) {
+  .team .inner .container h2 {
+    margin-top: 20px;
+  }
 }
 
 .team .inner .container h2 ~ p,
@@ -2248,12 +2537,31 @@ ol .team .inner .container h2 ~ li {
   max-width: 520px;
 }
 
-.team .inner .container .block:first-child {
+@media (max-width: 750px) {
+  .team .inner .container h2 ~ p,
+  .team .inner .container h2 ~ input,
+  .team .inner .container h2 ~ textarea,
+  .team .inner .container ul h2 ~ li,
+  ul .team .inner .container h2 ~ li,
+  .team .inner .container ol h2 ~ li,
+  ol .team .inner .container h2 ~ li {
+    padding-left: 20px;
+    text-align: center;
+  }
+}
+
+.team .inner .container .block.with-anchor {
   align-self: flex-start;
   -webkit-box-flex: 0;
   -ms-flex: 0;
   flex: 0;
   -ms-flex-item-align: start;
+}
+
+@media (max-width: 750px) {
+  .team .inner .container .block.with-anchor {
+    display: inline-block;
+  }
 }
 
 .team .inner .container .content {
@@ -2272,6 +2580,22 @@ ol .team .inner .container h2 ~ li {
   padding-top: 80px;
   position: relative;
   z-index: 2;
+}
+
+@media (max-width: 750px) {
+  .team .inner .container .content .row,
+  .team .team-slider .inner .container .content .arrows .prev,
+  .team-slider .team .inner .container .content .arrows .prev,
+  .team .team-slider .inner .arrows .container .content .prev,
+  .team-slider .team .inner .arrows .container .content .prev,
+  .team .team-slider .inner .container .content .arrows .next,
+  .team-slider .team .inner .container .content .arrows .next,
+  .team .team-slider .inner .arrows .container .content .next,
+  .team-slider .team .inner .arrows .container .content .next {
+    display: block;
+    padding-left: 20px;
+    padding-top: 40px;
+  }
 }
 
 .team .inner .container .content .row .block,
@@ -2295,6 +2619,18 @@ ol .team .inner .container h2 ~ li {
   transition-duration: 0.5s;
 }
 
+.team .inner .container .content .row .block:after,
+.team .team-slider .inner .container .content .arrows .prev .block:after,
+.team-slider .team .inner .container .content .arrows .prev .block:after,
+.team .team-slider .inner .arrows .container .content .prev .block:after,
+.team-slider .team .inner .arrows .container .content .prev .block:after,
+.team .team-slider .inner .container .content .arrows .next .block:after,
+.team-slider .team .inner .container .content .arrows .next .block:after,
+.team .team-slider .inner .arrows .container .content .next .block:after,
+.team-slider .team .inner .arrows .container .content .next .block:after {
+  content: none;
+}
+
 @media (max-width: 1024px) {
   .team .inner .container .content .row .block,
   .team .team-slider .inner .container .content .arrows .prev .block,
@@ -2306,6 +2642,62 @@ ol .team .inner .container h2 ~ li {
   .team .team-slider .inner .arrows .container .content .next .block,
   .team-slider .team .inner .arrows .container .content .next .block {
     margin: 0 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .team .inner .container .content .row .block,
+  .team .team-slider .inner .container .content .arrows .prev .block,
+  .team-slider .team .inner .container .content .arrows .prev .block,
+  .team .team-slider .inner .arrows .container .content .prev .block,
+  .team-slider .team .inner .arrows .container .content .prev .block,
+  .team .team-slider .inner .container .content .arrows .next .block,
+  .team-slider .team .inner .container .content .arrows .next .block,
+  .team .team-slider .inner .arrows .container .content .next .block,
+  .team-slider .team .inner .arrows .container .content .next .block {
+    margin: 0 auto 20px;
+    max-width: 280px;
+    position: relative;
+    text-align: center;
+  }
+
+  .team .inner .container .content .row .block:first-of-type,
+  .team .team-slider .inner .container .content .arrows .prev .block:first-of-type,
+  .team-slider .team .inner .container .content .arrows .prev .block:first-of-type,
+  .team .team-slider .inner .arrows .container .content .prev .block:first-of-type,
+  .team-slider .team .inner .arrows .container .content .prev .block:first-of-type,
+  .team .team-slider .inner .container .content .arrows .next .block:first-of-type,
+  .team-slider .team .inner .container .content .arrows .next .block:first-of-type,
+  .team .team-slider .inner .arrows .container .content .next .block:first-of-type,
+  .team-slider .team .inner .arrows .container .content .next .block:first-of-type {
+    display: block;
+    margin-left: auto !important;
+  }
+
+  .team .inner .container .content .row .block:last-of-type,
+  .team .team-slider .inner .container .content .arrows .prev .block:last-of-type,
+  .team-slider .team .inner .container .content .arrows .prev .block:last-of-type,
+  .team .team-slider .inner .arrows .container .content .prev .block:last-of-type,
+  .team-slider .team .inner .arrows .container .content .prev .block:last-of-type,
+  .team .team-slider .inner .container .content .arrows .next .block:last-of-type,
+  .team-slider .team .inner .container .content .arrows .next .block:last-of-type,
+  .team .team-slider .inner .arrows .container .content .next .block:last-of-type,
+  .team-slider .team .inner .arrows .container .content .next .block:last-of-type {
+    margin-right: auto !important;
+  }
+
+  .team .inner .container .content .row .block:after,
+  .team .team-slider .inner .container .content .arrows .prev .block:after,
+  .team-slider .team .inner .container .content .arrows .prev .block:after,
+  .team .team-slider .inner .arrows .container .content .prev .block:after,
+  .team-slider .team .inner .arrows .container .content .prev .block:after,
+  .team .team-slider .inner .container .content .arrows .next .block:after,
+  .team-slider .team .inner .container .content .arrows .next .block:after,
+  .team .team-slider .inner .arrows .container .content .next .block:after,
+  .team-slider .team .inner .arrows .container .content .next .block:after {
+    bottom: 60px !important;
+    content: '';
+    left: calc(calc(calc(100vw - 100%) / -2) + 11.4285714286px);
   }
 }
 
@@ -2372,6 +2764,21 @@ ol .team .inner .container h2 ~ li {
   padding: 10px;
 }
 
+@media (max-width: 750px) {
+  .team .inner .container .content .row .block .info,
+  .team .team-slider .inner .container .content .arrows .prev .block .info,
+  .team-slider .team .inner .container .content .arrows .prev .block .info,
+  .team .team-slider .inner .arrows .container .content .prev .block .info,
+  .team-slider .team .inner .arrows .container .content .prev .block .info,
+  .team .team-slider .inner .container .content .arrows .next .block .info,
+  .team-slider .team .inner .container .content .arrows .next .block .info,
+  .team .team-slider .inner .arrows .container .content .next .block .info,
+  .team-slider .team .inner .arrows .container .content .next .block .info {
+    position: relative;
+    z-index: 3;
+  }
+}
+
 .team .inner .container .content .row .block .info .title,
 .team .team-slider .inner .container .content .arrows .prev .block .info .title,
 .team-slider .team .inner .container .content .arrows .prev .block .info .title,
@@ -2410,9 +2817,10 @@ ol .team .inner .container h2 ~ li {
 .contact-modal {
   background-color: #295ec3;
   color: #fff;
+  height: 100vh;
   left: 0;
-  min-height: 100vh;
   opacity: 0;
+  overflow-y: auto;
   pointer-events: none;
   position: fixed;
   top: 0;
@@ -2438,11 +2846,36 @@ ol .team .inner .container h2 ~ li {
   position: relative;
 }
 
+@media (max-width: 530px) {
+  .contact-modal .inner {
+    padding-top: 40px;
+  }
+}
+
 .contact-modal .inner .exit {
   position: absolute;
   right: 0;
   top: 40px;
   z-index: 999;
+}
+
+@media (max-width: 750px) {
+  .contact-modal .inner .exit {
+    position: fixed;
+    right: 40px;
+  }
+
+  .contact-modal .inner .exit svg {
+    max-height: 20px;
+    max-width: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .contact-modal .inner .exit {
+    right: 20px;
+    top: 20px;
+  }
 }
 
 .contact-modal .inner .exit g {
@@ -2452,6 +2885,12 @@ ol .team .inner .container h2 ~ li {
 .contact-modal .inner:after {
   left: calc(calc(100vw - 880px) / -2);
   opacity: 0.5;
+}
+
+@media (max-width: 750px) {
+  .contact-modal .inner:after {
+    left: 0;
+  }
 }
 
 .contact-modal .inner h2 {
@@ -2470,7 +2909,20 @@ ol .contact-modal .inner li {
   padding: 0 40px;
 }
 
+@media (max-width: 530px) {
+  .contact-modal .inner p,
+  .contact-modal .inner input,
+  .contact-modal .inner textarea,
+  .contact-modal .inner ul li,
+  ul .contact-modal .inner li,
+  .contact-modal .inner ol li,
+  ol .contact-modal .inner li {
+    padding: 0;
+  }
+}
+
 .contact-modal .inner form {
+  margin-bottom: 80px;
   position: relative;
   width: 100%;
   z-index: 2;

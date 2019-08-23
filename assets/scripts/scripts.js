@@ -8,7 +8,8 @@ var sliderContainer = $('#team-slider');
 
 $(document).ready(function () {
   slider.slick({
-    arrows: false
+    arrows: false,
+    adaptiveHeight: true
   });
 });
 
