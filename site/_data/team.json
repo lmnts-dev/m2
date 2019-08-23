@@ -2,7 +2,7 @@
     {
       "name": "James Wilson",
       "title": "Founder / CEO",
-      "linkedIn" : "/",
+      "linkedIn" : "https://www.linkedin.com/in/jamesmwilsonv/",
       "md": true,
       "image": "/assets/images/james.jpg",
       "bio": "<p>Dr. James Wilson is the CEO and Founder of M2 Medical Intelligence, Inc. He is the Director of the Nevada Medical Intelligence Center at the University of Nevada-Reno and Principle Investigator of Project ARIS. Dr. Wilson is a board-certified, practicing pediatrician who specializes in operational medical intelligence with a focus on the anticipation, detection, and warning of infectious disease crises.</p><p>He has led the creation of several of the most powerful systems in the world used for anticipation and detection of infectious disease crises and disasters. Dr. Wilson was the first operations chief of the Department of Homeland Security's National Biosurveillance Integration Center and worked with the Intelligence Community during the birth of formal health security intelligence in the mid-2000s.</p><p>Dr. Wilson led the private intelligence teams that provided warning of the 2009 H1N1 influenza pandemic, discovery of the United Nations as the source of the 2010 Cholera disaster in Haiti, and several investigations of alleged and confirmed biological weapon deployments. Dr. Wilson is a strong advocate for effective and accountable global health security intelligence and the need for credible and balanced threat assessments.</p>"
@@ -10,7 +10,7 @@
     {
         "name": "David Maine",
         "title": "COO / CFO",
-        "linkedIn" : "/",
+        "linkedIn" : "https://www.linkedin.com/in/david-maine-1190914b/",
         "md": false,
         "image": "/assets/images/david.jpg",
         "bio": "<p>David earned his master's degree in Economics from UNR (2014) and has been working in start-up business development since 2012 (DxDiscovery 2012, Strykagen co-founder 2013). These companies stem out of technologies developed by UNR medical school professors which Maine assisted in developing successful business models from concept to practice. Maine has overseen the financing, business development, and early stage research and development of a vast array of diagnostic and therapeutic opportunities for DxDiscovery and Strykagen respectively earning $6.1M and $1.1M to date.</p><p>Maine has an intimate familiarity with early stage business development, developing and implementing SBIR/STTR awards, government contracting and accounting systems, and establishing relations and securing investments with pharmaceutical partners. Recently (2017), Maine has taken his passion for startup development and experience and applied it as an instructor of entrepreneurship at TMCC community college.</p>"
@@ -18,7 +18,7 @@
     {
         "name": "Saul Reed",
         "title": "CTO",
-        "linkedIn" : "/",
+        "linkedIn" : "https://www.linkedin.com",
         "md": false,
         "image": "/assets/images/saul.jpg",
         "bio": "<p>Saul is machine learning and UX technologist. He received his B.S. and M.S. degrees from the University of Nevada, Reno. Presently, he's a Ph.D. candidate in the Department of Computer Science and Engineering at UNR with an emphasis on machine learning.</p><p>Utilizing the latest advances as well as a culmination of technologies, Saul architected the web services and proprietary tools used in the consumption of M2 Medical Intelligence's exposed interfaces and systems. As such, these robust systems are able to digest structured data, ensuring accurate and detailed analyses.</p>"
