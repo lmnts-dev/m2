@@ -15,6 +15,15 @@ footer {
     }
   }
 
+  .disclaimer-small {
+    display: none;
+    @media (max-width: $BaseMediaMd) {
+      display: block;
+      font-size: 12px;
+      margin-top: $Base;
+    }
+  }
+
   .block:first-of-type {
     @media (max-width: $BaseMediaMd) {
       margin: 0 auto;

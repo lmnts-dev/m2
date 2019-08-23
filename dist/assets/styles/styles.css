@@ -136,15 +136,8 @@ a:hover {
 abbr[title] {
   border-bottom: none;
   /* 1 */
-<<<<<<< HEAD
   -webkit-text-decoration: underline dotted;
   text-decoration: underline;
-=======
-  text-decoration: underline;
-  /* 2 */
-  -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
->>>>>>> eecf439a8afe1ea9d31a167da356535b1e8ec916
   /* 2 */
   text-decoration: underline dotted;
   /* 2 */
@@ -600,8 +593,8 @@ textarea {
   object-fit: cover;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 100%;
 }
@@ -659,14 +652,14 @@ a {
 .exit {
   border-radius: 50%;
   cursor: pointer;
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
 .exit svg {
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -685,8 +678,8 @@ a {
 }
 
 .exit:hover svg {
-  -webkit-transform: scale(0.5);
   -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
   transform: scale(0.5);
 }
 
@@ -703,8 +696,8 @@ a {
 }
 
 .linkedin-icon path {
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1006,8 +999,8 @@ header:after {
 section.start-border:before,
 footer.start-border:before,
 header.start-border:before {
-  background: -o-linear-gradient(top, #fff 20px, #fff, #d7e3f2);
   background: linear-gradient(to bottom, #fff 20px, #fff, #d7e3f2);
+  background: -o-linear-gradient(top, #fff 20px, #fff, #d7e3f2);
   z-index: 2;
 }
 
@@ -1196,10 +1189,6 @@ header .team-slider .team .inner .arrows .container .content .next .block .info 
   -webkit-box-orient: horizontal;
   display: -ms-flexbox;
   display: -webkit-box;
-<<<<<<< HEAD
-=======
-  display: -ms-flexbox;
->>>>>>> eecf439a8afe1ea9d31a167da356535b1e8ec916
   display: flex;
   -ms-flex-align: center;
   -ms-flex-direction: row;
@@ -1301,8 +1290,8 @@ button:hover,
 .btn:hover {
   -webkit-box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.3);
   box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.3);
-  -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
 }
 
@@ -1397,6 +1386,12 @@ header .inner img {
   transition-duration: 0.25s;
 }
 
+@media (max-width: 750px) {
+  header .inner img {
+    max-width: 160px;
+  }
+}
+
 header .inner img.large {
   margin-top: 0;
   max-width: 300px;
@@ -1417,6 +1412,12 @@ header .inner img.large {
   }
 }
 
+@media (max-width: 750px) {
+  header .inner img.large {
+    max-width: 200px;
+  }
+}
+
 header .inner nav {
   -webkit-box-flex: 100;
   -ms-flex: 100;
@@ -1433,8 +1434,8 @@ header .inner nav {
 }
 
 header .inner nav.no-scroll {
-  -webkit-transform: translateY(10px);
   -ms-transform: translateY(10px);
+  -webkit-transform: translateY(10px);
   transform: translateY(10px);
 }
 
@@ -1473,14 +1474,22 @@ header .inner .cta-button {
   font-size: 15px;
   margin: 0;
   padding: 26.6666666667px 60px;
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
 @media (max-width: 1024px) {
   header .inner .cta-button {
     padding: 20px 40px;
+  }
+}
+
+@media (max-width: 750px) {
+  header .inner .cta-button {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 40px;
   }
 }
 
@@ -1507,6 +1516,18 @@ footer {
 
 footer.no-border:after {
   content: none;
+}
+
+footer .disclaimer-small {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  footer .disclaimer-small {
+    display: block;
+    font-size: 12px;
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1707,8 +1728,8 @@ ol > li:before {
   pointer-events: none;
   position: fixed;
   top: 0;
-  -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
   width: 100vw;
   z-index: 950;
@@ -1808,8 +1829,8 @@ ol > li:before {
 
 .team-slider .inner .arrows .prev g,
 .team-slider .inner .arrows .next g {
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1825,8 +1846,8 @@ ol > li:before {
 }
 
 .team-slider .inner .arrows .prev svg {
-  -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -1983,15 +2004,9 @@ ol .team-slider .inner .container .slide .bio li {
   .anchor-map .inner .container .block {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
-<<<<<<< HEAD
     display: flex;
     display: -ms-flexbox;
     display: -webkit-box;
-=======
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
->>>>>>> eecf439a8afe1ea9d31a167da356535b1e8ec916
     -ms-flex-direction: row;
     flex-direction: row;
     margin-bottom: 40px;
@@ -2012,13 +2027,8 @@ ol .team-slider .inner .container .slide .bio li {
   -webkit-box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
   box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
   display: -ms-flexbox;
-<<<<<<< HEAD
   display: -webkit-box;
   display: flex;
-=======
-  display: flex;
-  display: -webkit-box;
->>>>>>> eecf439a8afe1ea9d31a167da356535b1e8ec916
   -ms-flex-align: center;
   flex-direction: row;
   -ms-flex-direction: row;
@@ -2049,30 +2059,36 @@ ol .team-slider .inner .container .slide .bio li {
   }
 }
 
-.anchor-map .inner .container .block .row .h5,
-.anchor-map .team-slider .inner .container .block .arrows .prev .h5,
-.team-slider .anchor-map .inner .container .block .arrows .prev .h5,
-.anchor-map .team-slider .inner .arrows .container .block .prev .h5,
-.team-slider .anchor-map .inner .arrows .container .block .prev .h5,
-.anchor-map .team-slider .inner .container .block .arrows .next .h5,
-.team-slider .anchor-map .inner .container .block .arrows .next .h5,
-.anchor-map .team-slider .inner .arrows .container .block .next .h5,
-.team-slider .anchor-map .inner .arrows .container .block .next .h5 {
+@media (max-width: 750px) {
+  .anchor-map .inner .container .block .content-container {
+    width: calc(100% - 80px);
+  }
+}
+
+.anchor-map .inner .container .block .content-container .row .h5,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .prev .h5,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .prev .h5,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .prev .h5,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .prev .h5,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .next .h5,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .next .h5,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .next .h5,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .next .h5 {
   margin: 0;
   -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
-.anchor-map .inner .container .block .row svg,
-.anchor-map .team-slider .inner .container .block .arrows .prev svg,
-.team-slider .anchor-map .inner .container .block .arrows .prev svg,
-.anchor-map .team-slider .inner .arrows .container .block .prev svg,
-.team-slider .anchor-map .inner .arrows .container .block .prev svg,
-.anchor-map .team-slider .inner .container .block .arrows .next svg,
-.team-slider .anchor-map .inner .container .block .arrows .next svg,
-.anchor-map .team-slider .inner .arrows .container .block .next svg,
-.team-slider .anchor-map .inner .arrows .container .block .next svg {
+.anchor-map .inner .container .block .content-container .row svg,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .prev svg,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .prev svg,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .prev svg,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .prev svg,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .next svg,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .next svg,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .next svg,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .next svg {
   margin-right: 10px;
   -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
@@ -2080,81 +2096,81 @@ ol .team-slider .inner .container .slide .bio li {
 }
 
 @media (max-width: 1024px) {
-  .anchor-map .inner .container .block .row svg,
-  .anchor-map .team-slider .inner .container .block .arrows .prev svg,
-  .team-slider .anchor-map .inner .container .block .arrows .prev svg,
-  .anchor-map .team-slider .inner .arrows .container .block .prev svg,
-  .team-slider .anchor-map .inner .arrows .container .block .prev svg,
-  .anchor-map .team-slider .inner .container .block .arrows .next svg,
-  .team-slider .anchor-map .inner .container .block .arrows .next svg,
-  .anchor-map .team-slider .inner .arrows .container .block .next svg,
-  .team-slider .anchor-map .inner .arrows .container .block .next svg {
+  .anchor-map .inner .container .block .content-container .row svg,
+  .anchor-map .team-slider .inner .container .block .content-container .arrows .prev svg,
+  .team-slider .anchor-map .inner .container .block .content-container .arrows .prev svg,
+  .anchor-map .team-slider .inner .arrows .container .block .content-container .prev svg,
+  .team-slider .anchor-map .inner .arrows .container .block .content-container .prev svg,
+  .anchor-map .team-slider .inner .container .block .content-container .arrows .next svg,
+  .team-slider .anchor-map .inner .container .block .content-container .arrows .next svg,
+  .anchor-map .team-slider .inner .arrows .container .block .content-container .next svg,
+  .team-slider .anchor-map .inner .arrows .container .block .content-container .next svg {
     max-width: 20px;
     max-width: 20px;
   }
 }
 
-.anchor-map .inner .container .block .row svg g,
-.anchor-map .team-slider .inner .container .block .arrows .prev svg g,
-.team-slider .anchor-map .inner .container .block .arrows .prev svg g,
-.anchor-map .team-slider .inner .arrows .container .block .prev svg g,
-.team-slider .anchor-map .inner .arrows .container .block .prev svg g,
-.anchor-map .team-slider .inner .container .block .arrows .next svg g,
-.team-slider .anchor-map .inner .container .block .arrows .next svg g,
-.anchor-map .team-slider .inner .arrows .container .block .next svg g,
-.team-slider .anchor-map .inner .arrows .container .block .next svg g {
-  -webkit-transition-duration: 0.25s;
+.anchor-map .inner .container .block .content-container .row svg g,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .prev svg g,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .prev svg g,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .prev svg g,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .prev svg g,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .next svg g,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .next svg g,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .next svg g,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .next svg g {
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
-.anchor-map .inner .container .block .row:hover,
-.anchor-map .team-slider .inner .container .block .arrows .prev:hover,
-.team-slider .anchor-map .inner .container .block .arrows .prev:hover,
-.anchor-map .team-slider .inner .arrows .container .block .prev:hover,
-.team-slider .anchor-map .inner .arrows .container .block .prev:hover,
-.anchor-map .team-slider .inner .container .block .arrows .next:hover,
-.team-slider .anchor-map .inner .container .block .arrows .next:hover,
-.anchor-map .team-slider .inner .arrows .container .block .next:hover,
-.team-slider .anchor-map .inner .arrows .container .block .next:hover {
+.anchor-map .inner .container .block .content-container .row:hover,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .prev:hover,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .prev:hover,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .prev:hover,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .prev:hover,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .next:hover,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .next:hover,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .next:hover,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .next:hover {
   cursor: pointer;
 }
 
-.anchor-map .inner .container .block .row:hover .h5,
-.anchor-map .team-slider .inner .container .block .arrows .prev:hover .h5,
-.team-slider .anchor-map .inner .container .block .arrows .prev:hover .h5,
-.anchor-map .team-slider .inner .arrows .container .block .prev:hover .h5,
-.team-slider .anchor-map .inner .arrows .container .block .prev:hover .h5,
-.anchor-map .team-slider .inner .container .block .arrows .next:hover .h5,
-.team-slider .anchor-map .inner .container .block .arrows .next:hover .h5,
-.anchor-map .team-slider .inner .arrows .container .block .next:hover .h5,
-.team-slider .anchor-map .inner .arrows .container .block .next:hover .h5 {
+.anchor-map .inner .container .block .content-container .row:hover .h5,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .prev:hover .h5,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .prev:hover .h5,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .prev:hover .h5,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .prev:hover .h5,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .next:hover .h5,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .next:hover .h5,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .next:hover .h5,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .next:hover .h5 {
   color: #2f86ff;
 }
 
-.anchor-map .inner .container .block .row:hover svg,
-.anchor-map .team-slider .inner .container .block .arrows .prev:hover svg,
-.team-slider .anchor-map .inner .container .block .arrows .prev:hover svg,
-.anchor-map .team-slider .inner .arrows .container .block .prev:hover svg,
-.team-slider .anchor-map .inner .arrows .container .block .prev:hover svg,
-.anchor-map .team-slider .inner .container .block .arrows .next:hover svg,
-.team-slider .anchor-map .inner .container .block .arrows .next:hover svg,
-.anchor-map .team-slider .inner .arrows .container .block .next:hover svg,
-.team-slider .anchor-map .inner .arrows .container .block .next:hover svg {
-  -webkit-transform: translateY(5px);
+.anchor-map .inner .container .block .content-container .row:hover svg,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .prev:hover svg,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .prev:hover svg,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .prev:hover svg,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .prev:hover svg,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .next:hover svg,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .next:hover svg,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .next:hover svg,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .next:hover svg {
   -ms-transform: translateY(5px);
+  -webkit-transform: translateY(5px);
   transform: translateY(5px);
 }
 
-.anchor-map .inner .container .block .row:hover svg g,
-.anchor-map .team-slider .inner .container .block .arrows .prev:hover svg g,
-.team-slider .anchor-map .inner .container .block .arrows .prev:hover svg g,
-.anchor-map .team-slider .inner .arrows .container .block .prev:hover svg g,
-.team-slider .anchor-map .inner .arrows .container .block .prev:hover svg g,
-.anchor-map .team-slider .inner .container .block .arrows .next:hover svg g,
-.team-slider .anchor-map .inner .container .block .arrows .next:hover svg g,
-.anchor-map .team-slider .inner .arrows .container .block .next:hover svg g,
-.team-slider .anchor-map .inner .arrows .container .block .next:hover svg g {
+.anchor-map .inner .container .block .content-container .row:hover svg g,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .prev:hover svg g,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .prev:hover svg g,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .prev:hover svg g,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .prev:hover svg g,
+.anchor-map .team-slider .inner .container .block .content-container .arrows .next:hover svg g,
+.team-slider .anchor-map .inner .container .block .content-container .arrows .next:hover svg g,
+.anchor-map .team-slider .inner .arrows .container .block .content-container .next:hover svg g,
+.team-slider .anchor-map .inner .arrows .container .block .content-container .next:hover svg g {
   stroke: #45484b;
 }
 
@@ -2163,13 +2179,8 @@ ol .team-slider .inner .container .slide .bio li {
 }
 
 .cta {
-<<<<<<< HEAD
   background: -o-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #69a8ff), color-stop(#69a8ff), color-stop(70%, #88baff), to(#88baff));
-=======
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #69a8ff), color-stop(#69a8ff), color-stop(70%, #88baff), to(#88baff));
-  background: -o-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
->>>>>>> eecf439a8afe1ea9d31a167da356535b1e8ec916
   background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
 }
 
@@ -2330,13 +2341,8 @@ ol .team-slider .inner .container .slide .bio li {
 }
 
 .process {
-<<<<<<< HEAD
   background: -o-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #69a8ff), color-stop(#69a8ff), color-stop(70%, #88baff), to(#88baff));
-=======
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #69a8ff), color-stop(#69a8ff), color-stop(70%, #88baff), to(#88baff));
-  background: -o-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
->>>>>>> eecf439a8afe1ea9d31a167da356535b1e8ec916
   background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
 }
 

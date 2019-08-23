@@ -31,6 +31,9 @@ header {
       margin-top: $Base / 8;
       max-width: $Base * 5;
       transition-duration: 0.25s;
+      @media (max-width: $BaseMediaSm) {
+        max-width: $Base * 4;
+      }
 
       &.large {
         margin-top: 0;
@@ -40,6 +43,9 @@ header {
         @media (max-width: $BaseMediaMd) {
           max-width: $Base * 6;
           transform: translateY( $Base / 3 );
+        }
+        @media (max-width: $BaseMediaSm) {
+          max-width: $Base * 5;
         }
       }
     }
@@ -92,6 +98,11 @@ header {
       transition-duration: 0.25s;
       @media (max-width: $BaseMediaMd) {
         padding: $Base / 2 $Base;
+      }
+      @media (max-width: $BaseMediaSm) {
+        height: 50px;
+        line-height: 50px;
+        padding: 0 $Base;
       }
 
       &:hover {

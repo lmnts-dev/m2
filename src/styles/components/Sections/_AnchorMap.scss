@@ -50,37 +50,43 @@
           }
         }
 
-        .row {
-          .h5 {
-            margin: 0;
-            transition-duration: 0.25s;
+        .content-container {
+          @media (max-width: $BaseMediaSm) {
+            width: calc(100% - #{$Base * 2});
           }
 
-          svg {
-            margin-right: $Base / 4;
-            transition-duration: 0.25s;
-            @media (max-width: $BaseMediaMd){
-              max-width: $Base / 2;
-              max-width: $Base / 2;
-            }
-
-            g {
-              transition-duration: 0.25s;
-            }
-          }
-
-          &:hover  {
-            cursor: pointer;
-
+          .row {
             .h5 {
-              color: $ClrSky;
+              margin: 0;
+              transition-duration: 0.25s;
             }
 
             svg {
-              transform: translateY(5px);
+              margin-right: $Base / 4;
+              transition-duration: 0.25s;
+              @media (max-width: $BaseMediaMd){
+                max-width: $Base / 2;
+                max-width: $Base / 2;
+              }
 
               g {
-                stroke: $ClrBark;
+                transition-duration: 0.25s;
+              }
+            }
+
+            &:hover  {
+              cursor: pointer;
+
+              .h5 {
+                color: $ClrSky;
+              }
+
+              svg {
+                transform: translateY(5px);
+
+                g {
+                  stroke: $ClrBark;
+                }
               }
             }
           }
