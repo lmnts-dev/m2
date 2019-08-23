@@ -29,9 +29,9 @@ html {
   font-family: sans-serif;
   /* 1 */
   scroll-behavior: smooth;
-  -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   /* 2 */
 }
 
@@ -136,10 +136,10 @@ a:hover {
 abbr[title] {
   border-bottom: none;
   /* 1 */
-  text-decoration: underline;
-  /* 2 */
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
+  text-decoration: underline;
+  /* 2 */
   /* 2 */
 }
 
@@ -593,8 +593,8 @@ textarea {
   object-fit: cover;
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 100%;
 }
@@ -652,8 +652,8 @@ a {
 .exit {
   border-radius: 50%;
   cursor: pointer;
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -672,8 +672,8 @@ a {
 
 .exit:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -1187,9 +1187,9 @@ header .team-slider .team .inner .arrows .container .content .next .block .info 
   -webkit-box-align: center;
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
-  display: -webkit-box;
   display: flex;
   display: -ms-flexbox;
+  display: -webkit-box;
   -ms-flex-align: center;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1264,8 +1264,8 @@ button,
   line-height: 54px;
   margin-top: 40px;
   padding: 0 40px;
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1290,8 +1290,8 @@ button:hover,
 .btn:hover {
   -webkit-box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.3);
   box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.3);
-  -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
 }
 
@@ -1348,8 +1348,8 @@ header {
   position: fixed;
   right: 0;
   top: 0;
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
   width: 100vw;
   z-index: 900;
@@ -1381,8 +1381,8 @@ header .inner img {
   margin-left: 40px;
   margin-top: 5px;
   max-width: 200px;
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1412,8 +1412,8 @@ header .inner img.large {
 @media (max-width: 1024px) {
   header .inner img.large {
     max-width: 240px;
-    -ms-transform: translateY(13.3333333333px);
     -webkit-transform: translateY(13.3333333333px);
+    -ms-transform: translateY(13.3333333333px);
     transform: translateY(13.3333333333px);
   }
 }
@@ -1428,8 +1428,8 @@ header .inner img.large {
   header .inner img.large {
     margin-top: 5px;
     max-width: 160px;
-    -webkit-transform: none;
     -ms-transform: none;
+    -webkit-transform: none;
     transform: none;
   }
 }
@@ -1438,8 +1438,8 @@ header .inner nav {
   -webkit-box-flex: 100;
   -ms-flex: 100;
   flex: 100;
-  -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1474,8 +1474,8 @@ header .inner nav li:before {
 
 header .inner nav li a {
   color: #45484b;
-  -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1490,8 +1490,8 @@ header .inner .cta-button {
   font-size: 15px;
   margin: 0;
   padding: 26.6666666667px 60px;
-  -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1661,8 +1661,8 @@ footer ul li:before {
 
 footer ul li a {
   color: #45484b;
-  -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1755,8 +1755,8 @@ ol > li:before {
   pointer-events: none;
   position: fixed;
   top: 0;
-  -o-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
   width: 100vw;
   z-index: 950;
@@ -1809,9 +1809,9 @@ ol > li:before {
   .team-slider .inner .arrows {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
-    display: flex;
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
     left: 40px;
@@ -1832,9 +1832,9 @@ ol > li:before {
   height: 80px;
   justify-content: center;
   margin-bottom: 20px;
+  transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
   width: 80px;
 }
 
@@ -2052,9 +2052,9 @@ ol .team-slider .inner .container .slide .bio li {
   .anchor-map .inner .container .block {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
-    display: flex;
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
     margin-bottom: 40px;
@@ -2080,8 +2080,8 @@ ol .team-slider .inner .container .slide .bio li {
   -webkit-box-pack: center;
   -webkit-box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
   box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
-  display: -webkit-box;
   display: flex;
+  display: -webkit-box;
   display: -ms-flexbox;
   -ms-flex-align: center;
   -ms-flex-direction: row;
@@ -2129,8 +2129,8 @@ ol .team-slider .inner .container .slide .bio li {
 .anchor-map .team-slider .inner .arrows .container .block .content-container .next .h5,
 .team-slider .anchor-map .inner .arrows .container .block .content-container .next .h5 {
   margin: 0;
-  -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -2144,8 +2144,8 @@ ol .team-slider .inner .container .slide .bio li {
 .anchor-map .team-slider .inner .arrows .container .block .content-container .next svg,
 .team-slider .anchor-map .inner .arrows .container .block .content-container .next svg {
   margin-right: 10px;
-  -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -2233,9 +2233,9 @@ ol .team-slider .inner .container .slide .bio li {
 }
 
 .cta {
-  background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #69a8ff), color-stop(#69a8ff), color-stop(70%, #88baff), to(#88baff));
   background: -o-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
+  background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
 }
 
 .cta .inner .container {
@@ -2434,9 +2434,9 @@ ol .team-slider .inner .container .slide .bio li {
 }
 
 .process {
-  background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #69a8ff), color-stop(#69a8ff), color-stop(70%, #88baff), to(#88baff));
   background: -o-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
+  background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
 }
 
 .process .inner .container {
@@ -2621,6 +2621,9 @@ ol .team .inner .container h2 ~ li {
 .team-slider .team .inner .container .content .arrows .next,
 .team .team-slider .inner .arrows .container .content .next,
 .team-slider .team .inner .arrows .container .content .next {
+  align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   padding-top: 80px;
   position: relative;
   z-index: 2;
@@ -2658,8 +2661,8 @@ ol .team .inner .container h2 ~ li {
   -ms-flex: 1;
   flex: 1;
   margin: 0 20px;
-  -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 
@@ -2850,11 +2853,18 @@ ol .team .inner .container h2 ~ li {
 }
 
 .team-pic .inner {
-  padding: 0;
+  padding: 50% 0 0;
+}
+
+.team-pic .inner .container {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .team-pic .inner .container .image-container {
-  padding-top: 50%;
   width: 100%;
 }
 
@@ -2868,8 +2878,8 @@ ol .team .inner .container h2 ~ li {
   pointer-events: none;
   position: fixed;
   top: 0;
-  -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
   width: 100vw;
   z-index: 950;
