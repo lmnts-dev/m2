@@ -23,7 +23,7 @@
   "devDependencies": {
     "argv": "^0.0.2",
     "assets-manager": "^0.3.8",
-    "autoprefixer": "^7.1.4",
+    "autoprefixer": "^9.6.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
