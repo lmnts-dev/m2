@@ -16,7 +16,7 @@ title: Home
         </p>
       </div>
       <div class="block">
-        <img src="/assets/images/sample.png" alt="Gloved hand holding medical sample in glass container">
+        <img src="/assets/images/sample.png" alt="Gloved hand holding medical sample in glass container" title="Gloved hand holding medical sample in glass container">
       </div>
     </div>
   </div>
@@ -90,7 +90,7 @@ title: Home
             {% for member in site.data.team %}
               <div class="block" data-member="{{ forloop.index | minus: 1 }}">
                 <div class="image-container">
-                  <img src="{{ member.image }}" alt="Photo of {{ member.name }}">
+                  <img src="{{ member.image }}" alt="Photo of {{ member.name }}" title="Photo of {{ member.name }}">
                 </div>
                 <div class="info">
                   <div class="h5">
@@ -114,7 +114,7 @@ title: Home
 <section class="team-pic padding-top-none padding-bottom-none">
   <div class="inner">
     <div class="container image-container">
-      <img src="/assets/images/team.jpg" alt="">
+      <img src="/assets/images/team.jpg" alt="M2 Team" title="M2 Team">
     </div>
   </div>
 </section>
