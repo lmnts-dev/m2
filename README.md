@@ -1,6 +1,10 @@
-# Jekyll Starter Kit
+# M2 Medical Intelligence
 
-> A starter template for Jekyll, Gulp, ECMAScript(latest), webpack3, sass and postcss.
+> Marketing site for M2 utilizing Jekyll, Gulp, ECMAScript(latest), webpack3, sass and postcss.
+
+
+[![Launch](https://img.shields.io/badge/-Launch%20the%20app-000000)](https://infallible-tereshkova-bfa363.netlify.com/) [![Netlify Status](https://api.netlify.com/api/v1/badges/73350271-c92b-44a6-9075-a866bc129e59/deploy-status)](https://app.netlify.com/sites/infallible-tereshkova-bfa363/deploys) [![Built by L&M](https://img.shields.io/badge/-Built%20by%20L%26M-orange)](www.laxaltandmciver.co)
+
 
 ## Table of Contents
 
@@ -13,8 +17,6 @@
 * [Dockerization](#dockerization)
 
 ## Features
-This starter also features a number of great software (in the words of their creators):
-- [Lanyon](http://lanyon.getpoole.com/) - a content-first, sliding sidebar theme (originally) for Jekyll (by [mdo](http://mdo.fm)).
 - [Gulp](http://gulpjs.com/) - a task automation tool.
 - [Browsersync](https://www.browsersync.io/) - time-saving synchronised browser testing, keep multiple browsers & devices in sync when editing files.
 - [EditorConfig](http://editorconfig.org/) - a config file for maintaining  consistent coding styles.
@@ -148,6 +150,9 @@ $ gulp
 $ git remote add upstream https://github.com/amazingsurge/jekyll-starter-kit.git
 $ git pull upstream master
 ```
+
+## Deployment
+To build, optimize, and distribute to the `netlify` branch, run `npm run deploy`.
 
 ## List of Gulp tasks
 

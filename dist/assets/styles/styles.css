@@ -136,10 +136,10 @@ a:hover {
 abbr[title] {
   border-bottom: none;
   /* 1 */
+  text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
-  text-decoration: underline;
   /* 2 */
 }
 
@@ -593,8 +593,8 @@ textarea {
   object-fit: cover;
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 100%;
 }
@@ -652,14 +652,14 @@ a {
 .exit {
   border-radius: 50%;
   cursor: pointer;
-  -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
 .exit svg {
-  -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -671,8 +671,8 @@ a {
 }
 
 .exit:hover svg {
-  -ms-transform: scale(0.5);
   -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
   transform: scale(0.5);
 }
 
@@ -689,8 +689,8 @@ a {
 }
 
 .linkedin-icon path {
-  -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -881,8 +881,8 @@ header:after {
 section.start-border:before,
 footer.start-border:before,
 header.start-border:before {
-  background: linear-gradient(to bottom, #fff 20px, #fff, #d7e3f2);
   background: -o-linear-gradient(top, #fff 20px, #fff, #d7e3f2);
+  background: linear-gradient(to bottom, #fff 20px, #fff, #d7e3f2);
   z-index: 2;
 }
 
@@ -1006,8 +1006,8 @@ header .team-slider .team .inner .arrows .container .content .next .block .info 
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
   display: -webkit-box;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   -ms-flex-align: center;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1083,8 +1083,8 @@ button:hover,
 .btn:hover {
   -webkit-box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.3);
   box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.3);
-  -ms-transform: translateY(-5px);
   -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
   transform: translateY(-5px);
 }
 
@@ -1146,8 +1146,8 @@ header .inner img {
 header .inner img.large {
   margin-top: 0;
   max-width: 300px;
-  -ms-transform: translateY(20px);
   -webkit-transform: translateY(20px);
+  -ms-transform: translateY(20px);
   transform: translateY(20px);
   -webkit-transform-origin: top left;
   -ms-transform-origin: top left;
@@ -1164,8 +1164,8 @@ header .inner nav {
 }
 
 header .inner nav.no-scroll {
-  -ms-transform: translateY(10px);
   -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
   transform: translateY(10px);
 }
 
@@ -1203,8 +1203,8 @@ header .inner .cta-button {
   font-size: 15px;
   margin: 0;
   padding: 26.6666666667px 60px;
-  -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1366,8 +1366,8 @@ ol > li:before {
   pointer-events: none;
   position: fixed;
   top: 0;
-  -o-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
   width: 100vw;
   z-index: 950;
@@ -1419,8 +1419,8 @@ ol > li:before {
 
 .team-slider .inner .arrows .prev g,
 .team-slider .inner .arrows .next g {
-  -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1436,8 +1436,8 @@ ol > li:before {
 }
 
 .team-slider .inner .arrows .prev svg {
-  -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -1543,12 +1543,12 @@ ol .team-slider .inner .container .slide .bio li {
   -webkit-box-pack: center;
   -webkit-box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
   box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
-  display: -webkit-box;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
+  display: -webkit-box;
   -ms-flex-align: center;
-  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-direction: row;
   -ms-flex-pack: center;
   height: 80px;
   justify-content: center;
@@ -1595,8 +1595,8 @@ ol .team-slider .inner .container .slide .bio li {
 .team-slider .anchor-map .inner .container .block .arrows .next svg g,
 .anchor-map .team-slider .inner .arrows .container .block .next svg g,
 .team-slider .anchor-map .inner .arrows .container .block .next svg g {
-  -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1633,8 +1633,8 @@ ol .team-slider .inner .container .slide .bio li {
 .team-slider .anchor-map .inner .container .block .arrows .next:hover svg,
 .anchor-map .team-slider .inner .arrows .container .block .next:hover svg,
 .team-slider .anchor-map .inner .arrows .container .block .next:hover svg {
-  -ms-transform: translateY(5px);
   -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
   transform: translateY(5px);
 }
 
@@ -1655,9 +1655,9 @@ ol .team-slider .inner .container .slide .bio li {
 }
 
 .cta {
-  background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
-  background: -o-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #69a8ff), color-stop(#69a8ff), color-stop(70%, #88baff), to(#88baff));
+  background: -o-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
+  background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
 }
 
 .cta .inner .container {
@@ -1734,9 +1734,9 @@ ol .team-slider .inner .container .slide .bio li {
 }
 
 .process {
-  background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
-  background: -o-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #69a8ff), color-stop(#69a8ff), color-stop(70%, #88baff), to(#88baff));
+  background: -o-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
+  background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
 }
 
 .process .inner .container {
@@ -1966,8 +1966,8 @@ ol .team .inner .container h2 ~ li {
   pointer-events: none;
   position: fixed;
   top: 0;
-  -o-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
   width: 100vw;
   z-index: 950;
