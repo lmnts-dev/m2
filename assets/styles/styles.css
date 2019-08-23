@@ -1400,7 +1400,7 @@ header .inner img {
 
 header .inner img.large {
   margin-top: 0;
-  max-width: 300px;
+  max-width: 260px;
   -webkit-transform: translateY(20px);
   -ms-transform: translateY(20px);
   transform: translateY(20px);
@@ -2357,8 +2357,20 @@ ol .team-slider .inner .container .slide .bio li {
 
 @media (max-width: 1024px) {
   .hero .inner h1 {
-    margin-top: 120px;
+    margin-top: 15vw;
   }
+}
+
+@media (max-width: 750px) {
+  .hero .inner h1 {
+    margin-top: 40px;
+  }
+}
+
+.hero .inner .container {
+  align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
 }
 
 @media (max-width: 750px) {
@@ -2381,12 +2393,39 @@ ol .team-slider .inner .container .slide .bio li {
 }
 
 @media (max-width: 750px) {
-  .hero .inner .container .block:last-of-type {
-    align-self: flex-end;
-    -ms-flex-item-align: end;
-    min-width: none;
-    width: 70%;
+  .hero .inner .container .block:first-of-type {
+    min-width: 0;
+    padding-right: 20px;
   }
+}
+
+.hero .inner .container .block:last-of-type {
+  position: relative;
+}
+
+@media (max-width: 750px) {
+  .hero .inner .container .block:last-of-type {
+    min-height: 30vw;
+  }
+}
+
+@media (max-width: 530px) {
+  .hero .inner .container .block:last-of-type {
+    min-height: 160px;
+  }
+}
+
+.hero .inner .container .block:last-of-type img {
+  z-index: 1;
+}
+
+.hero .inner .container .block:last-of-type svg {
+  bottom: -2px;
+  height: 100%;
+  left: -3px;
+  position: absolute;
+  width: auto;
+  z-index: 2;
 }
 
 .process {
