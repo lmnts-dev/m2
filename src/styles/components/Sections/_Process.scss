@@ -4,10 +4,27 @@
   .inner {
     .container {
       padding-left: 0;
+      @media (max-width: $BaseMediaMd) {
+        svg {
+          width: 25vw;
+        }
+      }
+      @media (max-width: $BaseMediaSm) {
+        display: block;
+
+        .block {
+          padding-left: $Base / 2;
+          text-align: center;
+        }
+      }
 
       .block:first-child {
         align-self: flex-start;
         flex: 0;
+        @media (max-width: $BaseMediaSm) {
+          display: inline-block;
+          text-align: left;
+        }
 
         .anchor {
           color: $ClrWhite;
@@ -18,6 +35,12 @@
       .block:last-of-type {
         flex: 2;
         padding-left: $Base * 1.5;
+        @media (max-width: $BaseMediaMd) {
+          padding-left: $Base;
+        }
+        @media (max-width: $BaseMediaSm) {
+          padding-left: $Base / 2;
+        }
 
         h2 {
           margin: 0;

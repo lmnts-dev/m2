@@ -2,8 +2,6 @@
 
 // Default Styles
 button, .btn {
-  
-  
   background-color: $ClrWhite;
   border-radius: $Base * 2;
   box-shadow: $BasicShadow;
@@ -19,6 +17,11 @@ button, .btn {
   margin-top: $Base;
   padding: 0 $Base;
   transition-duration: 0.25s;
+  @media (max-width: $BaseMediaMd) {
+    font-size: 0.9rem;
+    height: $ButtonHeight * 0.85;
+    line-height: $ButtonHeight * 0.85;
+  }
 
   &:focus,
   &:active {
@@ -42,4 +45,7 @@ button, .btn {
   position: absolute;
   width: 100vw;
   z-index: 1;
+  @media (max-width: $BaseMediaMd) {
+    bottom: ($ButtonHeight * 0.85) / 2;
+  }
 }

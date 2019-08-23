@@ -72,7 +72,7 @@ h1, .h1 {
   letter-spacing: -0.02em;
   line-height: 1.3;
   @media (max-width: $BaseMediaMd) {
-  
+    font-size: 1.5rem;
   }
   @media (max-width: $BaseMediaSm) {
     
@@ -84,7 +84,7 @@ h2, .h2 {
   letter-spacing: -0.02em;
   line-height: 1.3;
   @media (max-width: $BaseMediaMd) {
-  
+    font-size: 2rem;
   }
   @media (max-width: $BaseMediaSm) {
     
@@ -96,7 +96,7 @@ h3,
   font-size: 2.375rem;
   line-height: 1.3;
   @media (max-width: $BaseMediaMd) {
-
+    font-size: 1.8rem;
   }
   @media (max-width: $BaseMediaSm) {
   
@@ -123,7 +123,7 @@ h5,
   font-size: 1.25rem;
   font-weight: 700;
   @media (max-width: $BaseMediaMd) {
-
+    font-size: 1rem;
   }
   @media (max-width: $BaseMediaSm) {
   
@@ -149,6 +149,9 @@ h6,
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   white-space: nowrap;
+  @media (max-width: $BaseMediaMd) {
+    font-size: 12px;
+  }
 }
 
 // #####################################
@@ -170,6 +173,9 @@ blockquote, .blockquote {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.375;
+  @media (max-width: $BaseMediaMd) {
+    font-size: 1.3rem;
+  }
 }
 
 p,
@@ -179,7 +185,7 @@ p,
   margin-top: $Base / 2;
 
   @media (max-width: $BaseMediaMd) {
-
+    font-size: 1rem;
   }
   @media (max-width: $BaseMediaMd) {
   
@@ -193,7 +199,7 @@ p,
   margin-top: $Base / 4;
 
   @media (max-width: $BaseMediaMd) {
-
+    font-size: 1.2rem;
   }
   @media (max-width: $BaseMediaMd) {
   

@@ -41,6 +41,9 @@
             flex: 1;
             margin: 0 $Base / 2;
             transition-duration: 0.5s;
+            @media (max-width: $BaseMediaMd) {
+              margin: 0 $Base / 4;
+            }
 
             &:hover {
               box-shadow: $BasicShadow;

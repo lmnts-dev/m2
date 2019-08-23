@@ -1,8 +1,28 @@
 .anchor-map {
   .inner {
     .container {
+      @media (max-width: $BaseMediaSm) {
+        display: block;
+      }
+
       .block {
         padding-right: $Base;
+        @media (max-width: $BaseMediaMd){
+          padding-right: $Base / 2;
+
+          p {
+            margin-top: $Base / 6;
+          }
+        }
+        @media (max-width: $BaseMediaSm) {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: $Base;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
 
         .icon {
           align-items: center;
@@ -14,7 +34,20 @@
           justify-content: center;
           margin-bottom: $Base / 2;
           width: $Base *2;
+          @media (max-width: $BaseMediaMd){
+            height: $Base * 1.5;
+            width: $Base * 1.5;
 
+            svg {
+              max-height: $Base / 1.5;
+              max-width: $Base / 1.5;
+            }
+          }
+          @media (max-width: $BaseMediaSm) {
+            margin-right: $Base / 2;
+            min-height: $Base * 1.5;
+            min-width: $Base * 1.5;
+          }
         }
 
         .row {
@@ -26,6 +59,10 @@
           svg {
             margin-right: $Base / 4;
             transition-duration: 0.25s;
+            @media (max-width: $BaseMediaMd){
+              max-width: $Base / 2;
+              max-width: $Base / 2;
+            }
 
             g {
               transition-duration: 0.25s;

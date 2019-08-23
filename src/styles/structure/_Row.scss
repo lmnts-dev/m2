@@ -19,10 +19,16 @@
   &.two-block-padding {
     .block:first-of-type {
       padding-right: $Base;
+      @media (max-width: $BaseMediaMd) {
+        padding-right: $Base / 2;
+      }
     }
 
     .block:last-of-type {
       padding-left: $Base;
+      @media (max-width: $BaseMediaMd) {
+        padding-left: $Base / 2;
+      }
     }
   }
 }

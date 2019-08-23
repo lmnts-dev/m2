@@ -1,8 +1,38 @@
 .hero {
+  @media( max-width: $BaseMediaMd ){
+    padding-bottom: $Base * 2.5 !important;
+  }
+
   .inner {
+    padding-right: 0;
+
     h1 {
       margin-bottom: 0;
+      margin-top: $Base * 4;
+      @media( max-width: $BaseMediaMd ){
+        margin-top: $Base * 3;
+      }
     }
-    padding-right: 0;
+    
+    .container {
+      @media (max-width: $BaseMediaSm) {
+        flex-direction: column-reverse;
+      }
+
+      .block:first-of-type {
+        min-width: $Base * 11;
+        @media( max-width: $BaseMediaMd ){
+          min-width: $Base * 8;
+        }
+      }
+
+      .block:last-of-type {
+        @media (max-width: $BaseMediaSm) {
+          align-self: flex-end;
+          min-width: none;
+          width: 70%;
+        }
+      }
+    }
   }
 }

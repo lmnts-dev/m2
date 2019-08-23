@@ -14,6 +14,10 @@ footer {
     }
   }
 
+  .block:last-of-type {
+    min-width: $Base * 10;
+  }
+
   p {
     font-family: $FntHeader;
     font-size: 16px;
@@ -37,7 +41,11 @@ footer {
     padding-top: $Base / 4;
 
     li {
-      width: 50%;
+      width: 65%;
+
+      &:nth-of-type(even){
+        width: 35%;
+      }
 
       &:before {
         content: none;
