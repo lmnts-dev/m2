@@ -43,9 +43,11 @@ function toggleSlider() {
 }
 
 // Nav scroll functions
+$(document.body).on('touchmove', onScroll); // for mobile
+$(window).on('scroll', onScroll); 
 
-$(window).scroll(function () {
-  var scrollPosition = $('body').scrollTop();
+function onScroll(){ 
+  var scrollPosition = $(window).scrollTop();
   if (scrollPosition != 0) {
     $('header img').removeClass('large');
     $('header nav').removeClass('no-scroll');
@@ -55,7 +57,7 @@ $(window).scroll(function () {
     $('header nav').addClass('no-scroll');
     $('header').addClass('no-background');
   }
-});
+}
 
 // Contact modal functions
 $('div[data-contact="exit"]').click(function () {
