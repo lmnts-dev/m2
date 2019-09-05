@@ -45,7 +45,7 @@ function toggleSlider() {
 // Nav scroll functions
 
 $(window).scroll(function () {
-  var scrollPosition = $('body, html').scrollTop();
+  var scrollPosition = $('body').scrollTop();
   if (scrollPosition != 0) {
     $('header img').removeClass('large');
     $('header nav').removeClass('no-scroll');
