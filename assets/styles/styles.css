@@ -672,8 +672,8 @@ a {
 
 .exit:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -1188,8 +1188,8 @@ header .team-slider .team .inner .arrows .container .content .next .block .info 
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
   display: -webkit-box;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   -ms-flex-align: center;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1264,8 +1264,8 @@ button,
   line-height: 54px;
   margin-top: 40px;
   padding: 0 40px;
-  -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1340,8 +1340,8 @@ button:hover,
 
 header {
   background-color: #fff;
-  box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
   -webkit-box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
+  box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
   left: 0;
   margin: 0 auto;
   max-width: 1440px;
@@ -1412,8 +1412,8 @@ header .inner img.large {
 @media (max-width: 1024px) {
   header .inner img.large {
     max-width: 240px;
-    -ms-transform: translateY(13.3333333333px);
     -webkit-transform: translateY(13.3333333333px);
+    -ms-transform: translateY(13.3333333333px);
     transform: translateY(13.3333333333px);
   }
 }
@@ -1474,8 +1474,8 @@ header .inner nav li:before {
 
 header .inner nav li a {
   color: #45484b;
-  -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1661,8 +1661,8 @@ footer ul li:before {
 
 footer ul li a {
   color: #45484b;
-  -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -1755,8 +1755,8 @@ ol > li:before {
   pointer-events: none;
   position: fixed;
   top: 0;
-  -o-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
   width: 100vw;
   z-index: 950;
@@ -1809,9 +1809,9 @@ ol > li:before {
   .team-slider .inner .arrows {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
-    display: flex;
-    display: -ms-flexbox;
     display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
     left: 40px;
@@ -1832,8 +1832,8 @@ ol > li:before {
   height: 80px;
   justify-content: center;
   margin-bottom: 20px;
-  -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
   width: 80px;
 }
@@ -2052,9 +2052,9 @@ ol .team-slider .inner .container .slide .bio li {
   .anchor-map .inner .container .block {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
-    display: flex;
-    display: -ms-flexbox;
     display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
     margin-bottom: 40px;
@@ -2084,8 +2084,8 @@ ol .team-slider .inner .container .slide .bio li {
   display: flex;
   display: -webkit-box;
   -ms-flex-align: center;
-  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-direction: row;
   -ms-flex-pack: center;
   height: 80px;
   justify-content: center;
@@ -2129,8 +2129,8 @@ ol .team-slider .inner .container .slide .bio li {
 .anchor-map .team-slider .inner .arrows .container .block .content-container .next .h5,
 .team-slider .anchor-map .inner .arrows .container .block .content-container .next .h5 {
   margin: 0;
-  -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -2144,8 +2144,8 @@ ol .team-slider .inner .container .slide .bio li {
 .anchor-map .team-slider .inner .arrows .container .block .content-container .next svg,
 .team-slider .anchor-map .inner .arrows .container .block .content-container .next svg {
   margin-right: 10px;
-  -o-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -2233,9 +2233,9 @@ ol .team-slider .inner .container .slide .bio li {
 }
 
 .cta {
-  background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #69a8ff), color-stop(#69a8ff), color-stop(70%, #88baff), to(#88baff));
   background: -o-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
+  background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
 }
 
 .cta .inner .container {
@@ -2434,9 +2434,9 @@ ol .team-slider .inner .container .slide .bio li {
 }
 
 .process {
-  background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #69a8ff), color-stop(#69a8ff), color-stop(70%, #88baff), to(#88baff));
   background: -o-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
+  background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
 }
 
 .process .inner .container {
@@ -2661,8 +2661,8 @@ ol .team .inner .container h2 ~ li {
   -ms-flex: 1;
   flex: 1;
   margin: 0 20px;
-  -o-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 
