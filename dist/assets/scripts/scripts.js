@@ -43,11 +43,9 @@ function toggleSlider() {
 }
 
 // Nav scroll functions
-$(document.body).on('touchmove', onScroll); // for mobile
-$(window).on('scroll', onScroll); 
 
-function onScroll(){ 
-  var scrollPosition = $(window).scrollTop();
+$(window).scroll(function () {
+  var scrollPosition = $('body, html').scrollTop();
   if (scrollPosition != 0) {
     $('header img').removeClass('large');
     $('header nav').removeClass('no-scroll');
@@ -57,7 +55,7 @@ function onScroll(){
     $('header nav').addClass('no-scroll');
     $('header').addClass('no-background');
   }
-}
+});
 
 // Contact modal functions
 $('div[data-contact="exit"]').click(function () {
