@@ -46,11 +46,11 @@ function toggleSlider() {
 $(window).scroll(function() {
 let scrollPosition = $('body, html').scrollTop();
 if (scrollPosition != 0) {
-  $('header img').removeClass('large');
+  $('header svg').removeClass('large');
   $('header nav').removeClass('no-scroll');
   $('header').removeClass('no-background');
 } else {
-  $('header img').addClass('large');
+  $('header svg').addClass('large');
   $('header nav').addClass('no-scroll');
   $('header').addClass('no-background');
 }
