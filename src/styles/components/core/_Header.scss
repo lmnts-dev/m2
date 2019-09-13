@@ -26,7 +26,8 @@ header {
       justify-content: space-between;
     }
 
-    img {
+    svg {
+      height: auto;
       margin-left: $Base;
       margin-top: $Base / 8;
       max-width: $Base * 5;

@@ -31,6 +31,12 @@ footer {
       padding-right: 0 !important;
     }
 
+    svg {
+      @media (max-width: $BaseMediaSm) {
+        max-width: 100%;
+      }
+    }
+
     p {
       margin-top: $Base / 2;
       @media (max-width: $BaseMediaMd) {

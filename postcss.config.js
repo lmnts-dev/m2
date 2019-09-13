@@ -6,7 +6,7 @@ let postcssConfig = {
     require('autoprefixer')({
       browsers: [
         // For more browsers, see https://github.com/ai/browserslist
-        '> 1%',
+        '> 0.01%',
         'last 3 versions',
         'IE >= 9'
       ]
