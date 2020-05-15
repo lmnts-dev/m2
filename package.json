@@ -134,6 +134,7 @@
     "npm": ">= 5"
   },
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "node": "^14.2.0"
   }
 }
