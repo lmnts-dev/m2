@@ -2,10 +2,10 @@
 <feed>
 
  <title>Lanyon</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2020-05-15T10:02:10-07:00</updated>
- <id>http://localhost:4000</id>
+ <link href="http://yoursite.com/atom.xml" rel="self"/>
+ <link href="http://yoursite.com/"/>
+ <updated>2020-05-15T15:40:49-04:00</updated>
+ <id>http://yoursite.com</id>
  <author>
    <name>Mark Otto</name>
    <email>markdotto@gmail.com</email>
