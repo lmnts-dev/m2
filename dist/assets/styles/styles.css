@@ -1080,7 +1080,7 @@ section.start-border:before,
 footer.start-border:before,
 header.start-border:before {
   background: -webkit-linear-gradient(top, #fff 20px, #fff, #d7e3f2);
-  background: -moz-linear-gradient(top, #fff 20px, #fff, #d7e3f2);
+  background: -moz- oldlinear-gradient(top, #fff 20px, #fff, #d7e3f2);
   background: -o-linear-gradient(top, #fff 20px, #fff, #d7e3f2);
   background: linear-gradient(to bottom, #fff 20px, #fff, #d7e3f2);
   z-index: 2;
@@ -1269,15 +1269,15 @@ header .team-slider .team .inner .arrows .container .content .next .block .info 
   align-items: center;
   -webkit-box-align: center;
   -moz-box-align: center;
-  -webkit-box-direction: normal;
   -moz-box-direction: normal;
+  -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
+  display: -ms-flexbox;
+  display: flex;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-align: center;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -1939,10 +1939,10 @@ ol > li:before {
     -webkit-box-orient: horizontal;
     -moz-box-orient: horizontal;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
+    display: -webkit-flex;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -1956,8 +1956,8 @@ ol > li:before {
 .team-slider .inner .arrows .next {
   background-color: #fff;
   border-radius: 50%;
-  -webkit-box-pack: center;
   -moz-box-pack: center;
+  -webkit-box-pack: center;
   -webkit-box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
   box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
   cursor: pointer;
@@ -2194,11 +2194,11 @@ ol .team-slider .inner .container .slide .bio li {
     -moz-box-direction: normal;
     -webkit-box-orient: horizontal;
     -moz-box-orient: horizontal;
+    display: flex;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -2222,22 +2222,22 @@ ol .team-slider .inner .container .slide .bio li {
   border-radius: 50%;
   -webkit-box-align: center;
   -moz-box-align: center;
-  -webkit-box-direction: normal;
   -moz-box-direction: normal;
+  -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
   -webkit-box-pack: center;
   -moz-box-pack: center;
   -webkit-box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
   box-shadow: -4px 7px 20px rgba(41, 94, 195, 0.15);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-box;
   -ms-flex-align: center;
-  -webkit-flex-direction: row;
   -ms-flex-direction: row;
+  -webkit-flex-direction: row;
   flex-direction: row;
   -ms-flex-pack: center;
   height: 80px;
@@ -2269,6 +2269,7 @@ ol .team-slider .inner .container .slide .bio li {
 
 @media (max-width: 750px) {
   .anchor-map .inner .container .block .content-container {
+    width: -webkit-calc(100% - 80px);
     width: -moz-calc(100% - 80px);
     width: calc(100% - 80px);
   }
@@ -2395,7 +2396,7 @@ ol .team-slider .inner .container .slide .bio li {
 .cta {
   background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #69a8ff), color-stop(#69a8ff), color-stop(70%, #88baff), to(#88baff));
   background: -webkit-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
-  background: -moz-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
+  background: -moz- oldlinear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
   background: -o-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
   background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
 }
@@ -2606,7 +2607,7 @@ ol .team-slider .inner .container .slide .bio li {
 .process {
   background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #69a8ff), color-stop(#69a8ff), color-stop(70%, #88baff), to(#88baff));
   background: -webkit-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
-  background: -moz-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
+  background: -moz- oldlinear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
   background: -o-linear-gradient(top left, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
   background: linear-gradient(to bottom right, #69a8ff 20%, #69a8ff, #88baff 70%, #88baff);
 }
@@ -2841,8 +2842,8 @@ ol .team .inner .container h2 ~ li {
   -webkit-box-shadow: none;
   box-shadow: none;
   cursor: pointer;
-  -webkit-flex: 1;
   -ms-flex: 1;
+  -webkit-flex: 1;
   flex: 1;
   margin: 0 20px;
   -webkit-transition-duration: 0.5s;
@@ -2929,6 +2930,7 @@ ol .team .inner .container h2 ~ li {
   .team-slider .team .inner .arrows .container .content .next .block:after {
     bottom: 60px !important;
     content: '';
+    left: -webkit-calc(-webkit-calc(-webkit-calc(100vw - 100%) / -2) + 11.4285714286px);
     left: -moz-calc(-moz-calc(-moz-calc(100vw - 100%) / -2) + 11.4285714286px);
     left: calc(calc(calc(100vw - 100%) / -2) + 11.4285714286px);
   }
@@ -3124,6 +3126,7 @@ ol .team .inner .container h2 ~ li {
 }
 
 .contact-modal .inner:after {
+  left: -webkit-calc(-webkit-calc(100vw - 880px) / -2);
   left: -moz-calc(-moz-calc(100vw - 880px) / -2);
   left: calc(calc(100vw - 880px) / -2);
   opacity: 0.5;
