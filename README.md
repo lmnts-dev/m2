@@ -154,6 +154,7 @@ $ git pull upstream master
 ## Deployment
 To build, optimize, and distribute to the `netlify` branch, run `npm run deploy`.
 
+
 ## List of Gulp tasks
 
 To run separate task type in command line `gulp [task_name]`.
