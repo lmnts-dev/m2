@@ -1,8 +1,0 @@
-/**
-* jekyll-starter-kit v0.1.1
-* https://github.com/amazingSurge/jekyll-starter-kit
-*
-* Copyright (c) amazingSurge <amazingSurge@gmail.com>
-* Released under the MIT license
-*/
-"use strict";var slider=$("#team-slider .inner .container"),sliderContainer=$("#team-slider");function goToSlide(e){slider.slick("slickGoTo",e+", "+!0)}function toggleSlider(){sliderContainer.hasClass("visible-slider")?sliderContainer.removeClass("visible-slider"):sliderContainer.addClass("visible-slider")}function toggleModal(){var e=$("#contact-modal");e.hasClass("visible-modal")?e.removeClass("visible-modal"):e.addClass("visible-modal")}$(document).ready(function(){slider.slick({arrows:!1,adaptiveHeight:!0})}),$('div[data-nav="next"]').click(function(){slider.slick("slickNext")}),$('div[data-nav="prev"]').click(function(){slider.slick("slickPrev")}),$('div[data-nav="exit"]').click(function(){toggleSlider()}),$("div[data-member]").click(function(){goToSlide($(this).attr("data-member")),toggleSlider()}),$(window).scroll(function(){0!=$("body, html").scrollTop()?($("header svg").removeClass("large"),$("header nav").removeClass("no-scroll"),$("header").removeClass("no-background")):($("header svg").addClass("large"),$("header nav").addClass("no-scroll"),$("header").addClass("no-background"))}),$('div[data-contact="exit"]').click(function(){toggleModal()}),$('div[data-contact="open"]').click(function(){toggleModal()});
